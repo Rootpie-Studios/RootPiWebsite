@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    min-width: 100vw;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 70px;
+}
+
+.icon-button:hover {
+    opacity: 0.8;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.header-link {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.header-right a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.header-right a:hover {
+    opacity: 0.8;
+}
