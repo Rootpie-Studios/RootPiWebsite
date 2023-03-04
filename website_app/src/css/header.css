@@ -24,10 +24,6 @@
     width: 70px;
 }
 
-.icon-button:hover {
-    opacity: 0.8;
-}
-
 .header-right {
     display: flex;
     justify-content: flex-end;
