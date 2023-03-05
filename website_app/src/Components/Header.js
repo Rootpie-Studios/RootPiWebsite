@@ -9,10 +9,10 @@ function Header(props) {
   return (
     <div className="header">
       <div className="header-left">
-        <Link to="/">
+        <Link className='link' to="/">
           <RoundButton color="black" label={<img className="logo" src={logo} alt="" />} />
+          {props.subtitle}
         </Link>
-        {props.subtitle}
       </div>
       <div className="header-right" style={{ display: window.innerWidth >= 800 ? 'flex' : 'none' }}>
         <a style={{ color: props.textColor }} className="header-link" href="/portfolio">Portfolio</a>
