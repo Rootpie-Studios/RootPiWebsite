@@ -17,7 +17,7 @@ function Header(props) {
       <div className="header-right" style={{ display: window.innerWidth >= 800 ? 'flex' : 'none' }}>
         <Link style={{ color: props.textColor }} className="header-link" to="/portfolio">Portfolio</Link>
         <Link style={{ color: props.textColor }} className="header-link" to="/students">Students</Link>
-        <Link style={{ color: props.textColor }} className="header-link" to="/about">about</Link>
+        <Link style={{ color: props.textColor }} className="header-link" to="/about">About</Link>
         <Link to="/about">
           <Button color="lightblue" textColor="black" label="Contact" />
         </Link>
