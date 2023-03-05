@@ -9,7 +9,7 @@ function Header(props) {
   return (
     <div className="header">
       <div className="header-left">
-        <Link className='link' to="/">
+        <Link className='link' to="/" style={{ textDecoration: 'none', color: 'white' }}>
           <RoundButton color="black" label={<img className="logo" src={logo} alt="" />} />
           {props.subtitle}
         </Link>
