@@ -3,10 +3,10 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer';
 import Card from '../Components/Card';
 import logo from '../images/LogoTextTransBlack.png';
-import '../css/homepage.css';
+import '../css/contactpage.css';
 
 
-function HomePage() {
+function ContactPage() {
   return (
     <div className='App'>
       <Header subtitle={<img className='image-container' src={logo} alt="Example Image" />} />
@@ -25,4 +25,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default ContactPage;

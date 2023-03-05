@@ -10,6 +10,17 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 100%);
 }
 
+.App-storytime {
+  font-family: 'Quicksand', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #FF06C8 0%, #010033 100%);
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
