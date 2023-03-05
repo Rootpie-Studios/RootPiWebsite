@@ -9,7 +9,7 @@ import '../css/contactpage.css';
 function ContactPage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt="Example Image" />} />
+      <Header subtitle={<img className='image-container' src={logo} alt="" />} />
       <main>
         <Card color="#696969" textColor="white" children={
           <div>
