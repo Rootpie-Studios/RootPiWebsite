@@ -7,7 +7,7 @@
 }
 
 .title-image-container {
-    width: 30%;
+    width: 70%;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
 }
 
 .title {
-    /* margin-top: 100px; */
+    margin-top: 400px;
 }
 
 .center-content {
@@ -40,6 +40,12 @@ h2 {
     margin-right: 60px;
 }
 
+.grid-container2-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
 .grid-container-header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,6 +61,12 @@ h2 {
 }
 
 .rounded-image {
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.rounded-image:hover {
     border-radius: 50%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
