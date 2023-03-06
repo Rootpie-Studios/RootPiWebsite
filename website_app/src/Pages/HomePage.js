@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import Card from '../Components/Card';
 import logo from '../images/LogoTextTransBlack.png';
 import '../css/homepage.css';
+import ropes from '../images/RootPiRopesAssetIconHQ.png';
 
 
 function HomePage() {
@@ -19,6 +20,29 @@ function HomePage() {
             <p>With a team of experienced developers and consultants, RootPi is committed to providing innovative solutions that meet the unique needs and goals of its clients.</p>
           </div>
         } />
+
+        <div className='title'>
+          <h2>What we are working on right now</h2>
+        </div>
+
+        <div class="grid-container">
+          <Card textColor="black" children={
+            <div>
+              <h2>Traumasim - VR application for medical students</h2>
+            </div>
+          } />
+          <Card textColor="black" children={
+            <div>
+              <h2>Ropes - Unity asset store</h2>
+              <img className='card-image-container rounded-image' src={ropes} alt="" />
+            </div>
+          } />
+          <Card textColor="black" children={
+            <div>
+              <h2>Instapply - AI generated cover letters</h2>
+            </div>
+          } />
+        </div>
       </main>
       <Footer/>
     </div>
