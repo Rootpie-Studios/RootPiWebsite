@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 100%);
+  width: 100vw;
 }
 
 .App-storytime {
@@ -36,3 +37,4 @@
     transform: rotate(360deg);
   }
 }
+
