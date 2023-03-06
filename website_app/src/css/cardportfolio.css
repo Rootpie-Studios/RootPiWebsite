@@ -1,8 +1,8 @@
-.card-portfolio {
+.cardportfolio {
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 20px 20px;
+    padding: 30px 30px 0px;
     margin: 3rem auto 3rem auto; 
     display: grid;
     grid-template-columns: 2fr 1fr;

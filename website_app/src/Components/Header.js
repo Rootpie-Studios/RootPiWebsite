@@ -30,7 +30,7 @@ function Header(props) {
         <Link style={{ color: props.textColor }} className={selected === 'about' ? 'selected' : 'header-link'} onClick={() => setSelected('about')}to="/about">About</Link>
        
         <Link to="/about">
-          <Button color="lightblue" textColor="black" label="Contact" />
+          <Button color="dodgerblue" textColor="black" label="Contact" />
         </Link>
       </div>
     </div>

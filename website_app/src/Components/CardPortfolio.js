@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/cardportfolio.css';
 
-function Card(props) {
+function CardPortfolio(props) {
   return (
-    <div className="card" style={{ 
+    <div className="cardportfolio" style={{ 
       backgroundColor: props.color, 
       color: props.textColor, 
       width: props.width,
@@ -16,4 +16,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default CardPortfolio;
