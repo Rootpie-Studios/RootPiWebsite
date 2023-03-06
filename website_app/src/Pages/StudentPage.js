@@ -11,12 +11,11 @@ function StudentPage() {
     <div className='App'>
       <Header subtitle={<img className='image-container' src={logo} alt="" />} />
       <main>
-        <Card color="#696969" textColor="white" children={
+      <Card color="#696969" textColor="white" width="60%" children={
           <div>
-            <h2>Student projects</h2>
-            <p>RootPi is a dynamic company that specializes in developing virtual reality applications in Unity, creating mobile apps in Flutter, and providing comprehensive consulting services to help clients bring their ideas to life. </p>
+            <h2>Database evaulation</h2>
+            <p>Teo and Axel studying systems science at LTU, Sweden, are working with us to evaluate and research different database solutions. They are looking at factors such as: efficiency, difficulty of implementation and cost for different sizes of the business.  </p>
             <br/>
-            <p>With a team of experienced developers and consultants, RootPi is committed to providing innovative solutions that meet the unique needs and goals of its clients.</p>
           </div>
         } />
       </main>
