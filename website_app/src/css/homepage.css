@@ -62,6 +62,12 @@ h2 {
 
 .rounded-image {
     border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.rounded-image:hover {
+    border-radius: 50%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 

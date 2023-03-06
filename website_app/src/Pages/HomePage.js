@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div className='App'>
       <Header subtitle={<img className='image-container' src={logo} alt="" />} />
-      <main style={{marginBottom: "50vw"}}>
+      <main style={{marginBottom: "30vw"}}>
         <div className='grid-container-header' style={{marginTop: '100px', marginBottom: '100px'}}>
           <div>
             <img className='title-image-container rounded-image' style={{marginLeft: "20%"}} src={VRDude} alt="" />
@@ -79,7 +79,7 @@ function HomePage() {
                 <div style={{gridColumn: '1 / span 2'}}>
                   <FaReact style={{marginBottom: '10px'}} />
                   <SiPython style={{marginBottom: '10px', marginLeft: '10px'}} />
-                  <p>A website for effortless generation of personalized cover letter, written for the work that you are applying to</p>
+                  <p>A website for effortless generation of personalized cover letter, written for the work that you are applying to. Available on <a href="https://instapply.se">instapply.se</a></p>
                 </div>
                 <img className='card-image-container rounded-image' src={Instapply} alt="" />
               </div>
