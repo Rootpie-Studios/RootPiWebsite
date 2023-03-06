@@ -1,7 +1,41 @@
 .image-container {
-    width: 30vw;
+    width: 300px;
+}
+
+.card-image-container {
+    width: 20vw;
 }
 
 h2 {
     margin: 0px;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.rounded-image {
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
 }
