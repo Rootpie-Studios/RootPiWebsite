@@ -5,3 +5,7 @@
     padding: 20px 20px;
     margin: auto;
 }
+
+.card:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
