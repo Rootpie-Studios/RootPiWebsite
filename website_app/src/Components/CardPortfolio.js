@@ -10,8 +10,9 @@ function CardPortfolio(props) {
     }}>
       <div className="card-content">
         <div className="text">{props.children}</div>
-        <div className="image-grid">{props.images}</div>
+        <div className="text">{props.icons}</div>
       </div>
+      <div className="img">{props.images}</div>
     </div>
   );
 }

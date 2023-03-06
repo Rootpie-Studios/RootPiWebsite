@@ -9,24 +9,17 @@
     align-items: center;
 }
 
-  
   .card-content {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   
-  .text {
-    justify-self: start;
-  }
-  
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 10px;
-  }
-  
-  .image-grid img {
-    width: 100%;
+  .img {
+    width: 50%;
     height: auto;
+    margin: auto auto;
   }
+
+  
