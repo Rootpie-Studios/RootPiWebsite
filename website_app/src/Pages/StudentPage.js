@@ -17,7 +17,7 @@ function StudentPage() {
       </div>
       <Card color="rgba(0, 0, 0, 0)" textColor="black" width="60%" children={
           <div>
-            <div className='grid-container-inner'>
+            <div className='student-grid-container-inner'>
                 <div style={{gridColumn: '1 / span 2'}}>
                   <h1>Database evaulation</h1>
                   <h3>Teo and Axel studying systems science at LTU, Sweden, are working with us to evaluate and research different database solutions. They are looking at factors such as: efficiency, difficulty of implementation and cost for different sizes of the business.  </h3>
