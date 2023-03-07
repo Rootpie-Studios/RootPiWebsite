@@ -4,12 +4,16 @@ import Footer from '../Components/Footer';
 import CardPortfolio from '../Components/CardPortfolio';
 import logo from '../images/LogoTextTransBlack.png';
 import '../css/portfoliopage.css';
+
+// Images
 import TraumaSim from '../images/TraumaSim.png';
 import Instapply from '../images/Instapply.png';
 import HaliteIV from '../images/HaliteIV.png';
 import CrystalQuest2 from '../images/CrystalQuest2.png';
 import Nifti from '../images/Nifti.png';
 import LundaPant from '../images/LundaPant.png';
+import Ropes from '../images/RootPiRopesAssetIconHQ.png';
+
 
 import { FaReact } from 'react-icons/fa';
 import { SiCsharp, SiDart, SiBlender, SiFirebase, SiJavascript, SiMicrosoftazure, SiPython, SiOpenai, SiFlutter, SiGoogleplay, SiAppstore, SiKeras, SiLaravel, SiNumpy  } from 'react-icons/si';
@@ -22,10 +26,11 @@ function PortfolioPage() {
       <Header subtitle={<img className='image-container' src={logo} alt="" />} />
       <main>
         
+        {/* TraumaSim */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>TraumaSim VR</h2>
-            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical and stressful aspects of the job as a medical professional. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. </p>
+            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical aspects of acuta trauma care. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. </p>
             <br/>
 
           </div>
@@ -33,7 +38,7 @@ function PortfolioPage() {
         images = {<img className="rounded-image" src={TraumaSim} alt="" />}
         />
 
-
+        {/* instapply */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>instapply.se, AI cover letters</h2>
@@ -41,8 +46,10 @@ function PortfolioPage() {
             </p>
             <br/>
           </div>
-        } icons =  {<h1><FaReact /> <SiJavascript /> <SiPython /> <SiFirebase /> <SiOpenai /></h1>}/>
+        } icons =  {<h1><FaReact /> <SiJavascript /> <SiPython /> <SiFirebase /> <SiOpenai /></h1>}
+        images = {<img className="rounded-image" src={Instapply} alt="" />}/>
 
+        {/* StoryTime */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>RootPi Storytime</h2>
@@ -52,6 +59,7 @@ function PortfolioPage() {
           </div>
         } icons =  {<h1><SiPython /> <SiOpenai /> <SiMicrosoftazure /> <SiFirebase /> </h1>}/>
 
+        {/* Datamatrix */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>DatamatrixDecoder: Image analysis tool for datamatrices</h2>
@@ -60,16 +68,17 @@ function PortfolioPage() {
           </div>
         } icons =  {<h1><SiPython /> </h1>}/> 
 
+        {/* Ropes */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>RootPi Ropes</h2>
             <p>RootPi Ropes is a toolkit for easily integrating ropes and tubes in a <b>Unity</b> based 3D environment. It is built with Unity, code for the physics simulations written in <b>C#</b> and it is available as a purchasable asset on the Unity Asset Store.  </p>
             <br/>
           </div>
-        } icons =  {<h1><BsUnity /> <SiCsharp /> </h1>}/>
+        } icons =  {<h1><BsUnity /> <SiCsharp /> </h1>}
+        images = {<img className="rounded-image" src={Ropes} alt="" />}/>
 
-
-
+        {/* TimeTracker */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>TimeTracker</h2>
@@ -78,6 +87,7 @@ function PortfolioPage() {
           </div>
         } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}/>
 
+        {/* LundaPant */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>LundaPant</h2>
@@ -87,7 +97,7 @@ function PortfolioPage() {
         } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}
         images = {<img className="rounded-image" src={LundaPant} alt="" />}/>
 
-
+        {/* GvHD */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>ML-classification GvHD with MicroRNA</h2>
@@ -95,7 +105,8 @@ function PortfolioPage() {
             <br/>
           </div>
         } icons =  {<h1><SiPython /> <SiKeras /> </h1>}/>
-
+        
+        {/* Niftitech */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>Consulting for Niftitech</h2>
@@ -104,7 +115,8 @@ function PortfolioPage() {
           </div>
         } icons =  {<h1><SiFlutter /> <SiLaravel/></h1>}
         images = {<img className="rounded-image" src={Nifti} alt="" />}/>
-
+        
+        {/* Crystal Quest */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>Crystal Quest: Rainbow and Crystal Quest 2</h2>
@@ -114,7 +126,7 @@ function PortfolioPage() {
         } icons =  {<h1><BsUnity /> <SiCsharp /> <SiBlender /> <SiAppstore /> <SiGoogleplay /></h1>}
         images = {<img className="rounded-image" src={CrystalQuest2} alt="" />}/>
 
-
+        {/* Halite IV */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>Deep Reinforcement Learning in Halite IV</h2>
