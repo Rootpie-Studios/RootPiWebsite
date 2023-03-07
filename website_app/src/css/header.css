@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     color: #000000;
-    min-width: 100vw;
+    min-width: 90%;
 }
 
 .header-left {
@@ -25,7 +25,7 @@
 .header-right {
     display: flex;
     justify-content: flex-end;
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 .header-link {
