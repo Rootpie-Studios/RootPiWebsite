@@ -54,8 +54,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>TraumaSim VR</h2>
-              <p>
+              <h2 className="text">TraumaSim VR</h2>
+              <p className="text">
                 A <b>VR-simulation</b> for education of hospital personnel and
                 students. In collaboration with Umeå University we are
                 developing a VR simulation for training on practical aspects of
@@ -102,8 +102,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>instapply.se, AI cover letters</h2>
-              <p>
+              <h2 className="text">instapply.se, AI cover letters</h2>
+              <p className="text">
                 With the use of the recent advances in NLP in AI we have built a
                 platform for generating a personal cover letter based on
                 inputting only your CV and the ad for the position you are
@@ -148,8 +148,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>RootPi Storytime</h2>
-              <p>
+              <h2 className="text">RootPi Storytime</h2>
+              <p className="text">
                 Using <b>Python</b>, text-to-speech API:s via{" "}
                 <b>Microsoft Azure</b>, and state of the art AI text and image
                 generation via <b>OpenAI</b> we have built a tool for generating
@@ -185,8 +185,10 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>DatamatrixDecoder: Image analysis tool for datamatrices</h2>
-              <p>
+              <h2 className="text">
+                DatamatrixDecoder: Image analysis tool for datamatrices
+              </h2>
+              <p className="text">
                 Using image analysis and <b>Python</b> we developed a tool for
                 decoding images containing several small datamatrices (compact
                 QR-codes). The tool was built for the company Treat4Life in
@@ -210,8 +212,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>RootPi Ropes</h2>
-              <p>
+              <h2 className="text">RootPi Ropes</h2>
+              <p className="text">
                 RootPi Ropes is a toolkit for easily integrating ropes and tubes
                 in a <b>Unity</b> based 3D environment. It is built with Unity,
                 code for the physics simulations written in <b>C#</b> and it is
@@ -238,8 +240,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>TimeTracker</h2>
-              <p>
+              <h2 className="text">TimeTracker</h2>
+              <p className="text">
                 TimeTracker is an app that tracks your activites from the GPS on
                 your phone, allowing you to automatically track where you spend
                 your time without checking in. Everything is handled
@@ -283,8 +285,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>LundaPant</h2>
-              <p>
+              <h2 className="text">LundaPant</h2>
+              <p className="text">
                 LundaPant is an app for getting rid of empty cans and bottles
                 without leaving your home, while still making sure they will be
                 recycled. They app was developed with <b>Flutter</b>,{" "}
@@ -324,8 +326,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>ML-classification GvHD with MicroRNA</h2>
-              <p>
+              <h2 className="text">ML-classification GvHD with MicroRNA</h2>
+              <p className="text">
                 In collaboration with researchers at Lund University we created
                 a neural network based binary classifier for determining whether
                 a patient has or does not have Graft versus Host Disease (GvHD)
@@ -356,8 +358,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>Consulting for Niftitech</h2>
-              <p>
+              <h2 className="text">Consulting for Niftitech</h2>
+              <p className="text">
                 We were hired on project basis for the company Niftitech,
                 consulting in development in <b>Flutter</b> and <b>Laravel</b>.
                 With a wide array of projects in mobile apps, websites and
@@ -385,8 +387,10 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>Crystal Quest: Rainbow and Crystal Quest 2</h2>
-              <p>
+              <h2 className="text">
+                Crystal Quest: Rainbow and Crystal Quest 2
+              </h2>
+              <p className="text">
                 The enormously anticipated sequel of the smash hit Crystal King:
                 Crystal Quest - Rainbow! With the same intense, never ending
                 arcade style gameplay but with 6 more levels, 2 thrilling boss
@@ -428,8 +432,8 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2>Deep Reinforcement Learning in Halite IV</h2>
-              <p>
+              <h2 className="text">Deep Reinforcement Learning in Halite IV</h2>
+              <p className="text">
                 For our master thesis at Lund University, LTH at the department
                 of Automatic Control we investigated the field of{" "}
                 <b>Deep Reinforcement Learning (DRL)</b>. We built a program
