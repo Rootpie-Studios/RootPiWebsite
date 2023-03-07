@@ -38,25 +38,6 @@ import {
 } from "react-icons/si";
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 
-import { FaReact } from "react-icons/fa";
-import {
-  SiCsharp,
-  SiDart,
-  SiBlender,
-  SiFirebase,
-  SiJavascript,
-  SiMicrosoftazure,
-  SiPython,
-  SiOpenai,
-  SiFlutter,
-  SiGoogleplay,
-  SiAppstore,
-  SiKeras,
-  SiLaravel,
-  SiNumpy,
-} from "react-icons/si";
-import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
-
 function PortfolioPage() {
   return (
     <div className="App">
