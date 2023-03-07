@@ -113,7 +113,7 @@ function PortfolioPage() {
                 <b>React</b> (with <b>JavaScript</b> and <b>Python</b>),
                 database handling via <b>Firebase</b> and is implementing the
                 GPT-3 API from <b>OpenAI</b>. Available on{" "}
-                <a href="instapply.se">instapply.se</a>.
+                <a href="https://instapply.se">instapply.se</a>.
               </p>
               <br />
             </div>
