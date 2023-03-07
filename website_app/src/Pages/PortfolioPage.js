@@ -23,7 +23,7 @@ import { BsBadgeVrFill, BsUnity } from 'react-icons/bs';
 function PortfolioPage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt="" />} />
+      <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main>
         
         {/* TraumaSim */}

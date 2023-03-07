@@ -10,7 +10,7 @@ import VRDude from '../images/VRDude.png';
 function StudentPage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt="" />} />
+      <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main>
       <div className='center-content'>
         <h1>Current projects</h1>

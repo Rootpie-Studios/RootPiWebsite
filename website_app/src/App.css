@@ -22,6 +22,16 @@
   background: linear-gradient(180deg, #FF06C8 0%, #010033 100%);
 }
 
+.header-image-container {
+  width: 300px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
