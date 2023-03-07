@@ -9,7 +9,7 @@ import '../css/aboutpage.css';
 function AboutPage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt=""/>} />
+      <Header subtitle={<img className='header-image-container' src={logo} alt=""/>} />
       <main>
         <Card color="#696969" textColor="white" children={
           <div>

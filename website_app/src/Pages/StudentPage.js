@@ -10,14 +10,14 @@ import VRDude from '../images/VRDude.png';
 function StudentPage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt="" />} />
+      <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main>
       <div className='center-content'>
         <h1>Current projects</h1>
       </div>
       <Card color="rgba(0, 0, 0, 0)" textColor="black" width="60%" children={
           <div>
-            <div className='grid-container-inner'>
+            <div className='student-grid-container-inner'>
                 <div style={{gridColumn: '1 / span 2'}}>
                   <h1>Database evaulation</h1>
                   <h3>Teo and Axel studying systems science at LTU, Sweden, are working with us to evaluate and research different database solutions. They are looking at factors such as: efficiency, difficulty of implementation and cost for different sizes of the business.  </h3>

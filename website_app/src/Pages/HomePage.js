@@ -18,15 +18,15 @@ import {SiCsharp, SiBlender, SiJavascript, SiDart, SiPython, SiCss3, SiFlutter, 
 function HomePage() {
   return (
     <div className='App'>
-      <Header subtitle={<img className='image-container' src={logo} alt="" />} />
+      <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main style={{marginBottom: "30vw"}}>
-        <div className='grid-container-header' style={{marginTop: '100px', marginBottom: '100px'}}>
+        <div className='home-grid-container-header' style={{marginTop: '100px', marginBottom: '100px'}}>
           <div>
-            <img className='title-image-container rounded-image' style={{marginLeft: "20%"}} src={VRDude} alt="" />
-            <img className='title-image-container rounded-image' style={{marginLeft: "40%", marginTop: "600px"}} src={AI} alt="" />
+            <img className='home-title-image-container home-rounded-image' style={{marginLeft: "20%"}} src={VRDude} alt="" />
+            <img className='home-title-image-container home-rounded-image' style={{marginLeft: "40%", marginTop: "600px"}} src={AI} alt="" />
           </div>
           <div>
-          <div className='title'>
+          <div className='home-title'>
             <h1>This is us</h1>
             </div>
             <h3 style={{marginTop: "80px"}}>Welcome to RootPi, the premier provider of cutting-edge virtual reality applications, mobile apps, and consulting services. At RootPi, we specialize in developing immersive and innovative virtual reality experiences that are sure to captivate and engage your audience. Our team of experienced developers and designers will work with you to create a custom virtual environment that is tailored to your specific needs and goals.</h3>
@@ -34,61 +34,61 @@ function HomePage() {
             <h3>So why wait? Contact RootPi today and let us help you bring your ideas to life.</h3>
           </div>
           <div>
-            <img className='title-image-container rounded-image' style={{marginLeft: "20%", marginTop: "500px"}} src={Coder} alt="" />
+            <img className='home-title-image-container home-rounded-image' style={{marginLeft: "20%", marginTop: "500px"}} src={Coder} alt="" />
           </div>
         </div>
 
         <div class="grid-container">
-          <div className='title'>
+          <div className='home-title'>
             <h2>What we are working on right now</h2>
           </div>
         </div>
 
         <div class="grid-container">
-          <Card textColor="black" children={
+          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Traumasim - VR application for medical students</h2>
-              <div className='grid-container-inner'>
+              <div className='home-grid-container-inner'>
                 <div style={{gridColumn: '1 / span 2'}}>
                   <BsUnity style={{marginBottom: '10px'}} />
                   <SiBlender style={{marginBottom: '10px', marginLeft: '10px'}} />
                   <SiCsharp style={{marginBottom: '10px', marginLeft: '10px'}} />
                   <p>We are working for Umeå university to build a virutal reality trauma simulation for students to train on</p>
                 </div>
-                <img className='card-image-container rounded-image' src={TraumaSim} alt="" />
+                <img className='home-card-image-container home-rounded-image' src={TraumaSim} alt="" />
               </div>
             </div>
           } />
-          <Card textColor="black" children={
+          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Ropes - Unity asset store</h2>
-              <div className='grid-container-inner'>
+              <div className='home-grid-container-inner'>
                 <div style={{gridColumn: '1 / span 2'}}>
                   <BsUnity style={{marginBottom: '10px'}} />
                   <SiCsharp style={{marginBottom: '10px', marginLeft: '10px'}} />
                   <p>We are developing and maintaining an asset for Unity which simulates the physics of a rope</p>
                 </div>
-                <img className='card-image-container rounded-image' src={ropes} alt="" />
+                <img className='home-card-image-container home-rounded-image' src={ropes} alt="" />
               </div>
             </div>
           } />
-          <Card textColor="black" children={
+          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Instapply - AI generated cover letters</h2>
-              <div className='grid-container-inner'>
+              <div className='home-grid-container-inner'>
                 <div style={{gridColumn: '1 / span 2'}}>
                   <FaReact style={{marginBottom: '10px'}} />
                   <SiPython style={{marginBottom: '10px', marginLeft: '10px'}} />
                   <p>A website for effortless generation of personalized cover letter, written for the work that you are applying to. Available on <a href="https://instapply.se">instapply.se</a></p>
                 </div>
-                <img className='card-image-container rounded-image' src={Instapply} alt="" />
+                <img className='home-card-image-container home-rounded-image' src={Instapply} alt="" />
               </div>
             </div>
           } />
         </div>
 
         <div class="grid-container">
-          <div className='title'>
+          <div className='home-title'>
             <h2>Our tech stack</h2>
           </div>
         </div>
@@ -115,13 +115,13 @@ function HomePage() {
         </div>
 
         <div class="grid-container2">
-          <Card textColor="black" children={
+          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Coding languages</h2>
               <p>We are compentent in many coding languages each with their own benefit to allow us to be flexible and deliver products that meet the client requirements</p>
             </div>
           } />
-          <Card textColor="black" children={
+          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Frameworks</h2>
               <p>From our previous projects we have used many different frameworks that allows us to get work done faster at a higher level</p>

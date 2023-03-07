@@ -21,3 +21,9 @@
     background-color: white;
     width: 150px;
 }
+
+.student-grid-container-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
