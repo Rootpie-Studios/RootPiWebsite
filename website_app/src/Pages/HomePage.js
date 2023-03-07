@@ -19,7 +19,6 @@ import AI from "../images/AI.png";
 // icons
 import { BsUnity } from "react-icons/bs";
 import { FaReact, FaPhp, FaHtml5, FaVuejs, FaJava } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 
 import {
   SiCsharp,
@@ -33,8 +32,6 @@ import {
 } from "react-icons/si";
 
 function HomePage() {
-  const ref = React.createRef();
-
   return (
     <div className="App">
       <Header

@@ -82,7 +82,7 @@ function Header(props) {
           About
         </Link>
 
-        <Button
+        {/* <Button
           textColor="white"
           label="Contact"
           onClick={() =>
@@ -91,7 +91,7 @@ function Header(props) {
               behavior: "smooth",
             })
           }
-        />
+        /> */}
       </div>
 
       <div

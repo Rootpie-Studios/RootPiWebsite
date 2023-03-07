@@ -1,23 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Card from "../Components/Card";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/contactpage.css";
 
 function ContactPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(
-      `Submitting form with name ${name}, email ${email}, and message ${message}`
-    );
-    // Replace this console log with code to submit the form to a server or API
-  };
-
   return (
     <div className="App">
       <Header
