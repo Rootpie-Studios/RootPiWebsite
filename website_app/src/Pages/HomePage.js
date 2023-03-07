@@ -38,10 +38,7 @@ function HomePage() {
         subtitle={<img className="header-image-container" src={logo} alt="" />}
       />
       <main style={{ marginBottom: "10vw" }}>
-        <div
-          className="home-grid-container-header"
-          style={{ marginTop: "100px", marginBottom: "100px" }}
-        >
+        <div className="home-grid-container-header">
           <div className="hidden">
             <img
               className="home-title-image-container home-rounded-image"
@@ -51,7 +48,7 @@ function HomePage() {
             />
             <img
               className="home-title-image-container home-rounded-image"
-              style={{ marginLeft: "40%", marginTop: "600px" }}
+              style={{ marginLeft: "40%", marginTop: "50px" }}
               src={AI}
               alt=""
             />
