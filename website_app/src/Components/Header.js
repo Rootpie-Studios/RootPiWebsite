@@ -155,7 +155,7 @@ function Header(props) {
                   </Link>
                 </ListItemButton>
               </ListItem>
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton>
                   <Link style={{ marginLeft: "5px" }} to="/contact">
                     <Button
@@ -165,7 +165,7 @@ function Header(props) {
                     />
                   </Link>
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
             </List>
           </Box>
         </Drawer>

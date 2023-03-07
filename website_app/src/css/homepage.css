@@ -60,26 +60,39 @@ h2 {
   display: visible;
 }
 
+.coder-image {
+  margin-left: 20%;
+  margin-top: 500px;
+}
+
 @media (max-width: 800px) {
   .home-grid-container-header {
     grid-template-columns: 1fr;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .home-grid-container2-inner {
     grid-template-columns: 1fr;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .home-grid-container-inner {
     grid-template-columns: 1fr;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .home-title {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .hidden {
     display: none;
+  }
+  .coder-image {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-card-image-container {
+    width: 50%;
   }
 }

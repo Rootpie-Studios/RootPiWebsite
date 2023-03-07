@@ -86,8 +86,7 @@ function HomePage() {
 
           <div>
             <img
-              className="home-title-image-container home-rounded-image"
-              style={{ marginLeft: "20%", marginTop: "500px" }}
+              className="home-title-image-container home-rounded-image coder-image"
               src={Coder}
               alt=""
             />
@@ -107,10 +106,10 @@ function HomePage() {
             children={
               <div>
                 <h2
+                  className="text"
                   style={{
                     marginBottom: "10px",
                     overflow: "visible",
-                    whiteSpace: "nowrap",
                   }}
                 >
                   Traumasim - VR application for medical students
@@ -137,7 +136,7 @@ function HomePage() {
                         />
                       }
                     />
-                    <p>
+                    <p className="text">
                       We are working for Umeå university to build a virutal
                       reality trauma simulation for students to train on
                     </p>
@@ -157,10 +156,10 @@ function HomePage() {
             children={
               <div>
                 <h2
+                  className="text"
                   style={{
                     marginBottom: "10px",
                     overflow: "visible",
-                    whiteSpace: "nowrap",
                   }}
                 >
                   Ropes - Unity asset store
@@ -203,10 +202,10 @@ function HomePage() {
             children={
               <div>
                 <h2
+                  className="text"
                   style={{
                     marginBottom: "10px",
                     overflow: "visible",
-                    whiteSpace: "nowrap",
                   }}
                 >
                   Instapply - AI generated cover letters
