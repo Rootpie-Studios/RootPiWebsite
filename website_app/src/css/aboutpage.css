@@ -1,0 +1,23 @@
+.about-rounded-image {
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.about-rounded-image:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-image-container {
+    width: 400px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}

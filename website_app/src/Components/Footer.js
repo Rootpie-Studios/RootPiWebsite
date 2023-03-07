@@ -16,23 +16,22 @@ function Footer(props) {
             With experience in a wide range of programming languages, frameworks and softwares we can create the tools you need and help you realize your visions. </p> */}
 
             <br />
-            <div style={{ color: props.textColor }} className="copyright">
-            &copy; 2023 RootPi AB. All rights reserved.
-            <br />
-            <br />
-            <br />
-          </div>
           </div>
           
           
         
-        <div className="column">
-          <h2 style={{ color: props.textColor }} className='footer-text'>Contact Us</h2>
-          <p style={{ color: props.textColor }} className='footer-text'>info@rootpi.xyz</p>
-        </div>
-
+          <div className="column">
+            <h2 style={{ color: props.textColor }} className='footer-text'>Contact Us</h2>
+            <p style={{ color: props.textColor }} className='footer-text'>info@rootpi.xyz</p>
+          </div>
         </div>
       </footer>
+      <div style={{ color: props.textColor, marginTop: '80px' }} className="copyright center-content">
+        &copy; 2023 RootPi AB. All rights reserved.
+        <br />
+        <br />
+        <br />
+      </div>
     </div>
   );
 }

@@ -47,6 +47,7 @@ function Header(props) {
       <div className="header-right" style={{ display: window.innerWidth >= 900 ? 'flex' : 'none' }}>
         <Link style={{ color: props.textColor }} className={selected === 'portfolio' ? 'selected' : 'header-link'} onClick={() => setSelected('portfolio')} to="/portfolio">Portfolio</Link>
         <Link style={{ color: props.textColor }} className={selected === 'students' ? 'selected' : 'header-link'} onClick={() => setSelected('students')} to="/students">Students</Link>
+        <Link style={{ color: props.textColor }} className={selected === 'about' ? 'selected' : 'header-link'} onClick={() => setSelected('about')} to="/about">About</Link>
        
         <Link to="/contact">
           <Button color="dodgerblue" textColor="black" label="Contact"/>

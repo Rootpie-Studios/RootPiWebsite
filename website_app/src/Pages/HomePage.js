@@ -66,7 +66,7 @@ function HomePage() {
                 <div style={{gridColumn: '1 / span 2'}}>
                   <BsUnity style={{marginBottom: '10px'}} />
                   <SiCsharp style={{marginBottom: '10px', marginLeft: '10px'}} />
-                  <p>We are developing and maintaining an asset for Unity which simulates the physics of a rope</p>
+                  <p>We are developing and maintaining an asset for Unity which simulates the physics of a rope. A short demo video can be found at, <a href='https://www.youtube.com/watch?v=ZVZiVGy22QA'>YouTube Video</a></p>
                 </div>
                 <img className='home-card-image-container home-rounded-image' src={ropes} alt="" />
               </div>

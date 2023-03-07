@@ -4,21 +4,27 @@ import Footer from '../Components/Footer';
 import Card from '../Components/Card';
 import logo from '../images/LogoTextTransBlack.png';
 import '../css/aboutpage.css';
-
+import Kim from '../images/Kim.png';
+import Jesper from '../images/Jesper.jpg';
 
 function AboutPage() {
   return (
     <div className='App'>
       <Header subtitle={<img className='header-image-container' src={logo} alt=""/>} />
       <main>
-        <Card color="#696969" textColor="white" children={
-          <div>
-            <h2>This is us</h2>
-            <p>RootPi is a dynamic company that specializes in developing virtual reality applications in Unity, creating mobile apps in Flutter, and providing comprehensive consulting services to help clients bring their ideas to life. </p>
-            <br/>
-            <p>With a team of experienced developers and consultants, RootPi is committed to providing innovative solutions that meet the unique needs and goals of its clients.</p>
+        <h1 className='center-content'>Our team</h1>
+        <div className='grid-container2'>
+          <div className='about-container'>
+            <img className='about-image-container about-rounded-image' src={Kim} alt="" />
+            <h2 style={{marginTop: '100px'}}>Kim Haapamäki</h2>
+            <p>M.Sc. Computer Science Engineering, LTH, Sweden. A passion for game development and Machine Learning. Developing Unity games, consulting expertise in VR/ML, mobile and web app development! Co-founder of RootPi AB.</p>
           </div>
-        } />
+          <div className='about-container'>
+            <img className='about-image-container about-rounded-image' src={Jesper} alt="" />
+            <h2 style={{marginTop: '100px'}}>Jesper Laurell</h2>
+            <p>M.Sc. Electrical Engineering, LTH, Sweden. Unity developer. Interested in images, games, ML, data science, blockchain, python, VR, flutter, UX and design. Co founder of RootPi AB.</p>
+          </div>
+        </div>
       </main>
       <Footer/>
     </div>
