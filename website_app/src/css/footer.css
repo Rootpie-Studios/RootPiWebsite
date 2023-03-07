@@ -12,20 +12,45 @@
     bottom: 0px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 50%;
+}
+
+/* .column {
     flex: 1;
-    margin: 20px 10px;
+    margin: 0px 10px 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
+    
+} */
+
+.footer-text {
+    margin: 10px 0px 0px 0px;
+    width: 200px;
 }
 
 .center-text {
     text-align: center;
 }
 
+.leftalign-text {
+    text-align: left;
+}
+
 .column-right {
     order: 2;
+    align-items: flex-start;
 }
 
 h2 {

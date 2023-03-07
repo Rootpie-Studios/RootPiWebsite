@@ -13,6 +13,7 @@ import CrystalQuest2 from '../images/CrystalQuest2.png';
 import Nifti from '../images/Nifti.png';
 import LundaPant from '../images/LundaPant.png';
 import Ropes from '../images/RootPiRopesAssetIconHQ.png';
+import StoryTime from '../images/StoryTime.png';
 
 
 import { FaReact } from 'react-icons/fa';
@@ -25,7 +26,9 @@ function PortfolioPage() {
     <div className='App'>
       <Header subtitle={<img className='image-container' src={logo} alt="" />} />
       <main>
-        
+      <div className='center-content'>
+        <h1>Portfolio</h1>
+      </div>
         {/* TraumaSim */}
         <CardPortfolio textColor="black" width="60%" children={
           <div>
@@ -57,7 +60,8 @@ function PortfolioPage() {
             </p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> <SiOpenai /> <SiMicrosoftazure /> <SiFirebase /> </h1>}/>
+        } icons =  {<h1><SiPython /> <SiOpenai /> <SiMicrosoftazure /> </h1>}
+        images = {<img className="rounded-image" src={StoryTime} alt="" />}/>
 
         {/* Datamatrix */}
         <CardPortfolio textColor="black" width="60%" children={
