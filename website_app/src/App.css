@@ -50,12 +50,20 @@
 @media (max-width: 1300px) {
   .grid-container {
       grid-template-columns: 1fr;
+      margin-left: 6px;
+      margin-right: 6px;
   }
 }
 
 @media (max-width: 800px) {
   .grid-container2 {
       grid-template-columns: 1fr;
+      margin-left: 6px;
+      margin-right: 6px;
+  }
+
+  .header-image-container{
+      width: 100px;
   }
 }
 
