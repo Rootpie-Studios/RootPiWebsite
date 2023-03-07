@@ -17,6 +17,7 @@ import StoryTime from '../images/StoryTime.png';
 import TimeTrack from '../images/TimeTrackBadLogo.png';
 import DataMatrix from '../images/DataMatrix.png';
 import GvHD from '../images/GvHD.jpg';
+import IconWithTooltip from '../Components/IconWithTooltip';
 
 
 import { FaReact } from 'react-icons/fa';
@@ -40,7 +41,12 @@ function PortfolioPage() {
             <br/>
 
           </div>
-        } icons =  {<h1><BsBadgeVrFill /> <BsUnity /> <SiCsharp /> <SiBlender /></h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Virtual reality" icon={<BsBadgeVrFill />} />
+          <IconWithTooltip tooltip="Unity" icon={<BsUnity style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Blender" icon={<SiBlender style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={TraumaSim} alt="" />}
         />
 
@@ -52,7 +58,13 @@ function PortfolioPage() {
             </p>
             <br/>
           </div>
-        } icons =  {<h1><FaReact /> <SiJavascript /> <SiPython /> <SiFirebase /> <SiOpenai /></h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="React" icon={<FaReact />} />
+          <IconWithTooltip tooltip="JavaScript" icon={<SiJavascript style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Python" icon={<SiPython style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Firebase" icon={<SiFirebase style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="OpenAI" icon={<SiOpenai style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={Instapply} alt="" />}/>
 
         {/* StoryTime */}
@@ -63,7 +75,11 @@ function PortfolioPage() {
             </p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> <SiOpenai /> <SiMicrosoftazure /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+          <IconWithTooltip tooltip="OpenAI" icon={<SiOpenai style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Microsoft azure" icon={<SiMicrosoftazure style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={StoryTime} alt="" />}/>
 
         {/* Datamatrix */}
@@ -73,7 +89,7 @@ function PortfolioPage() {
             <p>Using image analysis and <b>Python</b> we developed a tool for decoding images containing several small datamatrices (compact QR-codes). The tool was built for the company Treat4Life in order to improve efficiency and reduce costs for handling of medical test tubes containing blood and tissue samples. </p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> </h1>}
+        } icons =  {<h1><IconWithTooltip tooltip="Python" icon={<SiPython />} /></h1>}
         images = {<img className="rounded-image" src={DataMatrix} alt="" />}/>
         
 
@@ -84,7 +100,10 @@ function PortfolioPage() {
             <p>RootPi Ropes is a toolkit for easily integrating ropes and tubes in a <b>Unity</b> based 3D environment. It is built with Unity, code for the physics simulations written in <b>C#</b> and it is available as a purchasable asset on the Unity Asset Store.  </p>
             <br/>
           </div>
-        } icons =  {<h1><BsUnity /> <SiCsharp /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Unity" icon={<BsUnity/>} />
+          <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={Ropes} alt="" />}/>
 
         {/* TimeTracker */}
@@ -94,7 +113,13 @@ function PortfolioPage() {
             <p>TimeTracker is an app that tracks your activites from the GPS on your phone, allowing you to automatically track where you spend your time without checking in. Everything is handled automatically! Get a better overview of your life, whether you want to track your work, training, school or other habits. Activites are recorded in a calendar giving you an overview of where spend your time on a day to day basis. It is built with <b>Flutter</b> and <b>Dart</b> with <b>Firebase</b>. Available for download on <b>App Store</b> and <b>Play Store</b></p>
             <br/>
           </div>
-        } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+          <IconWithTooltip tooltip="Dart" icon={<SiDart style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Firebase" icon={<SiFirebase style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="App store" icon={<SiAppstore style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Play store" icon={<SiGoogleplay style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={TimeTrack} alt="" />}/>
 
         {/* LundaPant */}
@@ -104,7 +129,13 @@ function PortfolioPage() {
             <p>LundaPant is an app for getting rid of empty cans and bottles without leaving your home, while still making sure they will be recycled. They app was developed with <b>Flutter</b>, <b>Dart</b> and <b>Firebase</b> and is available for free on <b>App Store</b> and <b>Play Store</b></p>
             <br/>
           </div>
-        } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+          <IconWithTooltip tooltip="Dart" icon={<SiDart style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Firebase" icon={<SiFirebase style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="App store" icon={<SiAppstore style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Play store" icon={<SiGoogleplay style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={LundaPant} alt="" />}/>
 
         {/* GvHD */}
@@ -114,7 +145,10 @@ function PortfolioPage() {
             <p>In collaboration with researchers at Lund University we created a neural network based binary classifier for determining whether a patient has or does not have Graft versus Host Disease (GvHD) based on MicroRNA data. Our results indicated that machine learning can indeed be combined with micro-RNA data in order to determine positive/negative status of GvHD for a patient. The work was done in <b>Python</b> and the algorithms utilized the <b>Keras</b> API.</p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> <SiKeras /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+          <IconWithTooltip tooltip="Keras" icon={<SiKeras style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={GvHD} alt="" />}/>
         
         
@@ -125,7 +159,10 @@ function PortfolioPage() {
             <p>We were hired on project basis for the company Niftitech, consulting in development in <b>Flutter</b> and <b>Laravel</b>. With a wide array of projects in mobile apps, websites and custom solutions we have aided them in providing high quality experiences to their customers.</p>
             <br/>
           </div>
-        } icons =  {<h1><SiFlutter /> <SiLaravel/></h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+          <IconWithTooltip tooltip="Laravel" icon={<SiLaravel style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={Nifti} alt="" />}/>
         
         {/* Crystal Quest */}
@@ -135,7 +172,13 @@ function PortfolioPage() {
             <p>The enormously anticipated sequel of the smash hit Crystal King: Crystal Quest - Rainbow! With the same intense, never ending arcade style gameplay but with 6 more levels, 2 thrilling boss fights and brand new a shop filled with gear to unlock, this adventure will send you to the skies! Available on <b>App Store</b> and <b>Play Store</b>, built in <b>Unity</b> with <b>C#</b> and 3D models created with <b>Blender</b>.</p>
             <br/>
           </div>
-        } icons =  {<h1><BsUnity /> <SiCsharp /> <SiBlender /> <SiAppstore /> <SiGoogleplay /></h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Unity" icon={<BsUnity/>} />
+          <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Blender" icon={<SiBlender style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="App store" icon={<SiAppstore style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Play store" icon={<SiGoogleplay style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={CrystalQuest2} alt="" />}/>
 
         {/* Halite IV */}
@@ -145,7 +188,11 @@ function PortfolioPage() {
             <p>For our master thesis at Lund University, LTH at the department of Automatic Control we investigated the field of <b>Deep Reinforcement Learning (DRL)</b>. We built a program capable of setting up and training agents using DRL techniques and testing them in the competitive game environment Halite IV. Our RL agents outperformed some previously created algorithmic agents. Our full results are presented in our master thesis done at LTH and the software was developed in <b>Python</b> and powerful packages including <b>Numpy</b> and <b>Keras</b>.</p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> <SiNumpy /> <SiKeras /> </h1>}
+        } icons =  {<h1>
+          <IconWithTooltip tooltip="Python" icon={<SiPython/>} />
+          <IconWithTooltip tooltip="Numpy" icon={<SiNumpy style={{marginLeft: "10px"}}/>} />
+          <IconWithTooltip tooltip="Keras" icon={<SiKeras style={{marginLeft: "10px"}}/>} />
+        </h1>}
         images = {<img className="rounded-image" src={HaliteIV} alt="" />}/>
       </main>
       <Footer/>
