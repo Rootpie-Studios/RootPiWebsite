@@ -1,37 +1,43 @@
 .card {
-    background-color: rgb(238, 238, 238);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 20px 20px;
-    margin: 3rem auto 3rem auto; 
-    /* display: grid;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px 20px;
+  margin: 3rem auto 3rem auto;
+  /* display: grid;
     grid-template-columns: 2fr 1fr; */
-    align-items: center;
-    transition: box-shadow 0.3s ease-in-out;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
 }
-
 
 .card:hover {
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
-  
+
 .card-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
 .text {
-    justify-self: start;
+  justify-self: start;
+  overflow: auto;
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
 }
 
 .image-grid img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .text {
+    min-height: 70px;
+  }
 }
