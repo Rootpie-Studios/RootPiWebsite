@@ -40,16 +40,14 @@ function StudentPage() {
                 </div>
                 <div>
                   <img
-                    className="student-image-container profile-rounded-image"
-                    style={{ marginLeft: "50%", marginRight: "20%" }}
+                    className="student-image-container profile-rounded-image student-right"
                     src={VRDude}
                     alt=""
                   />
-                  <h2 style={{ marginLeft: "65%", marginTop: "10px" }}>Teo</h2>
-                  <h2 style={{ marginLeft: "35%" }}>Axel</h2>
+                  <h2 className="student-right-text">Teo</h2>
+                  <h2 className="student-left-text">Axel</h2>
                   <img
-                    className="student-image-container profile-rounded-image"
-                    style={{ marginLeft: "20%" }}
+                    className="student-image-container profile-rounded-image student-left"
                     src={VRDude}
                     alt=""
                   />
