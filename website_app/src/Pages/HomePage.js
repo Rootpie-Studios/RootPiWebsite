@@ -30,6 +30,7 @@ import {
   SiFlutter,
   SiLaravel,
 } from "react-icons/si";
+import { color } from "@mui/system";
 
 function HomePage() {
   return (
@@ -57,28 +58,30 @@ function HomePage() {
             <div className="home-title">
               <h1>This is us</h1>
             </div>
-            <h3 style={{ marginTop: "80px" }}>
+            <h3 style={{ marginTop: "60px" }}>
               Welcome to RootPi, we provide solutions for Virtual Reality
               applications, mobile apps, and consulting services. Our small team
               of experienced developers will work with you to create a custom
-              application that is tailored to your specific needs and goals.
+              solution that is tailored to your specific needs and goals.
             </h3>
             <br />
             <h3>
-              Do you have a clear project you want to realize or just want to
-              know more about us? Come in contact and let us help you bring your
-              ideas to life.
+              Do you have a project in mind or just want to know more about us?
+              Come in contact and let us help you bring your ideas to life.
             </h3>
-            <Button
-              textColor="white"
-              label="Contact"
-              onClick={() =>
-                window.scrollTo({
-                  top: document.documentElement.scrollHeight,
-                  behavior: "smooth",
-                })
-              }
-            />
+            <br />
+            <div className="center-content">
+              <Button
+                textColor="white"
+                label="Contact"
+                onClick={() =>
+                  window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: "smooth",
+                  })
+                }
+              />
+            </div>
           </div>
 
           <div>
@@ -405,10 +408,10 @@ function HomePage() {
                 <br />
                 <br />
                 <div>
-                  <h2>
+                  <span style={{ fontWeight: "bold" }}>
                     {/* <FiMail style={{ marginTop: "5px" }} /> */}
                     info@rootpi.xyz
-                  </h2>
+                  </span>
                 </div>
               </div>
             }
