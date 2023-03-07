@@ -17,6 +17,26 @@ import StoryTime from "../images/StoryTime.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
 import DataMatrix from "../images/DataMatrix.png";
 import GvHD from "../images/GvHD.jpg";
+import IconWithTooltip from "../Components/IconWithTooltip";
+
+import { FaReact } from "react-icons/fa";
+import {
+  SiCsharp,
+  SiDart,
+  SiBlender,
+  SiFirebase,
+  SiJavascript,
+  SiMicrosoftazure,
+  SiPython,
+  SiOpenai,
+  SiFlutter,
+  SiGoogleplay,
+  SiAppstore,
+  SiKeras,
+  SiLaravel,
+  SiNumpy,
+} from "react-icons/si";
+import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 
 import { FaReact } from "react-icons/fa";
 import {
@@ -74,7 +94,22 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <BsBadgeVrFill /> <BsUnity /> <SiCsharp /> <SiBlender />
+              <IconWithTooltip
+                tooltip="Virtual reality"
+                icon={<BsBadgeVrFill />}
+              />
+              <IconWithTooltip
+                tooltip="Unity"
+                icon={<BsUnity style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="C#"
+                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Blender"
+                icon={<SiBlender style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={TraumaSim} alt="" />}
@@ -104,8 +139,23 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <FaReact /> <SiJavascript /> <SiPython /> <SiFirebase />{" "}
-              <SiOpenai />
+              <IconWithTooltip tooltip="React" icon={<FaReact />} />
+              <IconWithTooltip
+                tooltip="JavaScript"
+                icon={<SiJavascript style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Python"
+                icon={<SiPython style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Firebase"
+                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="OpenAI"
+                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={Instapply} alt="" />}
@@ -134,7 +184,15 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiPython /> <SiOpenai /> <SiMicrosoftazure />{" "}
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+              <IconWithTooltip
+                tooltip="OpenAI"
+                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Microsoft azure"
+                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={StoryTime} alt="" />}
@@ -159,7 +217,7 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiPython />{" "}
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
             </h1>
           }
           images={<img className="rounded-image" src={DataMatrix} alt="" />}
@@ -183,7 +241,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <BsUnity /> <SiCsharp />{" "}
+              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
+              <IconWithTooltip
+                tooltip="C#"
+                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={Ropes} alt="" />}
@@ -212,8 +274,23 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore />{" "}
-              <SiGoogleplay />{" "}
+              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+              <IconWithTooltip
+                tooltip="Dart"
+                icon={<SiDart style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Firebase"
+                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="App store"
+                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Play store"
+                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={TimeTrack} alt="" />}
@@ -238,8 +315,23 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore />{" "}
-              <SiGoogleplay />{" "}
+              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+              <IconWithTooltip
+                tooltip="Dart"
+                icon={<SiDart style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Firebase"
+                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="App store"
+                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Play store"
+                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={LundaPant} alt="" />}
@@ -267,7 +359,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiPython /> <SiKeras />{" "}
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+              <IconWithTooltip
+                tooltip="Keras"
+                icon={<SiKeras style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={GvHD} alt="" />}
@@ -292,7 +388,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiFlutter /> <SiLaravel />
+              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
+              <IconWithTooltip
+                tooltip="Laravel"
+                icon={<SiLaravel style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={Nifti} alt="" />}
@@ -319,8 +419,23 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <BsUnity /> <SiCsharp /> <SiBlender /> <SiAppstore />{" "}
-              <SiGoogleplay />
+              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
+              <IconWithTooltip
+                tooltip="C#"
+                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Blender"
+                icon={<SiBlender style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="App store"
+                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Play store"
+                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={CrystalQuest2} alt="" />}
@@ -349,7 +464,15 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <SiPython /> <SiNumpy /> <SiKeras />{" "}
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+              <IconWithTooltip
+                tooltip="Numpy"
+                icon={<SiNumpy style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Keras"
+                icon={<SiKeras style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={HaliteIV} alt="" />}
