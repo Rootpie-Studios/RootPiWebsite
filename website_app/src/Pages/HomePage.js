@@ -38,13 +38,13 @@ function HomePage() {
           </div>
         </div>
 
-        <div class="grid-container">
+        <div className="grid-container">
           <div className='home-title'>
             <h2>What we are working on right now</h2>
           </div>
         </div>
 
-        <div class="grid-container">
+        <div className="grid-container">
           <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Traumasim - VR application for medical students</h2>
@@ -87,13 +87,13 @@ function HomePage() {
           } />
         </div>
 
-        <div class="grid-container">
+        <div className="grid-container">
           <div className='home-title'>
             <h2>Our tech stack</h2>
           </div>
         </div>
 
-        <div class="grid-container2">
+        <div className="grid-container2">
           <h1>
             <SiCsharp style={{marginBottom: '10px'}} />
             <SiPython style={{marginBottom: '10px', marginLeft: '10px'}} />
@@ -114,7 +114,7 @@ function HomePage() {
           </h1>
         </div>
 
-        <div class="grid-container2">
+        <div className="grid-container2">
           <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
             <div>
               <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Coding languages</h2>
