@@ -30,7 +30,6 @@ import {
   SiFlutter,
   SiLaravel,
 } from "react-icons/si";
-import { color } from "@mui/system";
 
 function HomePage() {
   return (
