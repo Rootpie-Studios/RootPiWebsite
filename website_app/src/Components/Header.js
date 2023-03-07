@@ -80,6 +80,11 @@ function Header(props) {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemButton>
+                    <Link style={{ color: props.textColor }} className={selected === 'about' ? 'selected' : 'header-link'} onClick={() => setSelected('about')} to="/about">About</Link>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton>
                     <Link style={{marginLeft: '5px'}} to="/contact">
                       <Button color="dodgerblue" textColor="black" label="Contact"/>
                     </Link>
