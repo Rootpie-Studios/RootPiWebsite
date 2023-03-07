@@ -32,6 +32,9 @@ function Header(props) {
           <Button color="dodgerblue" textColor="black" label="Contact"/>
         </Link>
       </div>
+
+      <div className="header-right" style={{ display: window.innerWidth < 800 ? 'flex' : 'none' }}>
+      </div>
     </div>
   );
 }
