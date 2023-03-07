@@ -98,10 +98,7 @@ function Header(props) {
         className="header-right"
         style={{ display: window.innerWidth < 900 ? "flex" : "none" }}
       >
-        <h1
-          className="hamburger center-content"
-          onClick={toggleDrawer("right", true)}
-        >
+        <h1 onClick={toggleDrawer("right", true)}>
           <RxHamburgerMenu style={{ color: "black" }} />
         </h1>
         <Drawer
