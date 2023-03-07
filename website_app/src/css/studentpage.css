@@ -20,12 +20,14 @@
 .student-image-container {
   background-color: white;
   width: 150px;
+  margin-bottom: 20px;
 }
 
 .student-grid-container-inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  overflow: hidden;
 }
 
 .student-left {
