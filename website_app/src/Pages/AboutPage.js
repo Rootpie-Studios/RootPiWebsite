@@ -38,8 +38,9 @@ function AboutPage() {
             <h2 style={{ marginTop: "100px" }}>Jesper Laurell</h2>
             <p>
               M.Sc. Electrical Engineering, LTH, Sweden. Unity developer.
-              Interested in images, games, ML, data science, blockchain, python,
-              VR, flutter, UX and design. Co founder of RootPi AB.
+              Interested in VR, games, 3D modelling and animation, quantified
+              self and tracking, Python, blockchain, app development, UX and
+              design. Co-founder of RootPi AB.
             </p>
           </div>
         </div>

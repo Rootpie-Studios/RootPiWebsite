@@ -19,6 +19,8 @@ import AI from "../images/AI.png";
 // icons
 import { BsUnity } from "react-icons/bs";
 import { FaReact, FaPhp, FaHtml5, FaVuejs, FaJava } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+
 import {
   SiCsharp,
   SiBlender,
@@ -402,10 +404,19 @@ function HomePage() {
                   ideas!
                 </p>
                 <br />
-                <h4>RootPi AB, Stralsundsvägen 96</h4>
-                <h4>224 79, Lund</h4>
+                <span style={{ fontWeight: "bold" }}>
+                  RootPi AB, Stralsundsvägen 96
+                </span>
                 <br />
-                <h2>info@rootpi.xyz</h2>
+                <span style={{ fontWeight: "bold" }}>224 79, Lund</span>
+                <br />
+                <br />
+                <div>
+                  <h2>
+                    {/* <FiMail style={{ marginTop: "5px" }} /> */}
+                    info@rootpi.xyz
+                  </h2>
+                </div>
               </div>
             }
           ></CardContact>
