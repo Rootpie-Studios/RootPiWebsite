@@ -25,6 +25,10 @@
   width: 300px;
 }
 
+.header-image-container:hover {
+  opacity: 0.8;
+}
+
 .center-content {
   display: flex;
   justify-content: center;

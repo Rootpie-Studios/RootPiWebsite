@@ -49,9 +49,16 @@ function Header(props) {
         <Link style={{ color: props.textColor }} className={selected === 'students' ? 'selected' : 'header-link'} onClick={() => setSelected('students')} to="/students">Students</Link>
         <Link style={{ color: props.textColor }} className={selected === 'about' ? 'selected' : 'header-link'} onClick={() => setSelected('about')} to="/about">About</Link>
        
-        <Link to="/contact">
-          <Button color="dodgerblue" textColor="black" label="Contact"/>
-        </Link>
+        <Button
+          textColor="white"
+          label="Contact"
+          onClick={() =>
+            window.scrollTo({
+              top: document.documentElement.scrollHeight,
+              behavior: 'smooth',
+            })
+          }
+        />
       </div>
 
       <div className="header-right" style={{ display: window.innerWidth < 900 ? 'flex' : 'none' }}>
