@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Button from "./Button";
 import "../css/header.css";
 import logo from "../images/LogoTrans.png";
 import RoundButton from "./RoundButton";
