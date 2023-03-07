@@ -13,7 +13,7 @@ function StudentPage() {
       <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main>
       <div className='center-content'>
-        <h1>Current projects</h1>
+        <h1>Student projects</h1>
       </div>
       <Card color="rgba(0, 0, 0, 0)" textColor="black" width="60%" children={
           <div>

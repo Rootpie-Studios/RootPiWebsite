@@ -8,7 +8,7 @@ function NotFoundPage() {
     <div className='page'>
       <Header/>
       <main>
-        <p>Oh no, the page you were looking for doesn't exist</p>
+        <p>Oh no! the page you were looking seems to have run away!</p>
       </main>
       <Footer/>
     </div>

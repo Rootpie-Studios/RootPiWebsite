@@ -14,6 +14,7 @@ import Nifti from '../images/Nifti.png';
 import LundaPant from '../images/LundaPant.png';
 import Ropes from '../images/RootPiRopesAssetIconHQ.png';
 import StoryTime from '../images/StoryTime.png';
+import TimeTrack from '../images/TimeTrackBadLogo.png';
 
 
 import { FaReact } from 'react-icons/fa';
@@ -89,7 +90,8 @@ function PortfolioPage() {
             <p>TimeTracker is an app that tracks your activites from the GPS on your phone, allowing you to automatically track where you spend your time without checking in. Everything is handled automatically! Get a better overview of your life, whether you want to track your work, training, school or other habits. Activites are recorded in a calendar giving you an overview of where spend your time on a day to day basis. It is built with <b>Flutter</b> and <b>Dart</b> with <b>Firebase</b>. Available for download on <b>App Store</b> and <b>Play Store</b></p>
             <br/>
           </div>
-        } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}/>
+        } icons =  {<h1><SiFlutter /> <SiDart /> <SiFirebase /> <SiAppstore /> <SiGoogleplay /> </h1>}
+        images = {<img className="rounded-image" src={TimeTrack} alt="" />}/>
 
         {/* LundaPant */}
         <CardPortfolio textColor="black" width="60%" children={
@@ -105,7 +107,7 @@ function PortfolioPage() {
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>ML-classification GvHD with MicroRNA</h2>
-            <p>Using a data set consisting of micro-RNA data created by researchers at Lund University we created a neural network based binary classifier for determining whether a patient has or does not have Graft versus Host Disease (GvHD). Our results indicated that machine learning can indeed be combined with micro-RNA data in order to determine positive/negative status of GvHD for a patient. The work was done in <b>Python</b> and the algorithms utilized the <b>Keras</b> API.</p>
+            <p>In collaboration with researchers at Lund University we created a neural network based binary classifier for determining whether a patient has or does not have Graft versus Host Disease (GvHD) based in MicroRNA data. Our results indicated that machine learning can indeed be combined with micro-RNA data in order to determine positive/negative status of GvHD for a patient. The work was done in <b>Python</b> and the algorithms utilized the <b>Keras</b> API.</p>
             <br/>
           </div>
         } icons =  {<h1><SiPython /> <SiKeras /> </h1>}/>

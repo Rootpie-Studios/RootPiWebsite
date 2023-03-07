@@ -4,7 +4,7 @@ import '../css/cardportfolio.css';
 function CardPortfolio(props) {
   return (
     <div className="cardportfolio" style={{ 
-      backgroundColor: props.color, 
+      backgroundColor: 'transparent', 
       color: props.textColor, 
       width: props.width,
     }}>
