@@ -36,7 +36,7 @@ function PortfolioPage() {
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>TraumaSim VR</h2>
-            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical aspects of acuta trauma care. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. </p>
+            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical aspects of acuta trauma care. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. <br/>Have a look at the evolution of the program on the project's <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">YouTube channel</a></p>
             <br/>
 
           </div>

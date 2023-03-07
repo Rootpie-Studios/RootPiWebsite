@@ -40,7 +40,7 @@ function StudentPage() {
         <Card color="rgba(0, 0, 0, 0)" textColor="black" width="60%" children={
           <div>
             <h1>Unity: Rope physics</h1>
-            <h3>We are intrested of having a student to look into how to best implemnt physics of a rope using particle-based physics</h3>
+            <h3>We are intrested in having a student look into how to best implement physics of a rope in a virtual 3D environment using particle-based physics simulations</h3>
             <br />
             <h3>If this is something you would find intresting do not hesitate to contact us!</h3>
           </div>
