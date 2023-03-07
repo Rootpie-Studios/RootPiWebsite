@@ -21,7 +21,7 @@ function HomePage() {
       <Header subtitle={<img className='header-image-container' src={logo} alt="" />} />
       <main style={{marginBottom: "30vw"}}>
         <div className='home-grid-container-header' style={{marginTop: '100px', marginBottom: '100px'}}>
-          <div>
+          <div className='hidden'>
             <img className='home-title-image-container home-rounded-image' style={{marginLeft: "20%"}} src={VRDude} alt="" />
             <img className='home-title-image-container home-rounded-image' style={{marginLeft: "40%", marginTop: "600px"}} src={AI} alt="" />
           </div>
