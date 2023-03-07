@@ -26,11 +26,11 @@ function StudentPage() {
                 <div style={{ gridColumn: "1 / span 2" }}>
                   <h1>Database evaulation</h1>
                   <h3>
-                    Teo and Axel studying systems science at LTU, Sweden, are
-                    working with us to evaluate and research different database
-                    solutions. They are looking at factors such as: efficiency,
-                    difficulty of implementation and cost for different sizes of
-                    the business.{" "}
+                    Teo and Axel are studying systems science at LTU, Sweden,
+                    and are working with us to evaluate and research different
+                    database solutions. They are looking at factors such as
+                    efficiency, implementation difficulty and cost for different
+                    stages in a growing business.{" "}
                   </h3>
                   <br />
                   <h3>
@@ -68,9 +68,10 @@ function StudentPage() {
             <div>
               <h1>Unity: Rope physics</h1>
               <h3>
-                We are intrested in having a student look into how to best
+                We are interested in having a student look into how to best
                 implement physics of a rope in a virtual 3D environment using
-                particle-based physics simulations
+                particle-based physics simulations. This can be done as a
+                bachelor or master thesis project
               </h3>
               <br />
               <h3>
