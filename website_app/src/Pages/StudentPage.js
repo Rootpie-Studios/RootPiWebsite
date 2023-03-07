@@ -4,7 +4,8 @@ import Footer from "../Components/Footer";
 import Card from "../Components/Card";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/studentpage.css";
-import VRDude from "../images/VRDude.png";
+import Axel from "../images/Axel.jpg";
+import Teo from "../images/Teo.jpg";
 
 function StudentPage() {
   return (
@@ -39,18 +40,22 @@ function StudentPage() {
                   </h3>
                 </div>
                 <div>
-                  <img
-                    className="student-image-container profile-rounded-image student-right"
-                    src={VRDude}
-                    alt=""
-                  />
-                  <h2 className="student-right-text">Teo</h2>
-                  <h2 className="student-left-text">Axel</h2>
-                  <img
-                    className="student-image-container profile-rounded-image student-left"
-                    src={VRDude}
-                    alt=""
-                  />
+                  <div className="student-right">
+                    <img
+                      className="student-image-container profile-rounded-image"
+                      src={Teo}
+                      alt=""
+                    />
+                    <h2 style={{marginLeft: '40px'}}>Teodor</h2>
+                  </div>
+                  <div className="student-left">
+                    <h2 style={{marginLeft: '50px'}}>Axel</h2>
+                    <img
+                      className="student-image-container profile-rounded-image"
+                      src={Axel}
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <br />
