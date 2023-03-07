@@ -2,14 +2,19 @@ import React from 'react';
 import Header from '../Components/Header'
 import Footer from '../Components/Footer';
 import Card from '../Components/Card';
+import CardContact from '../Components/CardContact';
 import logo from '../images/LogoTextTransBlack.png';
 import '../css/homepage.css';
-import ropes from '../images/RootPiRopesAssetIconHQ.png';
+
+// images
 import VRDude from '../images/VRDude.png';
 import TraumaSim from '../images/TraumaSim.png';
+import ropes from '../images/RootPiRopesAssetIconHQ.png';
 import Instapply from '../images/Instapply.png';
 import Coder from '../images/Coder.png';
 import AI from '../images/AI.png';
+
+// icons
 import {BsUnity} from 'react-icons/bs';
 import {FaReact, FaPhp, FaHtml5, FaVuejs, FaJava} from 'react-icons/fa';
 import {SiCsharp, SiBlender, SiJavascript, SiDart, SiPython, SiCss3, SiFlutter, SiLaravel} from 'react-icons/si';
@@ -127,6 +132,11 @@ function HomePage() {
               <p>From our previous projects we have used many different frameworks that allows us to get work done faster at a higher level</p>
             </div>
           } />
+        </div>
+        <div>
+          <CardContact textColor="black" children={
+            <div>Hej</div>
+          }></CardContact>
         </div>
       </main>
       <Footer/>
