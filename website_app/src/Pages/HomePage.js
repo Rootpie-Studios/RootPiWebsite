@@ -29,9 +29,9 @@ function HomePage() {
           <div className='home-title'>
             <h1>This is us</h1>
             </div>
-            <h3 style={{marginTop: "80px"}}>Welcome to RootPi, the premier provider of cutting-edge virtual reality applications, mobile apps, and consulting services. At RootPi, we specialize in developing immersive and innovative virtual reality experiences that are sure to captivate and engage your audience. Our team of experienced developers and designers will work with you to create a custom virtual environment that is tailored to your specific needs and goals.</h3>
+            <h3 style={{marginTop: "80px"}}>Welcome to RootPi, we provide of solutions for Virtual Reality applications, mobile apps, AI implementations and consulting services. Our small team of experienced developers will work with you to create a custom solution tailored for your specific needs and goals.</h3>
             <br/>
-            <h3>So why wait? Contact RootPi today and let us help you bring your ideas to life.</h3>
+            <h3>Do you have an idea you want to realize or just want to talk? Come in contact us today and let us help you bring your visions to life.</h3>
           </div>
           <div>
             <img className='home-title-image-container home-rounded-image' style={{marginLeft: "20%", marginTop: "500px"}} src={Coder} alt="" />

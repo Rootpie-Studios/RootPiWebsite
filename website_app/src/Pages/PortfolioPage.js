@@ -15,6 +15,8 @@ import LundaPant from '../images/LundaPant.png';
 import Ropes from '../images/RootPiRopesAssetIconHQ.png';
 import StoryTime from '../images/StoryTime.png';
 import TimeTrack from '../images/TimeTrackBadLogo.png';
+import DataMatrix from '../images/DataMatrix.png';
+import GvHD from '../images/GvHD.jpg';
 
 
 import { FaReact } from 'react-icons/fa';
@@ -34,7 +36,7 @@ function PortfolioPage() {
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>TraumaSim VR</h2>
-            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical aspects of acuta trauma care. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. </p>
+            <p>A <b>VR-simulation</b> for education of hospital personnel and students. In collaboration with Umeå University we are developing a VR simulation for training on practical aspects of acuta trauma care. The application is developed in <b>Unity</b> with <b>C#</b> and is currently being built and tailored for the needs of the students. The work involves VR-centered programming and design, discussions with experienced doctors at Umeå University, 3D-modelling and animation in <b>Blender</b> as well as sound handling and intuitive VR interface building. <br/>Have a look at the evolution of the program on the project's <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">YouTube channel</a></p>
             <br/>
 
           </div>
@@ -71,7 +73,9 @@ function PortfolioPage() {
             <p>Using image analysis and <b>Python</b> we developed a tool for decoding images containing several small datamatrices (compact QR-codes). The tool was built for the company Treat4Life in order to improve efficiency and reduce costs for handling of medical test tubes containing blood and tissue samples. </p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> </h1>}/> 
+        } icons =  {<h1><SiPython /> </h1>}
+        images = {<img className="rounded-image" src={DataMatrix} alt="" />}/>
+        
 
         {/* Ropes */}
         <CardPortfolio textColor="black" width="60%" children={
@@ -107,10 +111,12 @@ function PortfolioPage() {
         <CardPortfolio textColor="black" width="60%" children={
           <div>
             <h2>ML-classification GvHD with MicroRNA</h2>
-            <p>In collaboration with researchers at Lund University we created a neural network based binary classifier for determining whether a patient has or does not have Graft versus Host Disease (GvHD) based in MicroRNA data. Our results indicated that machine learning can indeed be combined with micro-RNA data in order to determine positive/negative status of GvHD for a patient. The work was done in <b>Python</b> and the algorithms utilized the <b>Keras</b> API.</p>
+            <p>In collaboration with researchers at Lund University we created a neural network based binary classifier for determining whether a patient has or does not have Graft versus Host Disease (GvHD) based on MicroRNA data. Our results indicated that machine learning can indeed be combined with micro-RNA data in order to determine positive/negative status of GvHD for a patient. The work was done in <b>Python</b> and the algorithms utilized the <b>Keras</b> API.</p>
             <br/>
           </div>
-        } icons =  {<h1><SiPython /> <SiKeras /> </h1>}/>
+        } icons =  {<h1><SiPython /> <SiKeras /> </h1>}
+        images = {<img className="rounded-image" src={GvHD} alt="" />}/>
+        
         
         {/* Niftitech */}
         <CardPortfolio textColor="black" width="60%" children={
