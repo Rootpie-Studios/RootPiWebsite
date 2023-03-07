@@ -61,7 +61,7 @@ function HomePage() {
               Welcome to RootPi, we provide solutions for Virtual Reality
               applications, mobile apps, and consulting services. Our small team
               of experienced developers will work with you to create a custom
-              applicationtool that is tailored to your specific needs and goals.
+              application that is tailored to your specific needs and goals.
             </h3>
             <br />
             <h3>
