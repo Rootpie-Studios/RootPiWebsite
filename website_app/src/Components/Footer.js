@@ -8,7 +8,7 @@ function Footer(props) {
         <div
           style={{
             color: props.textColor,
-            marginTop: "80px",
+            // marginTop: "30px",
             marginBottom: "50px",
           }}
           className="copyright"

@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from '../Components/Header'
-import Footer from '../Components/Footer';
-import Card from '../Components/Card';
-import logo from '../images/LogoTextTransBlack.png';
-import '../css/homepage.css';
-import IconWithTooltip from '../Components/IconWithTooltip';
+import React from "react";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Card from "../Components/Card";
+import logo from "../images/LogoTextTransBlack.png";
+import "../css/homepage.css";
+import IconWithTooltip from "../Components/IconWithTooltip";
 import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
 
@@ -29,7 +29,6 @@ import {
   SiFlutter,
   SiLaravel,
 } from "react-icons/si";
-import ScrollButton from "../Components/ScrollButton";
 
 function HomePage() {
   const ref = React.createRef();
@@ -39,7 +38,7 @@ function HomePage() {
       <Header
         subtitle={<img className="header-image-container" src={logo} alt="" />}
       />
-      <main style={{ marginBottom: "30vw" }}>
+      <main style={{ marginBottom: "10vw" }}>
         <div
           className="home-grid-container-header"
           style={{ marginTop: "100px", marginBottom: "100px" }}
@@ -103,58 +102,146 @@ function HomePage() {
         </div>
 
         <div className="grid-container">
-          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
-            <div>
-              <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Traumasim - VR application for medical students</h2>
-              <div className='home-grid-container-inner'>
-                <div style={{gridColumn: '1 / span 2'}}>
-                  <IconWithTooltip tooltip="Unity" icon={<BsUnity style={{marginBottom: '10px'}} />} />
-                  <IconWithTooltip tooltip="Blender" icon={<SiBlender style={{marginBottom: '10px', marginLeft: '10px'}} />} />
-                  <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginBottom: '10px', marginLeft: '10px'}} />} />
-                  <p>We are working for Umeå university to build a virutal reality trauma simulation for students to train on</p>
-                </div>
-                <img
+          <Card
+            color="rgba(0, 0, 0, 0)"
+            textColor="black"
+            children={
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "10px",
+                    overflow: "visible",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Traumasim - VR application for medical students
+                </h2>
+                <div className="home-grid-container-inner">
+                  <div style={{ gridColumn: "1 / span 2" }}>
+                    <IconWithTooltip
+                      tooltip="Unity"
+                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="Blender"
+                      icon={
+                        <SiBlender
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <IconWithTooltip
+                      tooltip="C#"
+                      icon={
+                        <SiCsharp
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <p>
+                      We are working for Umeå university to build a virutal
+                      reality trauma simulation for students to train on
+                    </p>
+                  </div>
+                  <img
                     className="home-card-image-container home-rounded-image"
                     src={TraumaSim}
                     alt=""
                   />
-              </div>
-            </div>
-          } />
-          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
-            <div>
-              <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Ropes - Unity asset store</h2>
-              <div className='home-grid-container-inner'>
-                <div style={{gridColumn: '1 / span 2'}}>
-                  <IconWithTooltip tooltip="Unity" icon={<BsUnity style={{marginBottom: '10px'}}/>} />
-                  <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginBottom: '10px', marginLeft: '10px'}}/>} />
-                  <p>We are developing and maintaining an asset for Unity which simulates the physics of a rope. A short demo video can be found at, <a href='https://www.youtube.com/watch?v=ZVZiVGy22QA'>YouTube Video</a></p>
                 </div>
-                <img
+              </div>
+            }
+          />
+          <Card
+            color="rgba(0, 0, 0, 0)"
+            textColor="black"
+            children={
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "10px",
+                    overflow: "visible",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Ropes - Unity asset store
+                </h2>
+                <div className="home-grid-container-inner">
+                  <div style={{ gridColumn: "1 / span 2" }}>
+                    <IconWithTooltip
+                      tooltip="Unity"
+                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="C#"
+                      icon={
+                        <SiCsharp
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <p>
+                      We are developing and maintaining an asset for Unity which
+                      simulates the physics of a rope. A short demo video can be
+                      found at,{" "}
+                      <a href="https://www.youtube.com/watch?v=ZVZiVGy22QA">
+                        YouTube Video
+                      </a>
+                    </p>
+                  </div>
+                  <img
                     className="home-card-image-container home-rounded-image"
                     src={ropes}
                     alt=""
                   />
-              </div>
-            </div>
-          } />
-          <Card color='rgba(0, 0, 0, 0)' textColor="black" children={
-            <div>
-              <h2 style={{marginBottom: '10px', overflow: 'visible', whiteSpace: 'nowrap'}}>Instapply - AI generated cover letters</h2>
-              <div className='home-grid-container-inner'>
-                <div style={{gridColumn: '1 / span 2'}}>
-                  <IconWithTooltip tooltip="React" icon={<FaReact style={{marginBottom: '10px'}}/>} />
-                  <IconWithTooltip tooltip="Python" icon={<SiPython style={{marginBottom: '10px', marginLeft: '10px'}}/>} />
-                  <p>A website for effortless generation of personalized cover letter, written for the work that you are applying to. Available on <a href="https://instapply.se">instapply.se</a></p>
                 </div>
-                <img
+              </div>
+            }
+          />
+          <Card
+            color="rgba(0, 0, 0, 0)"
+            textColor="black"
+            children={
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "10px",
+                    overflow: "visible",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Instapply - AI generated cover letters
+                </h2>
+                <div className="home-grid-container-inner">
+                  <div style={{ gridColumn: "1 / span 2" }}>
+                    <IconWithTooltip
+                      tooltip="React"
+                      icon={<FaReact style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="Python"
+                      icon={
+                        <SiPython
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <p>
+                      A website for effortless generation of personalized cover
+                      letter, written for the work that you are applying to.
+                      Available on{" "}
+                      <a href="https://instapply.se">instapply.se</a>
+                    </p>
+                  </div>
+                  <img
                     className="home-card-image-container home-rounded-image"
                     src={Instapply}
                     alt=""
                   />
+                </div>
               </div>
-            </div>
-          }/>
+            }
+          />
         </div>
 
         <div className="grid-container">
@@ -165,22 +252,96 @@ function HomePage() {
 
         <div className="grid-container2">
           <h1>
-            <IconWithTooltip tooltip="C#" icon={<SiCsharp style={{marginBottom: '10px'}}/>} />
-            <IconWithTooltip tooltip="Python" icon={<SiPython style={{marginBottom: '10px', marginLeft: '10px'}} />}/>
-            <IconWithTooltip tooltip="Java" icon={<FaJava style={{marginBottom: '10px', marginLeft: '10px'}} />}/>
-            <IconWithTooltip tooltip="PHP" icon={<FaPhp style={{marginBottom: '10px', marginLeft: '10px'}} />}/>
-            <IconWithTooltip tooltip="Html5" icon={<FaHtml5 style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="Java" icon={<SiJavascript style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="Dart" icon={<SiDart style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="Css3" icon={<SiCss3 style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
+            <IconWithTooltip
+              tooltip="C#"
+              icon={<SiCsharp style={{ marginBottom: "10px" }} />}
+            />
+            <IconWithTooltip
+              tooltip="Python"
+              icon={
+                <SiPython
+                  style={{ marginBottom: "10px", marginLeft: "10px" }}
+                />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Java"
+              icon={
+                <FaJava style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="PHP"
+              icon={
+                <FaPhp style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Html5"
+              icon={
+                <FaHtml5 style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Java"
+              icon={
+                <SiJavascript
+                  style={{ marginBottom: "10px", marginLeft: "10px" }}
+                />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Dart"
+              icon={
+                <SiDart style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Css3"
+              icon={
+                <SiCss3 style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
           </h1>
           <h1>
-            <IconWithTooltip tooltip="Blender" icon={<SiBlender style={{marginBottom: '10px'}} />}  />
-            <IconWithTooltip tooltip="Unity" icon={<BsUnity style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="Flutter" icon={<SiFlutter style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="Laravel" icon={<SiLaravel style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="VueJS" icon={<FaVuejs style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
-            <IconWithTooltip tooltip="React" icon={<FaReact style={{marginBottom: '10px', marginLeft: '10px'}} />}  />
+            <IconWithTooltip
+              tooltip="Blender"
+              icon={<SiBlender style={{ marginBottom: "10px" }} />}
+            />
+            <IconWithTooltip
+              tooltip="Unity"
+              icon={
+                <BsUnity style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Flutter"
+              icon={
+                <SiFlutter
+                  style={{ marginBottom: "10px", marginLeft: "10px" }}
+                />
+              }
+            />
+            <IconWithTooltip
+              tooltip="Laravel"
+              icon={
+                <SiLaravel
+                  style={{ marginBottom: "10px", marginLeft: "10px" }}
+                />
+              }
+            />
+            <IconWithTooltip
+              tooltip="VueJS"
+              icon={
+                <FaVuejs style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
+            <IconWithTooltip
+              tooltip="React"
+              icon={
+                <FaReact style={{ marginBottom: "10px", marginLeft: "10px" }} />
+              }
+            />
           </h1>
         </div>
 
@@ -233,7 +394,20 @@ function HomePage() {
         <div>
           <CardContact
             textColor="black"
-            children={<div>Hej</div>}
+            children={
+              <div>
+                <h1>Come in contact</h1>
+                <p>
+                  Contact us and tell us about yourself, your company or your
+                  ideas!
+                </p>
+                <br />
+                <h4>RootPi AB, Stralsundsvägen 96</h4>
+                <h4>224 79, Lund</h4>
+                <br />
+                <h2>info@rootpi.xyz</h2>
+              </div>
+            }
           ></CardContact>
         </div>
       </main>

@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/cardcontact.css";
 
-function CardPortfolio(props) {
+function CardContact(props) {
   return (
-    <div className="cardportfolio">
+    <div className="cardcontact">
       <div className="card-content">
         <div className="text">{props.children}</div>
         <div className="text">{props.icons}</div>
@@ -13,4 +13,4 @@ function CardPortfolio(props) {
   );
 }
 
-export default CardPortfolio;
+export default CardContact;
