@@ -65,8 +65,8 @@ function HomePage() {
             </h3>
             <br />
             <h3>
-              Do you have a project in mind or just want to know more about us?
-              Come in contact and let us help you bring your ideas to life.
+              Do you have a project in mind or just want to know more about our
+              business? Contact us and let us help you bring your ideas to life.
             </h3>
             <br />
             <div className="center-content">
@@ -136,8 +136,13 @@ function HomePage() {
                       }
                     />
                     <p className="text">
-                      We are working for Umeå university to build a virutal
-                      reality trauma simulation for students to train on
+                      We are working for Umeå university to build a Virtual
+                      Reality trauma simulation for students to be able to
+                      experience and practice the caretaking of patients during
+                      an acute trauma situation.{" "}
+                      <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
+                        TraumaSim YouTube channel
+                      </a>
                     </p>
                   </div>
                   <img
@@ -180,9 +185,9 @@ function HomePage() {
                     <p>
                       We are developing and maintaining an asset for Unity which
                       simulates the physics of a rope. A short demo video can be
-                      found at,{" "}
+                      found here:{" "}
                       <a href="https://www.youtube.com/watch?v=ZVZiVGy22QA">
-                        YouTube Video
+                        RootPi Ropes video
                       </a>
                     </p>
                   </div>
@@ -224,9 +229,9 @@ function HomePage() {
                       }
                     />
                     <p>
-                      A website for effortless generation of personalized cover
-                      letter, written for the work that you are applying to.
-                      Available on{" "}
+                      A website for effortless AI generation of personalized
+                      cover letter, written for the work that you are applying
+                      to. Available on{" "}
                       <a href="https://instapply.se">instapply.se</a>
                     </p>
                   </div>
