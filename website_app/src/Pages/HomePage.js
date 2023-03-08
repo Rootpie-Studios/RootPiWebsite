@@ -280,7 +280,7 @@ function HomePage() {
               }
             />
             <IconWithTooltip
-              tooltip="Java"
+              tooltip="JavaScript"
               icon={
                 <SiJavascript
                   style={{ marginBottom: "10px", marginLeft: "10px" }}
@@ -358,9 +358,10 @@ function HomePage() {
                   Coding languages
                 </h2>
                 <p>
-                  We are compentent in many coding languages each with their own
-                  benefit to allow us to be flexible and deliver products that
-                  meet the client requirements
+                  We have competence and years of experience in many coding
+                  languages each with their own benefit to allow us to be
+                  flexible and deliver products that meet any client
+                  requirements
                 </p>
               </div>
             }
@@ -377,12 +378,13 @@ function HomePage() {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  Frameworks
+                  Frameworks and programs
                 </h2>
                 <p>
-                  From our previous projects we have used many different
-                  frameworks that allows us to get work done faster at a higher
-                  level
+                  From 3D modelling and game engines to web- and app development
+                  software, we are confident users of a variety of powerful
+                  frameworks and programs and that allow us to get work done
+                  faster at a high level
                 </p>
               </div>
             }
