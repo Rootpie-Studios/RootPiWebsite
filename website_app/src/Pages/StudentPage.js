@@ -27,7 +27,7 @@ function StudentPage() {
                 <div style={{ gridColumn: "1 / span 2" }}>
                   <h1>Database evaulation</h1>
                   <h3>
-                    Teo and Axel are studying systems science at LTU, Sweden,
+                    Teodor and Axel are studying systems science at LTU, Sweden,
                     and are working with us to evaluate and research different
                     database solutions. They are looking at factors such as
                     efficiency, implementation difficulty and cost for different
@@ -46,10 +46,10 @@ function StudentPage() {
                       src={Teo}
                       alt=""
                     />
-                    <h2 style={{marginLeft: '40px'}}>Teodor</h2>
+                    <h2 style={{ marginLeft: "40px" }}>Teodor</h2>
                   </div>
                   <div className="student-left">
-                    <h2 style={{marginLeft: '50px'}}>Axel</h2>
+                    <h2 style={{ marginLeft: "50px" }}>Axel</h2>
                     <img
                       className="student-image-container profile-rounded-image"
                       src={Axel}

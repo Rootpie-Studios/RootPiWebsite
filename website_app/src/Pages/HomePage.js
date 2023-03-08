@@ -65,8 +65,8 @@ function HomePage() {
             </h3>
             <br />
             <h3>
-              Do you have a project in mind or just want to know more about us?
-              Come in contact and let us help you bring your ideas to life.
+              Do you have a project in mind or just want to know more about our
+              business? Contact us and let us help you bring your ideas to life.
             </h3>
             <br />
             <div className="center-content">
@@ -136,8 +136,13 @@ function HomePage() {
                       }
                     />
                     <p className="text">
-                      We are working for Umeå university to build a virutal
-                      reality trauma simulation for students to train on
+                      We are working for Umeå university to build a Virtual
+                      Reality trauma simulation for students to be able to
+                      experience and practice the caretaking of patients during
+                      an acute trauma situation.{" "}
+                      <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
+                        TraumaSim YouTube channel
+                      </a>
                     </p>
                   </div>
                   <img
@@ -180,9 +185,9 @@ function HomePage() {
                     <p>
                       We are developing and maintaining an asset for Unity which
                       simulates the physics of a rope. A short demo video can be
-                      found at,{" "}
+                      found here:{" "}
                       <a href="https://www.youtube.com/watch?v=ZVZiVGy22QA">
-                        YouTube Video
+                        RootPi Ropes video
                       </a>
                     </p>
                   </div>
@@ -224,9 +229,9 @@ function HomePage() {
                       }
                     />
                     <p>
-                      A website for effortless generation of personalized cover
-                      letter, written for the work that you are applying to.
-                      Available on{" "}
+                      A website for effortless AI generation of personalized
+                      cover letter, written for the work that you are applying
+                      to. Available on{" "}
                       <a href="https://instapply.se">instapply.se</a>
                     </p>
                   </div>
@@ -280,7 +285,7 @@ function HomePage() {
               }
             />
             <IconWithTooltip
-              tooltip="Java"
+              tooltip="JavaScript"
               icon={
                 <SiJavascript
                   style={{ marginBottom: "10px", marginLeft: "10px" }}
@@ -358,9 +363,10 @@ function HomePage() {
                   Coding languages
                 </h2>
                 <p>
-                  We are compentent in many coding languages each with their own
-                  benefit to allow us to be flexible and deliver products that
-                  meet the client requirements
+                  We have competence and years of experience in many coding
+                  languages each with their own benefit to allow us to be
+                  flexible and deliver products that meet any client
+                  requirements
                 </p>
               </div>
             }
@@ -377,12 +383,13 @@ function HomePage() {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  Frameworks
+                  Frameworks and programs
                 </h2>
                 <p>
-                  From our previous projects we have used many different
-                  frameworks that allows us to get work done faster at a higher
-                  level
+                  From 3D modelling and game engines to web- and app development
+                  software, we are confident users of a variety of powerful
+                  frameworks and programs and that allow us to get work done
+                  faster at a high level
                 </p>
               </div>
             }
