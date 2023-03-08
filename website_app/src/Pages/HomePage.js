@@ -409,7 +409,7 @@ function HomePage() {
                 <div>
                   <span style={{ fontWeight: "bold" }}>
                     {/* <FiMail style={{ marginTop: "5px" }} /> */}
-                    info@rootpi.xyz
+                    <a href="mailto:info@rootpi.xyz" style={{color: 'black', textDecoration: 'none'}}>info@rootpi.xyz</a>
                   </span>
                 </div>
               </div>
