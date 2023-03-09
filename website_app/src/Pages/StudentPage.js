@@ -41,20 +41,24 @@ function StudentPage() {
                 </div>
                 <div>
                   <div className="student-right">
-                    <img
-                      className="student-image-container profile-rounded-image"
-                      src={Teo}
-                      alt=""
-                    />
-                    <h2 style={{ marginLeft: "40px" }}>Teodor</h2>
+                    <div>
+                      <img
+                        className="student-image-container profile-rounded-image"
+                        src={Teo}
+                        alt=""
+                      />
+                      <h2 className="center-content">Teodor</h2>
+                    </div>
                   </div>
                   <div className="student-left">
-                    <h2 style={{ marginLeft: "50px" }}>Axel</h2>
-                    <img
-                      className="student-image-container profile-rounded-image"
-                      src={Axel}
-                      alt=""
-                    />
+                    <div>
+                      <h2 className="center-content">Axel</h2>
+                      <img
+                        className="student-image-container profile-rounded-image"
+                        src={Axel}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

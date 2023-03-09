@@ -20,7 +20,6 @@
 .student-image-container {
   background-color: white;
   width: 150px;
-  margin-bottom: 20px;
 }
 
 .student-grid-container-inner {
@@ -31,43 +30,18 @@
 }
 
 .student-left {
-  margin-left: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .student-right {
-  margin-left: 50%;
-  margin-right: 20%;
-}
-
-.student-left-text {
-  margin-left: 35%;
-}
-
-.student-right-text {
-  margin-left: 65%;
-  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 
 @media (max-width: 1600px) {
   .student-grid-container-inner {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 800px) {
-  .student-left {
-    margin-left: 0%;
-  }
-  .student-right {
-    margin-left: 40%;
-  }
-
-  .student-left-text {
-    margin-left: 28%;
-  }
-
-  .student-right-text {
-    margin-left: 65%;
-    margin-top: 10px;
   }
 }
