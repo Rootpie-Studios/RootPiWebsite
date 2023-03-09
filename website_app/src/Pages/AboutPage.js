@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/aboutpage.css";
 import Kim from "../images/Kim.png";
-import Jesper from "../images/Jesper.jpg";
+import Jesper from "../images/jespernorge3.png";
 
 function AboutPage() {
   return (
