@@ -7,12 +7,18 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import StudentPage from "./Pages/StudentPage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
+import SaganOmBinlo from "./Pages/SaganOmBinlo";
+import AlfredsSaga from "./Pages/AlfredsSaga";
+import SagorPage from "./Pages/SagorPage";
 
 function MainRouter(props) {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/storytime" element={<StoryTime />} />
+        <Route exact path="/sagor-for-barn" element={<StoryTime />} />
+        <Route exact path="/sagor" element={<SagorPage />} />
+        <Route exact path="/sagan-om-binlo" element={<SaganOmBinlo />} />
+        <Route exact path="/sagan-om-alfred" element={<AlfredsSaga />} />
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/portfolio" element={<PortfolioPage />} />
         <Route exact path="/students" element={<StudentPage />} />

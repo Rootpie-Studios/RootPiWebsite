@@ -1,40 +1,89 @@
 import React from "react";
-import Header from "../Components/Header";
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
-import Card from "../Components/Card";
 import Button from "../Components/Button";
 import "../css/storytime.css";
+import StoryTimeHeader from "../Components/StoryTimeHeader";
+import SagorForBarn from "../images/sagor-for-barn.png";
+import Sagor from "../images/sagor.png";
 
 function HomePage() {
   return (
     <div className="App-storytime">
-      <Header subtitle={<h1>Storytime</h1>} textColor="white" />
-      <main>
-        <Card
-          color="rgba(0, 0, 0, 0.2)"
-          textColor="white"
-          children={
+      <StoryTimeHeader subtitle={<h1>Sagor</h1>} textColor="white" />
+      <main style={{ margin: "100px" }}>
+        <div className="grid-container2 center-content">
+          <div>
+            <h1 style={{ color: "white" }}>Här hittar du sagor för barn!</h1>
+            <br />
+            <p style={{ color: "white" }}>
+              Vi har skapat en tjänst med hjälp av den nya utvecklingen av AI
+              för att generera personliga sagor till barn. Vi vet att barn har
+              en väldigt levande fantasi och älskar sagor och vi vill ge
+              föräldrar chansen att få nya unika sagor.
+            </p>
+            <br />
+            <p style={{ color: "white" }}>
+              Hos oss kan du skapa nya egna sagor, där du enkelt får den
+              personlig till ditt eget barn. Du kan även läsa våra egna sagor
+              som vi har skapat och få inspiration till dina egna sagor.
+            </p>
+            <br />
+            <p style={{ color: "white" }}>
+              Våra bilder är framtagna med den senate tekniken inom AI, tjänsten
+              heter Midjourney, den kan skapa otroliga bilder från korta
+              beskrivningar.
+            </p>
+            <br />
+            <div className="center-content">
+              <Button color="rgba(0, 255, 0, 0.2)" label="Generera din saga" />
+              <Link style={{ margin: "auto" }} to="/sagor">
+                <Button
+                  color="rgba(0, 255, 0, 0.2)"
+                  label="Läs några av våra egna sagor"
+                ></Button>
+              </Link>
+            </div>
+          </div>
+          <Link
+            className="center-content"
+            style={{ marginRight: "10%" }}
+            to="/sagan-om-alfred"
+          >
+            <img
+              className="home-title-image-container home-rounded-image"
+              style={{ marginLeft: "10%" }}
+              src={SagorForBarn}
+              alt=""
+            />
+          </Link>
+        </div>
+        <div className="grid-container2">
+          <Link
+            className="center-content"
+            style={{ marginRight: "10%" }}
+            to="/sagan-om-binlo"
+          >
+            <img
+              className="home-title-image-container home-rounded-image"
+              src={Sagor}
+              alt=""
+            />
+          </Link>
+          <div className="center-content">
             <div>
-              <h2>Få din personliga saga att läsa till dina barn!</h2>
-              <p>
-                Vi har skapat en tjänst med hjälp av den nya utvecklingen av AI
-                för att generera personliga sagor till barn. Vi vet att barn har
-                en väldigt levande fantasi och älskar sagor och vi vill ge
-                föräldrar chansen att få nya sagor som handlar om egna
-                erfarenheter eller personliga moraler enkelt och snabbt.{" "}
-              </p>
-              <br />
-              <p>
-                Tjänsten är gratis att testa! Ifall ni uppskattar tjänsten så
-                hjälper det oss enorm mycket om ni delar med er till andra om
-                oss!
+              <h2 style={{ color: "white" }}>RootPi - Vilka är vi</h2>
+              <p style={{ color: "white" }}>
+                Vi är ett litet företag som sitter i Lund, och vi jobbar främst
+                inom mjukvara och AI. Vi skapar hemsidor och tjänster och har
+                goda kunskaper med datorer. De senaste åren har utvecklingen
+                inom AI tagit ordentlig fart och vi har jobbat med många projekt
+                där vi sett hur bra AI kan vara. Från detta har denna idé
+                uppstått där vi hoppas att AI kan vara till hjälp för många
+                mindre saker i vår vardag.
               </p>
             </div>
-          }
-        />
-
-        <div className="center">
-          <Button color="rgba(0, 255, 0, 0.2)" label="Generera din saga" />
+          </div>
         </div>
       </main>
       <Footer textColor="white" />
