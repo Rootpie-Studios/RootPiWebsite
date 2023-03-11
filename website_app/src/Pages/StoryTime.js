@@ -40,7 +40,7 @@ function HomePage() {
               <Link style={{ margin: "auto" }} to="/sagor">
                 <Button
                   color="rgba(0, 255, 0, 0.2)"
-                  label="Läs några av våra egna sagor"
+                  label="Se vårt bibliotek av sagor"
                 ></Button>
               </Link>
             </div>
