@@ -33,18 +33,15 @@ function GenerateStoryPage() {
     console.log(
       "Requesting from: " + process.env.REACT_APP_BACKEND_URL + "/generera-saga"
     );
-    const response = fetch(
-      process.env.REACT_APP_BACKEND_URL + "/generera-saga",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
-        body: JSON.stringify(data),
-      }
-    )
+    fetch(process.env.REACT_APP_BACKEND_URL + "/generera-saga", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    })
       .then((response) => response.json())
       .catch((error) => {
         setLoading(false);
@@ -52,7 +49,7 @@ function GenerateStoryPage() {
       .then((responseJson) => {
         console.log(responseJson);
         var newstory = responseJson["story"].split(/\r?\n/);
-        if (responseJson["finish_reason"] == "stop") {
+        if (responseJson["finish_reason"] === "stop") {
           setLoading(false);
           setStory(newstory);
           setShowStory(true);
@@ -63,7 +60,7 @@ function GenerateStoryPage() {
           setError("Vår AI kunde inte skriva hela din saga.");
         } else {
           setLoading(false);
-          if (responseJson["finish_reason"] == "content_filter") {
+          if (responseJson["finish_reason"] === "content_filter") {
             setError(
               "Vår AI har inte kunnat skapa en saga som följer vår policy."
             );
@@ -90,6 +87,7 @@ function GenerateStoryPage() {
   return (
     <div className="App-storytime">
       <StoryTimeHeader subtitle={<h1>Sagor</h1>} textColor="white" />
+      {error !== "" && <h3 style={{ color: "white" }}>{error}</h3>}
       {!showStory ? (
         <div className="grid-container2">
           <div>
