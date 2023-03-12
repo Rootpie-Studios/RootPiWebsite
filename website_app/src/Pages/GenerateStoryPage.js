@@ -5,6 +5,7 @@ import CreateYourOwnStory from "../images/CreateYourOwnStory.png";
 import Button from "../Components/Button";
 import LinearProgress from "@mui/material/LinearProgress";
 import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
 
 function GenerateStoryPage() {
   const [progress, setProgress] = useState(0);
@@ -12,6 +13,18 @@ function GenerateStoryPage() {
   const [story, setStory] = useState([]);
   const [error, setError] = useState("");
   const [showStory, setShowStory] = useState(false);
+  const [value, setValue] = useState(3);
+  const [review, setReview] = useState("");
+
+  const handleReview = (e) => {
+    e.preventDefault();
+    console.log("Review");
+    var data = {
+      review: review,
+      rating: value,
+    };
+    console.log(data);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +37,9 @@ function GenerateStoryPage() {
 
     var data = {
       prompt:
-        "Skriv en saga, huvudkaraktären heter " +
+        "Skriv en berättelse, huvudkaraktären heter " +
         name +
-        " och sagan handlar om " +
+        " och berättelsen handlar om " +
         story,
     };
 
@@ -161,6 +174,48 @@ function GenerateStoryPage() {
               </h3>
             );
           })}
+          <br />
+          <div className="center-content">
+            <Button
+              color="rgba(0, 255, 0, 0.2)"
+              label="Få bilder och ljud till din saga för endast 35kr"
+            />
+          </div>
+          <br />
+          <div className="center-content">
+            <p style={{ color: "white" }}>
+              Vi skulle uppskatta dina kommentarer på sagan som vi genererat åt
+              dig
+            </p>
+          </div>
+          <form onSubmit={handleReview}>
+            <div className="center-content">
+              <Rating
+                size="large"
+                precision={0.5}
+                value={value}
+                onChange={(event, newValue) => {
+                  setValue(newValue);
+                }}
+              />
+            </div>
+            <div className="center-content">
+              <textarea
+                style={{
+                  backgroundColor: "rgba(255,255,255, 0.2)",
+                  color: "rgba(255,255,255, 1)",
+                  fontFamily: "QuickSand",
+                }}
+                onChange={(event) => {
+                  setReview(event.target.value);
+                }}
+                maxLength={400}
+              />
+            </div>
+            <div className="center-content">
+              <Button color="rgba(0, 255, 0, 0.2)" label="Lämna omdöme" />
+            </div>
+          </form>
         </div>
       )}
       <Footer textColor="white" />
