@@ -37,7 +37,7 @@ function GenerateStoryPage() {
 
     var data = {
       prompt:
-        "Skriv en berättelse, huvudkaraktären heter " +
+        "Skriv första kapitlet av en barnbok, huvudkaraktären heter " +
         name +
         " och berättelsen handlar om " +
         story,
@@ -178,7 +178,7 @@ function GenerateStoryPage() {
           <div className="center-content">
             <Button
               color="rgba(0, 255, 0, 0.2)"
-              label="Få bilder och ljud till din saga för endast 35kr"
+              label="För endast 35kr får du hela sagan med bilder och ljud"
             />
           </div>
           <br />
