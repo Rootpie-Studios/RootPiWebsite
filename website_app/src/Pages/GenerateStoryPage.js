@@ -70,7 +70,6 @@ function GenerateStoryPage() {
           setLoading(false);
           setStory(newstory);
           setShowStory(true);
-          setError("Vår AI kunde inte skriva hela din saga.");
         } else {
           setLoading(false);
           if (responseJson["finish_reason"] === "content_filter") {
@@ -178,7 +177,7 @@ function GenerateStoryPage() {
           <div className="center-content">
             <Button
               color="rgba(0, 255, 0, 0.2)"
-              label="För endast 35kr får du hela sagan med bilder och ljud"
+              label="För endast 99kr får du hela sagan med bilder och ljud"
             />
           </div>
           <br />
