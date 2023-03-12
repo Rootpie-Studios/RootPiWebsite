@@ -6,6 +6,11 @@ import Button from "../Components/Button";
 import LinearProgress from "@mui/material/LinearProgress";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogTitle from "@mui/material/DialogTitle";
+import privacy_policy from "./privacy_policy.md";
+import ReactMarkdown from "react-markdown";
 
 function GenerateStoryPage() {
   const [progress, setProgress] = useState(0);
@@ -13,8 +18,53 @@ function GenerateStoryPage() {
   const [story, setStory] = useState([]);
   const [error, setError] = useState("");
   const [showStory, setShowStory] = useState(false);
+  const [reviewed, setReviewed] = useState(false);
   const [value, setValue] = useState(3);
   const [review, setReview] = useState("");
+  const [buySaga, setBuySaga] = useState(false);
+  const [dialog, setDialog] = React.useState(false);
+  const [consent, setConsent] = useState(false);
+  const [email, setEmail] = useState("");
+  const [prompt, setPromt] = useState("");
+
+  let [privacyPolicy, setPrivacyPolicy] = useState({ md: "" });
+  useEffect(() => {
+    fetch(privacy_policy)
+      .then((res) => res.text())
+      .then((md) => {
+        setPrivacyPolicy({ md });
+      });
+  }, []);
+
+  const handleDialogOpen = () => {
+    setDialog(true);
+  };
+
+  const handleDialogClose = () => {
+    setDialog(false);
+  };
+
+  const handlePurchase = (e) => {
+    e.preventDefault();
+    console.log("Purchase");
+    var data = {
+      email: email,
+      story: story,
+      prompt: prompt,
+    };
+
+    fetch(process.env.REACT_APP_BACKEND_URL + "/spara-saga", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((_) => console.log("thank you"));
+  };
 
   const handleReview = (e) => {
     e.preventDefault();
@@ -23,7 +73,20 @@ function GenerateStoryPage() {
       review: review,
       rating: value,
     };
+
     console.log(data);
+
+    fetch(process.env.REACT_APP_BACKEND_URL + "/leave-review", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((_) => setReviewed(true));
   };
 
   const handleSubmit = (e) => {
@@ -34,6 +97,13 @@ function GenerateStoryPage() {
 
     var name = e.target[0].value;
     var story = e.target[1].value;
+
+    setPromt(
+      "Skriv första kapitlet av en barnbok, huvudkaraktären heter " +
+        name +
+        " och berättelsen handlar om " +
+        story
+    );
 
     var data = {
       prompt:
@@ -164,60 +234,153 @@ function GenerateStoryPage() {
         </div>
       ) : (
         <div style={{ padding: "0px 300px" }}>
-          <h1 style={{ color: "white" }}>Din saga</h1>
-          <br />
-          {story.map(function (object, i) {
-            return (
-              <h3 style={{ color: "white" }} key={i}>
-                {object}
-              </h3>
-            );
-          })}
-          <br />
-          <div className="center-content">
-            <Button
-              color="rgba(0, 255, 0, 0.2)"
-              label="För endast 99kr får du hela sagan med bilder och ljud"
-            />
-          </div>
-          <br />
-          <div className="center-content">
-            <p style={{ color: "white" }}>
-              Vi skulle uppskatta dina kommentarer på sagan som vi genererat åt
-              dig
-            </p>
-          </div>
-          <form onSubmit={handleReview}>
-            <div className="center-content">
-              <Rating
-                size="large"
-                precision={0.5}
-                value={value}
-                onChange={(event, newValue) => {
-                  setValue(newValue);
-                }}
-              />
+          {!buySaga ? (
+            <div>
+              <h1 style={{ color: "white" }}>Din saga</h1>
+              <br />
+              {story.map(function (object, i) {
+                return (
+                  <h3 style={{ color: "white" }} key={i}>
+                    {object}
+                  </h3>
+                );
+              })}
+              <br />
+              <div className="center-content">
+                <Button
+                  onClick={() => setBuySaga(true)}
+                  color="rgba(0, 255, 0, 0.2)"
+                  label="För endast 99kr får du hela sagan med bilder och ljud"
+                />
+              </div>
+              <br />
+              {!reviewed ? (
+                <div>
+                  <div className="center-content">
+                    <p style={{ color: "white" }}>
+                      Vi skulle uppskatta dina kommentarer på sagan som vi
+                      genererat åt dig
+                    </p>
+                  </div>
+                  <form onSubmit={handleReview}>
+                    <div className="center-content">
+                      <Rating
+                        size="large"
+                        precision={0.5}
+                        value={value}
+                        onChange={(event, newValue) => {
+                          setValue(newValue);
+                        }}
+                      />
+                    </div>
+                    <div className="center-content">
+                      <textarea
+                        style={{
+                          backgroundColor: "rgba(255,255,255, 0.2)",
+                          color: "rgba(255,255,255, 1)",
+                          fontFamily: "QuickSand",
+                        }}
+                        onChange={(event) => {
+                          setReview(event.target.value);
+                        }}
+                        maxLength={400}
+                      />
+                    </div>
+                    <div className="center-content">
+                      <Button
+                        color="rgba(0, 255, 0, 0.2)"
+                        label="Lämna omdöme"
+                      />
+                    </div>
+                  </form>
+                </div>
+              ) : (
+                <div className="center-content">
+                  <h1 style={{ color: "white" }}>Tack för din feedback!</h1>
+                </div>
+              )}
             </div>
-            <div className="center-content">
-              <textarea
+          ) : (
+            <div>
+              <h2 style={{ color: "white" }}>
+                Vi skriver genererar klart din saga och skickar den till dig
+                direkt den är klar.
+              </h2>
+              <h3 style={{ color: "white" }}>
+                Vi levererar den som en PDF och ljudfil, i PDF:en får du din
+                saga tillsammans med fina unika bilder till din saga. I
+                ljudfilen så får du en berättarröst och unika röster för alla
+                karaktärer i sagan.
+              </h3>
+              <br />
+              <p style={{ color: "white" }}>
+                Ange email, används för att leverera din saga
+              </p>
+              <br />
+              <input
                 style={{
                   backgroundColor: "rgba(255,255,255, 0.2)",
                   color: "rgba(255,255,255, 1)",
                   fontFamily: "QuickSand",
                 }}
-                onChange={(event) => {
-                  setReview(event.target.value);
-                }}
-                maxLength={400}
+                onChange={(e) => setEmail(e.target.value)}
+                type="text"
+                maxLength={30}
               />
+              <br />
+              <br />
+              <br />
+              <input
+                onChange={(e) => setConsent(e.target.checked)}
+                type="checkbox"
+                id="privacy_policy"
+                name="privacy_policy"
+              />
+              <label
+                for="privacy_policy"
+                style={{ color: "white", marginLeft: "10px" }}
+              >
+                Läs igenom och acceptera vår{" "}
+                <Button
+                  onClick={handleDialogOpen}
+                  color="rgba(0, 255, 0, 0.2)"
+                  label="Integritetspolicy"
+                />
+              </label>
+              <br />
+              <br />
+              <div>
+                <Button
+                  onClick={handlePurchase}
+                  color={
+                    !consent || email === ""
+                      ? "rgba(0, 255, 0, 0.1)"
+                      : "rgba(0, 255, 0, 0.2)"
+                  }
+                  textColor={
+                    !consent || email === ""
+                      ? "rgba(255,255,255, 0.5)"
+                      : "white"
+                  }
+                  label="Slutför köp - 99kr"
+                />
+              </div>
             </div>
-            <div className="center-content">
-              <Button color="rgba(0, 255, 0, 0.2)" label="Lämna omdöme" />
-            </div>
-          </form>
+          )}
         </div>
       )}
       <Footer textColor="white" />
+      <Dialog
+        open={dialog}
+        onClose={handleDialogClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"Integritetspolicy"}</DialogTitle>
+        <DialogContent>
+          <ReactMarkdown children={privacyPolicy.md} />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
