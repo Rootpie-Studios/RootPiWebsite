@@ -10,6 +10,7 @@ import ContactPage from "./Pages/ContactPage";
 import SaganOmBinlo from "./Pages/SaganOmBinlo";
 import AlfredsSaga from "./Pages/AlfredsSaga";
 import SagorPage from "./Pages/SagorPage";
+import GenerateStoryPage from "./Pages/GenerateStoryPage";
 
 function MainRouter(props) {
   return (
@@ -17,6 +18,7 @@ function MainRouter(props) {
       <Routes>
         <Route exact path="/sagor-for-barn" element={<StoryTime />} />
         <Route exact path="/sagor" element={<SagorPage />} />
+        <Route exact path="/skapa-din-egen-saga" element={<GenerateStoryPage />} />
         <Route exact path="/sagan-om-binlo" element={<SaganOmBinlo />} />
         <Route exact path="/sagan-om-alfred" element={<AlfredsSaga />} />
         <Route exact path="/" element={<HomePage />} />

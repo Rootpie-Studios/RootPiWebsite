@@ -36,7 +36,12 @@ function HomePage() {
             </p>
             <br />
             <div className="center-content">
-              <Button color="rgba(0, 255, 0, 0.2)" label="Generera din saga" />
+              <Link style={{ margin: "auto" }} to="/skapa-din-egen-saga">
+                <Button
+                  color="rgba(0, 255, 0, 0.2)"
+                  label="Generera din saga"
+                />
+              </Link>
               <Link style={{ margin: "auto" }} to="/sagor">
                 <Button
                   color="rgba(0, 255, 0, 0.2)"
