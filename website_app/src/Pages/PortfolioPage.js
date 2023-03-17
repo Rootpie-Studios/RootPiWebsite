@@ -154,9 +154,9 @@ function PortfolioPage() {
                 <b>Microsoft Azure</b>, and state of the art AI text and image
                 generation via <b>OpenAI</b> we have built a tool for generating
                 a narrated story with AI created images from only a text input.
-                Sample stories can be found on the YouTube channel{" "}
-                <a href="https://www.youtube.com/@rootpistorytime">
-                  RootPi Storytime
+                Sample stories can be found on our website{" "}
+                <a href="https://sagostund.nu/skapa-din-egen-saga">
+                  Sagostund.nu
                 </a>
                 .
               </p>
