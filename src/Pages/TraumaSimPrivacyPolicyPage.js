@@ -9,10 +9,8 @@ function TraumaSimPrivacyPolicyPage() {
   const privacyPolicyMarkdown = `
 # Privacy Policy for TraumaSim VR
 
-## Effective Date: [Insert Date]
-
 ### Introduction
-Welcome to TraumaSim VR. This privacy policy aims to inform you about the data we collect, why we collect it, and how we use it.
+This privacy policy aims to inform you about the data we collectw when you use TraumaSim VR, why we collect it, and how we use it.
 
 ### Information We Collect
 
@@ -25,17 +23,16 @@ Welcome to TraumaSim VR. This privacy policy aims to inform you about the data w
 - To provide a personalized training experience.
 - To generate statistical reports for improving the app.
 - To identify areas for educational improvement.
+- To evaluate the effectiveness of VR as an educational tool.
+- To aid in research around VR as an educational tool.
 
 ### How We Use Data
 
-- **Personalization**: Your username helps us provide a personalized experience.
+- **Personalization**: Your username helps us provide a personalized experience and have separate users compare scores to themselves and others over time.
 - **Performance Metrics**: Time of completion and score are used to gauge your training efficacy.
 - **Improvement**: Data is analyzed to make ongoing improvements to the app.
-- **Research**: Anonymized or aggregated scores may be used for research purposes to evaluate the effectiveness of VR as an educational tool. No personally identifiable information will be used for these research activities without explicit consent.
+- **Research**: Anonymized or aggregated scores may be used for research purposes to evaluate the effectiveness of VR as an educational tool. 
 
-### Data Security
-
-We employ standard security measures to protect your information.
 
 ### Data Sharing
 
@@ -47,7 +44,7 @@ We do not share your data with third parties unless required by law.
 - Rectification of your data
 - Deletion of your data
 
-To exercise any of these rights, please contact us at [Insert Contact Information].
+To exercise any of these rights, please contact us at info@rootpi.xyz.
 
 ### Consent for Research
 
@@ -59,7 +56,7 @@ We reserve the right to update this policy. Changes will be noted here.
 
 ### Contact
 
-For questions about this privacy policy, please contact [Insert Contact Information].
+For questions about this privacy policy, please contact info@rootpi.xyz
   `;
 
   return (
