@@ -7,14 +7,14 @@ import "../css/portfoliopage.css";
 import { Link } from "react-router-dom";
 
 // Images
-import TraumaSim from "../images/TraumaSim.png";
+import TraumaSim from "../images/traumasim_logo.png";
 import Instapply from "../images/Instapply.png";
 import HaliteIV from "../images/HaliteIV.png";
 import CrystalQuest2 from "../images/CrystalQuest2.png";
 import Nifti from "../images/Nifti.png";
 import LundaPant from "../images/LundaPant.png";
 import Ropes from "../images/RootPiRopesAssetIconHQ.png";
-import StoryTime from "../images/StoryTime.png";
+import SagoLogo from "../images/sago_logo.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
 // import DataMatrix from "../images/DataMatrix.png";
 import ai_decoder from "../images/logo_maybe.png";
@@ -122,7 +122,7 @@ function PortfolioPage() {
                 <b>Tailwind</b>.
               </p>
               <br />
-              <a href="https://ai-decoder">ai-decoder.com</a>
+              <a href="https://ai-decoder.com">ai-decoder.com</a>
               <br />
             </div>
           }
@@ -165,10 +165,7 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip
-                tooltip="OpenAI"
-                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
-              />
+              <IconWithTooltip tooltip="OpenAI" icon={<SiOpenai />} />
               <IconWithTooltip
                 tooltip="Microsoft azure"
                 icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
@@ -187,7 +184,7 @@ function PortfolioPage() {
               />
             </h1>
           }
-          images={<img className="rounded-image" src={StoryTime} alt="" />}
+          images={<img className="rounded-image" src={SagoLogo} alt="" />}
         />
 
         {/* Ropes */}

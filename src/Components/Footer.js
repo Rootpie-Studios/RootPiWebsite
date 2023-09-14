@@ -13,7 +13,7 @@ function Footer(props) {
           }}
           className="copyright"
         >
-          &copy; 2023 RootPi AB. All rights reserved.
+          &copy; 2023 RootPi AB
         </div>
       </footer>
     </div>

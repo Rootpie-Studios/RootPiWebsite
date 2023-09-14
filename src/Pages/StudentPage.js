@@ -6,7 +6,6 @@ import logo from "../images/LogoTextTransBlack.png";
 import "../css/studentpage.css";
 import Axel from "../images/Axel.jpg";
 import Teo from "../images/Teo.jpg";
-
 function StudentPage() {
   return (
     <div className="App">
@@ -15,7 +14,7 @@ function StudentPage() {
       />
       <main>
         <div className="center-content">
-          <h1>Student projects</h1>
+          <h1>Student Projects</h1>
         </div>
         <Card
           color="rgba(0, 0, 0, 0)"
@@ -25,25 +24,26 @@ function StudentPage() {
             <div>
               <div className="student-grid-container-inner">
                 <div style={{ gridColumn: "1 / span 2" }}>
-                  <h1>Database evaulation</h1>
-                  <h3>
-                    Teodor and Axel are studying systems science at LTU, Sweden,
-                    and are working with us to evaluate and research different
-                    database solutions. They are looking at factors such as
-                    efficiency, implementation difficulty and cost for different
-                    stages in a growing business.{" "}
-                  </h3>
+                  <h1>Database Evaluation</h1>
+                  <p>
+                    Teodor and Axel studied systems science at LTU, Sweden, and
+                    worked with us to evaluate and research different database
+                    solutions. They looked at factors such as efficiency,
+                    implementation difficulty, and cost for different stages in
+                    a growing business.
+                  </p>
                   <br />
-                  <h3>
-                    They are comparing our implementation with Firebase to a
-                    regular MySQL implementation.
-                  </h3>
+                  <p>
+                    They compared our current implementation with Firebase to a
+                    regular MySQL solution and the project was carried out with
+                    great success.
+                  </p>
                 </div>
                 <div>
                   <div className="student-right">
                     <div>
                       <img
-                        className="student-image-container profile-rounded-image"
+                        className="student-image-container rounded-image"
                         src={Teo}
                         alt=""
                       />
@@ -54,7 +54,7 @@ function StudentPage() {
                     <div>
                       <h2 className="center-content">Axel</h2>
                       <img
-                        className="student-image-container profile-rounded-image"
+                        className="student-image-container rounded-image"
                         src={Axel}
                         alt=""
                       />
@@ -63,30 +63,6 @@ function StudentPage() {
                 </div>
               </div>
               <br />
-            </div>
-          }
-        />
-        <div className="center-content">
-          <h1>Available projects</h1>
-        </div>
-        <Card
-          color="rgba(0, 0, 0, 0)"
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h1>Unity: Rope physics</h1>
-              <h3>
-                We are interested in having a student look into how to best
-                implement physics of a rope in a virtual 3D environment using
-                particle-based physics simulations. This can be done as a
-                bachelor or master thesis project
-              </h3>
-              <br />
-              <h3>
-                If this is something you would find intresting do not hesitate
-                to contact us!
-              </h3>
             </div>
           }
         />

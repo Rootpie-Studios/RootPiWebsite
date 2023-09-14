@@ -10,15 +10,23 @@ import CardContact from "../Components/CardContact";
 
 // images
 import VRDude from "../images/VRDude.png";
-import TraumaSim from "../images/TraumaSim.png";
-import ropes from "../images/RootPiRopesAssetIconHQ.png";
+import TraumaSim from "../images/traumasim_logo.png";
+// import ropes from "../images/RootPiRopesAssetIconHQ.png";
+import sago_logo from "../images/sago_logo.png";
 import Instapply from "../images/Instapply.png";
 import Coder from "../images/Coder.png";
 import AI from "../images/AI.png";
 
 // icons
 import { BsUnity } from "react-icons/bs";
-import { FaReact, FaPhp, FaHtml5, FaVuejs, FaJava } from "react-icons/fa";
+import {
+  FaReact,
+  FaPhp,
+  FaHtml5,
+  FaVuejs,
+  FaJava,
+  FaPython,
+} from "react-icons/fa";
 
 import {
   SiCsharp,
@@ -29,6 +37,7 @@ import {
   SiCss3,
   SiFlutter,
   SiLaravel,
+  SiTailwindcss,
 } from "react-icons/si";
 
 function HomePage() {
@@ -41,14 +50,14 @@ function HomePage() {
         <div className="home-grid-container-header">
           <div className="hidden">
             <img
-              className="home-title-image-container home-rounded-image"
-              style={{ marginLeft: "20%" }}
+              className="home-title-image-container rounded-image"
+              style={{ marginLeft: "5%", marginTop: "20px" }}
               src={VRDude}
               alt=""
             />
             <img
-              className="home-title-image-container home-rounded-image"
-              style={{ marginLeft: "40%", marginTop: "50px" }}
+              className="home-title-image-container rounded-image"
+              style={{ marginLeft: "20%", marginTop: "50px" }}
               src={AI}
               alt=""
             />
@@ -57,17 +66,17 @@ function HomePage() {
             <div className="home-title">
               <h1>This is us</h1>
             </div>
-            <h3 style={{ marginTop: "60px" }}>
+            <p style={{ marginTop: "60px", fontSize: "18px" }}>
               Welcome to RootPi, we provide solutions for Virtual Reality
               applications, mobile apps, and consulting services. Our small team
               of experienced developers will work with you to create a custom
               solution that is tailored to your specific needs and goals.
-            </h3>
+            </p>
             <br />
-            <h3>
+            <p>
               Do you have a project in mind or just want to know more about our
               business? Contact us and let us help you bring your ideas to life.
-            </h3>
+            </p>
             <br />
             <div className="center-content">
               <Button
@@ -85,7 +94,7 @@ function HomePage() {
 
           <div>
             <img
-              className="home-title-image-container home-rounded-image coder-image"
+              className="home-title-image-container rounded-image coder-image"
               src={Coder}
               alt=""
             />
@@ -94,7 +103,7 @@ function HomePage() {
 
         <div className="grid-container">
           <div className="home-title">
-            <h2>What we are working on right now</h2>
+            <h1>Current projects</h1>
           </div>
         </div>
 
@@ -111,7 +120,7 @@ function HomePage() {
                     overflow: "visible",
                   }}
                 >
-                  Traumasim - VR application for medical students
+                  TraumaSim VR
                 </h2>
                 <div className="home-grid-container-inner">
                   <div style={{ gridColumn: "1 / span 2" }}>
@@ -136,17 +145,17 @@ function HomePage() {
                       }
                     />
                     <p className="text">
-                      We are working for Umeå university to build a Virtual
-                      Reality trauma simulation for students to be able to
-                      experience and practice the caretaking of patients during
-                      an acute trauma situation.{" "}
-                      <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
-                        TraumaSim YouTube channel
-                      </a>
+                      A VR education software for practicing realistic trauma
+                      related scenarios in a medical environment. Built in
+                      collaboration with Umeå University.
                     </p>
+                    <br />
+                    <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
+                      YouTube channel
+                    </a>
                   </div>
                   <img
-                    className="home-card-image-container home-rounded-image"
+                    className="home-card-image-container rounded-image"
                     src={TraumaSim}
                     alt=""
                   />
@@ -154,7 +163,7 @@ function HomePage() {
               </div>
             }
           />
-          <Card
+          {/* <Card
             color="rgba(0, 0, 0, 0)"
             textColor="black"
             children={
@@ -192,8 +201,72 @@ function HomePage() {
                     </p>
                   </div>
                   <img
-                    className="home-card-image-container home-rounded-image"
+                    className="home-card-image-container rounded-image"
                     src={ropes}
+                    alt=""
+                  />
+                </div>
+              </div>
+            }
+          /> */}
+          <Card
+            color="rgba(0, 0, 0, 0)"
+            textColor="black"
+            children={
+              <div>
+                <h2
+                  className="text"
+                  style={{
+                    marginBottom: "10px",
+                    overflow: "visible",
+                  }}
+                >
+                  sagostund.nu
+                </h2>
+                <div className="home-grid-container-inner">
+                  <div style={{ gridColumn: "1 / span 2" }}>
+                    {/* <IconWithTooltip
+                      tooltip="Unity"
+                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="C#"
+                      icon={
+                        <SiCsharp
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    /> */}
+                    <IconWithTooltip
+                      tooltip="VueJS"
+                      icon={<FaVuejs style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="TailwindCSS"
+                      icon={
+                        <SiTailwindcss
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <IconWithTooltip
+                      tooltip="Python"
+                      icon={
+                        <FaPython
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <p>
+                      A website for generating magical, unique stories and fairy
+                      tales for your children, your friends or yourself!
+                    </p>
+                    <br />
+                    <a href="sagostund.nu">sagostund.nu</a>
+                  </div>
+                  <img
+                    className="home-card-image-container rounded-image"
+                    src={sago_logo}
                     alt=""
                   />
                 </div>
@@ -201,6 +274,60 @@ function HomePage() {
             }
           />
           <Card
+            color="rgba(0, 0, 0, 0)"
+            textColor="black"
+            children={
+              <div>
+                <h2
+                  className="text"
+                  style={{
+                    marginBottom: "10px",
+                    overflow: "visible",
+                  }}
+                >
+                  ai-decoder.com
+                </h2>
+                <div className="home-grid-container-inner">
+                  <div style={{ gridColumn: "1 / span 2" }}>
+                    <IconWithTooltip
+                      tooltip="VueJS"
+                      icon={<FaVuejs style={{ marginBottom: "10px" }} />}
+                    />
+                    <IconWithTooltip
+                      tooltip="TailwindCSS"
+                      icon={
+                        <SiTailwindcss
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+                    <IconWithTooltip
+                      tooltip="Python"
+                      icon={
+                        <FaPython
+                          style={{ marginBottom: "10px", marginLeft: "10px" }}
+                        />
+                      }
+                    />
+
+                    <p>
+                      A website for effortless AI generation of personalized
+                      cover letter, tailored to both your own skills and for the
+                      work you are applying to.
+                    </p>
+                    <br />
+                    <a href="https://instapply.se">instapply.se</a>
+                  </div>
+                  <img
+                    className="home-card-image-container rounded-image"
+                    src={Instapply}
+                    alt=""
+                  />
+                </div>
+              </div>
+            }
+          />
+          {/* <Card
             color="rgba(0, 0, 0, 0)"
             textColor="black"
             children={
@@ -230,25 +357,26 @@ function HomePage() {
                     />
                     <p>
                       A website for effortless AI generation of personalized
-                      cover letter, written for the work that you are applying
-                      to. Available on{" "}
-                      <a href="https://instapply.se">instapply.se</a>
+                      cover letter, tailored to both your own skills and for the
+                      work you are applying to.
                     </p>
+                    <br />
+                    <a href="https://instapply.se">instapply.se</a>
                   </div>
                   <img
-                    className="home-card-image-container home-rounded-image"
+                    className="home-card-image-container rounded-image"
                     src={Instapply}
                     alt=""
                   />
                 </div>
               </div>
             }
-          />
+          /> */}
         </div>
 
         <div className="grid-container">
           <div className="home-title">
-            <h2>Our tech stack</h2>
+            <h1>Our tech stack</h1>
           </div>
         </div>
 
@@ -416,7 +544,12 @@ function HomePage() {
                 <div>
                   <span style={{ fontWeight: "bold" }}>
                     {/* <FiMail style={{ marginTop: "5px" }} /> */}
-                    <a href="mailto:info@rootpi.xyz" style={{color: 'black', textDecoration: 'none'}}>info@rootpi.xyz</a>
+                    <a
+                      href="mailto:info@rootpi.xyz"
+                      style={{ color: "black", textDecoration: "none" }}
+                    >
+                      info@rootpi.xyz
+                    </a>
                   </span>
                 </div>
               </div>

@@ -10,7 +10,7 @@ function TraumaSimPrivacyPolicyPage() {
 # Privacy Policy for TraumaSim VR
 
 ### Introduction
-This privacy policy aims to inform you about the data we collectw when you use TraumaSim VR, why we collect it, and how we use it.
+This privacy policy aims to inform you about the data we collect when you use TraumaSim VR, why we collect it, and how we use it.
 
 ### Information We Collect
 

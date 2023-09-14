@@ -73,6 +73,14 @@
   overflow: auto;
 }
 
+.rounded-image {
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  /* transition: box-shadow 0.3s ease-in-out; */
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
 @media (max-width: 1300px) {
   .grid-container {
     grid-template-columns: 1fr;
