@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import CardPortfolio from "../Components/CardPortfolio";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/portfoliopage.css";
+import { Link } from "react-router-dom";
 
 // Images
 import TraumaSim from "../images/TraumaSim.png";
@@ -73,6 +74,12 @@ function PortfolioPage() {
               <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
                 YouTube channel
               </a>
+              <br />
+              <p>
+                <Link to="/traumasim-privacy-policy">
+                  TraumaSim Privacy Policy
+                </Link>
+              </p>
               <br />
             </div>
           }

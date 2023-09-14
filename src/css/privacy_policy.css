@@ -1,0 +1,41 @@
+.center-content {
+  text-align: center;
+}
+
+.markdown-content {
+  margin: auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.markdown-content h1,
+.markdown-content h2 {
+  color: #333;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-content p {
+  margin-bottom: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1em;
+  padding-left: 20px;
+}
+
+.markdown-content li {
+  line-height: 1.5;
+}
+
+.markdown-content a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
