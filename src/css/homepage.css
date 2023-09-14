@@ -46,15 +46,15 @@ h2 {
 
 .home-rounded-image {
   border-radius: 50%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
   margin-bottom: 20px;
 }
 
-.home-rounded-image:hover {
+/* .home-rounded-image:hover {
   border-radius: 50%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .hidden {
   display: visible;

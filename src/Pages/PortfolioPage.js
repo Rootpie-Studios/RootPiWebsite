@@ -15,7 +15,8 @@ import LundaPant from "../images/LundaPant.png";
 import Ropes from "../images/RootPiRopesAssetIconHQ.png";
 import StoryTime from "../images/StoryTime.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
-import DataMatrix from "../images/DataMatrix.png";
+// import DataMatrix from "../images/DataMatrix.png";
+import ai_decoder from "../images/logo_maybe.png";
 import GvHD from "../images/GvHD.jpg";
 import IconWithTooltip from "../Components/IconWithTooltip";
 
@@ -35,6 +36,8 @@ import {
   SiKeras,
   SiLaravel,
   SiNumpy,
+  SiVuedotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 
@@ -48,7 +51,7 @@ function PortfolioPage() {
         <div className="center-content">
           <h1>Portfolio</h1>
         </div>
-        {/* TraumaSim */}
+        {/* TraumaSim VR*/}
         <CardPortfolio
           textColor="black"
           width="60%"
@@ -64,12 +67,12 @@ function PortfolioPage() {
                 needs of the students. The work involves VR-centered programming
                 and design, discussions with experienced doctors at Umeå
                 University, 3D-modelling and animation in <b>Blender</b> as well
-                as sound handling and intuitive VR interface building. <br />
-                Have a look at the evolution of the program on the project's{" "}
-                <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
-                  YouTube channel
-                </a>
+                as sound handling and intuitive VR interface building.
               </p>
+              <br />
+              <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
+                YouTube channel
+              </a>
               <br />
             </div>
           }
@@ -95,6 +98,122 @@ function PortfolioPage() {
           }
           images={<img className="rounded-image" src={TraumaSim} alt="" />}
         />
+        {/* ai-decoder */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">ai-decoder.com</h2>
+              <p className="text">
+                Using AI tools and <b>Python</b> we developed a tool for
+                decoding images of 96-well plates used in biobanking and medtech
+                research. The original tool was built for the company Treat4Life
+                in order to improve efficiency and reduce costs for handling of
+                medical test tubes containing blood and tissue samples. You can
+                access it on our website which is built with <b>Vue</b> and{" "}
+                <b>Tailwind</b>.
+              </p>
+              <br />
+              <a href="https://ai-decoder">ai-decoder.com</a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
+              <IconWithTooltip
+                tooltip="Vue"
+                icon={<SiVuedotjs style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Tailwind"
+                icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
+              />
+            </h1>
+          }
+          images={<img className="rounded-image" src={ai_decoder} alt="" />}
+        />
+
+        {/* sagostund.nu */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">sagostund.nu</h2>
+              <p className="text">
+                Using <b>Python</b>, text-to-speech API:s via{" "}
+                <b>Microsoft Azure</b>, and state of the art AI text and image
+                generation via <b>OpenAI</b> we have built a tool for generating
+                a narrated story with AI created images from only a text input.
+                You can try generating your own story on our website{" "}
+              </p>
+              <br />
+              <a href="https://sagostund.nu/skapa-din-egen-saga">
+                sagostund.nu
+              </a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <IconWithTooltip
+                tooltip="OpenAI"
+                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Microsoft azure"
+                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Python"
+                icon={<SiPython style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Vue"
+                icon={<SiVuedotjs style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Tailwind"
+                icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
+              />
+            </h1>
+          }
+          images={<img className="rounded-image" src={StoryTime} alt="" />}
+        />
+
+        {/* Ropes */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">RootPi Ropes</h2>
+              <p className="text">
+                RootPi Ropes is a toolkit for easily integrating ropes and tubes
+                in a <b>Unity</b> based 3D environment. It is built with Unity,
+                code for the physics simulations written in <b>C#</b> and it is
+                available as a purchasable asset on the Unity Asset Store.{" "}
+              </p>
+              <br />
+              <a href="https://assetstore.unity.com/packages/tools/physics/rootpi-ropes-177018">
+                RootPi Ropes
+              </a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
+              <IconWithTooltip
+                tooltip="C#"
+                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
+              />
+            </h1>
+          }
+          images={<img className="rounded-image" src={Ropes} alt="" />}
+        />
 
         {/* instapply */}
         <CardPortfolio
@@ -102,19 +221,19 @@ function PortfolioPage() {
           width="60%"
           children={
             <div>
-              <h2 className="text">instapply.se, AI cover letters</h2>
+              <h2 className="text">instapply.se</h2>
               <p className="text">
-                With the use of the recent advances in NLP in AI we have built a
-                platform for generating a personal cover letter based on
+                A platform for generating a personal cover letter based on
                 inputting only your CV and the ad for the position you are
-                applying for. It is completely free and in a matter of seconds
-                you can have your next cover letter written in front of you with
-                the help of our algorithms. The application is written in{" "}
-                <b>React</b> (with <b>JavaScript</b> and <b>Python</b>),
-                database handling via <b>Firebase</b> and is implementing the
-                GPT-3 API from <b>OpenAI</b>. Available on{" "}
-                <a href="https://instapply.se">instapply.se</a>.
+                applying for. Using state of the art AI language models and a
+                clean interface you can get your cover letter written in seconds
+                completely free. The application is written in <b>React</b>{" "}
+                (with <b>JavaScript</b> and <b>Python</b>), database handling
+                via <b>Firebase</b> and is implementing LLM API:s from{" "}
+                <b>OpenAI</b>.
               </p>
+              <br />
+              <a href="https://instapply.se">instapply.se</a>.
               <br />
             </div>
           }
@@ -141,99 +260,6 @@ function PortfolioPage() {
           }
           images={<img className="rounded-image" src={Instapply} alt="" />}
         />
-
-        {/* StoryTime */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">RootPi Storytime</h2>
-              <p className="text">
-                Using <b>Python</b>, text-to-speech API:s via{" "}
-                <b>Microsoft Azure</b>, and state of the art AI text and image
-                generation via <b>OpenAI</b> we have built a tool for generating
-                a narrated story with AI created images from only a text input.
-                Sample stories can be found on our website{" "}
-                <a href="https://sagostund.nu/skapa-din-egen-saga">
-                  Sagostund.nu
-                </a>
-                .
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="OpenAI"
-                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Microsoft azure"
-                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
-              />
-            </h1>
-          }
-          images={<img className="rounded-image" src={StoryTime} alt="" />}
-        />
-
-        {/* Datamatrix */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">
-                DatamatrixDecoder: Image analysis tool for datamatrices
-              </h2>
-              <p className="text">
-                Using image analysis and <b>Python</b> we developed a tool for
-                decoding images containing several small datamatrices (compact
-                QR-codes). The tool was built for the company Treat4Life in
-                order to improve efficiency and reduce costs for handling of
-                medical test tubes containing blood and tissue samples.{" "}
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-            </h1>
-          }
-          images={<img className="rounded-image" src={DataMatrix} alt="" />}
-        />
-
-        {/* Ropes */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">RootPi Ropes</h2>
-              <p className="text">
-                RootPi Ropes is a toolkit for easily integrating ropes and tubes
-                in a <b>Unity</b> based 3D environment. It is built with Unity,
-                code for the physics simulations written in <b>C#</b> and it is
-                available as a purchasable asset on the Unity Asset Store.{" "}
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
-              <IconWithTooltip
-                tooltip="C#"
-                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
-              />
-            </h1>
-          }
-          images={<img className="rounded-image" src={Ropes} alt="" />}
-        />
-
         {/* TimeTracker */}
         <CardPortfolio
           textColor="black"
