@@ -7,22 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+  background: linear-gradient(180deg, #eeeeee 0%, #aaaaaa 100%);
   width: auto;
 }
-
-/* .App-storytime {
-  font-family: "Quicksand", sans-serif;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(180deg, #75005b 0%, #010033 100%);
-  width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-} */
 
 .header-image-container {
   width: 300px;
@@ -74,8 +61,8 @@
 
 .rounded-image {
   border-radius: 50%;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  /* transition: box-shadow 0.3s ease-in-out; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  background-color: white;
   margin-bottom: 20px;
   max-width: 100%;
 }

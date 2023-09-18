@@ -4,7 +4,7 @@ import IconWithTooltip from "./IconWithTooltip";
 const IconArray = ({ icons }) => (
   <h1>
     {icons.map((icon, index) => (
-      <IconWithTooltip key={index} {...icon} />
+      <IconWithTooltip key={index} {...icon} style={{ marginRight: "10px" }} />
     ))}
   </h1>
 );

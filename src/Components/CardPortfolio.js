@@ -6,7 +6,7 @@ function CardPortfolio(props) {
     <div
       className="cardportfolio"
       style={{
-        backgroundColor: "transparent",
+        backgroundColor: "white",
         color: props.textColor,
         width: props.width,
       }}

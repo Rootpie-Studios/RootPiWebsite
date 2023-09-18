@@ -40,6 +40,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
+// import IconArray from "../Components/IconArray";
 
 function PortfolioPage() {
   return (
@@ -48,9 +49,8 @@ function PortfolioPage() {
         subtitle={<img className="header-image-container" src={logo} alt="" />}
       />
       <main>
-        <div className="center-content">
-          <h1>Portfolio</h1>
-        </div>
+        <h1 className="center-content">Portfolio</h1>
+
         {/* TraumaSim VR*/}
         <CardPortfolio
           textColor="black"

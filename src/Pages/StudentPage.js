@@ -24,7 +24,7 @@ function StudentPage() {
       />
       <main>
         <h1 className="center-content">Student Projects</h1>
-        <Card color="transparent" textColor="black" width="80%">
+        <Card color="white" textColor="black" width="80%">
           <div className="student-grid">
             <div className="student-description">
               <h1>Database Evaluation</h1>

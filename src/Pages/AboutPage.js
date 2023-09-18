@@ -21,12 +21,14 @@ function AboutPage() {
               src={Kim}
               alt=""
             />
-            <h2 style={{ marginTop: "50px" }}>Kim Haapamäki</h2>
-            <p>
-              M.Sc. Computer Science Engineering, LTH, Sweden. A passion for
-              game development and Machine Learning. Developing Unity games,
-              consulting expertise in VR/ML, mobile and web app development.
-            </p>
+            <div className="card">
+              <h2>Kim Haapamäki</h2>
+              <p>
+                M.Sc. Computer Science Engineering, LTH, Sweden. A passion for
+                game development and Machine Learning. Developing Unity games,
+                consulting expertise in VR/ML, mobile and web app development.
+              </p>
+            </div>
           </div>
           <div className="about-container">
             <img
@@ -34,12 +36,14 @@ function AboutPage() {
               src={Jesper}
               alt=""
             />
-            <h2 style={{ marginTop: "50px" }}>Jesper Laurell</h2>
-            <p>
-              M.Sc. Electrical Engineering, LTH, Sweden. Interested in VR, game
-              development and design, Unity, Generative AI, Python, image
-              analysis, UI, and UX.
-            </p>
+            <div className="card">
+              <h2>Jesper Laurell</h2>
+              <p>
+                M.Sc. Electrical Engineering, LTH, Sweden. Interested in VR,
+                game development and design, Unity, Generative AI, Python, image
+                analysis, UI, and UX.
+              </p>
+            </div>
           </div>
         </div>
       </main>

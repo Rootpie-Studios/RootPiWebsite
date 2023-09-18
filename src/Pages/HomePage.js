@@ -1,28 +1,27 @@
 import React from "react";
+import "../css/homepage.css";
+
+// Components
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Card from "../Components/Card";
-import logo from "../images/LogoTextTransBlack.png";
-import "../css/homepage.css";
-// import IconWithTooltip from "../Components/IconWithTooltip";
 import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
-import CardProject from "../Components/CardProject"; // Import ProjectCard
-import IconArray from "../Components/IconArray"; // Import TechStack
+import CardProject from "../Components/CardProject";
+import IconArray from "../Components/IconArray";
 
 // images
+import RootPiText from "../images/LogoTextTransBlack.png";
 import VRDude from "../images/VRDude.png";
 import Coder from "../images/Coder.png";
 import AI from "../images/AI.png";
 
 // Project images
 import TraumaSim from "../images/traumasim_logo.png";
-// import Instapply from "../images/Instapply.png";
 import sago_logo from "../images/sago_logo.png";
-// import ropes from "../images/RootPiRopesAssetIconHQ.png";
 import ai_decoder from "../images/ai_decoder.png";
 
-// icons
+// Icons
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 import {
   FaReact,
@@ -31,7 +30,6 @@ import {
   FaVuejs,
   FaJava,
   FaPython,
-  // FaOpenAi,
 } from "react-icons/fa";
 
 import {
@@ -70,7 +68,6 @@ function HomePage() {
         { tooltip: "VueJS", icon: <FaVuejs /> },
         { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
         { tooltip: "Python", icon: <FaPython /> },
-        // ... other icons
       ],
       description:
         "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
@@ -83,7 +80,6 @@ function HomePage() {
         { tooltip: "VueJS", icon: <FaVuejs /> },
         { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
         { tooltip: "Python", icon: <FaPython /> },
-        // ... other icons
       ],
       description:
         "A website for effortless AI generation of personalized cover letter, tailored to both your own skills and for the work you are applying to.",
@@ -101,8 +97,6 @@ function HomePage() {
     { tooltip: "JavaScript", icon: <SiJavascript /> },
     { tooltip: "Dart", icon: <SiDart /> },
     { tooltip: "Css3", icon: <SiCss3 /> },
-
-    // ... other icons
   ];
 
   const frameworksIcons = [
@@ -116,14 +110,14 @@ function HomePage() {
     { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
     { tooltip: "OpenAI", icon: <SiOpenai /> },
     { tooltip: "Firebase", icon: <SiFirebase /> },
-
-    // ... other icons
   ];
 
   return (
     <div className="App">
       <Header
-        subtitle={<img className="header-image-container" src={logo} alt="" />}
+        subtitle={
+          <img className="header-image-container" src={RootPiText} alt="" />
+        }
       />
       <main style={{ marginBottom: "10vw" }}>
         <div className="home-grid-container-header">
@@ -243,9 +237,8 @@ function HomePage() {
                 <p>
                   We work with high level frameworks and programs to deliver at
                   a high speed and efficiency. From 3D modelling and game
-                  engines to web- and app development software, we are confident
-                  users of a variety of powerful frameworks and programs and
-                  that allow us to get work done faster at a high level
+                  engines to web- and app development software, we utilize state
+                  of the art technologies to create the best possible products.
                 </p>
                 <div className="">
                   <IconArray icons={frameworksIcons} />

@@ -1,10 +1,15 @@
 import React from "react";
 import Tooltip from "@mui/material/Tooltip";
 
-const IconWithTooltip = React.forwardRef(function IconWithTooltip(props, ref) {
+const IconWithTooltip = React.forwardRef(function IconWithTooltip(
+  { tooltip, icon, style },
+  ref
+) {
   return (
-    <Tooltip title={props.tooltip} arrow>
-      <span ref={ref}>{props.icon}</span>
+    <Tooltip title={tooltip} arrow>
+      <span ref={ref} style={style}>
+        {icon}
+      </span>
     </Tooltip>
   );
 });
