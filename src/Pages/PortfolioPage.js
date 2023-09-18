@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import CardPortfolio from "../Components/CardPortfolio";
 import logo from "../images/LogoTextTransBlack.png";
-import "../css/portfoliopage.css";
 import { Link } from "react-router-dom";
 
 // Images
@@ -17,7 +16,7 @@ import Ropes from "../images/RootPiRopesAssetIconHQ.png";
 import SagoLogo from "../images/sago_logo.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
 // import DataMatrix from "../images/DataMatrix.png";
-import ai_decoder from "../images/logo_maybe.png";
+import ai_decoder from "../images/ai_decoder.png";
 import GvHD from "../images/GvHD.jpg";
 import IconWithTooltip from "../Components/IconWithTooltip";
 

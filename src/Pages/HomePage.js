@@ -4,21 +4,26 @@ import Footer from "../Components/Footer";
 import Card from "../Components/Card";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/homepage.css";
-import IconWithTooltip from "../Components/IconWithTooltip";
+// import IconWithTooltip from "../Components/IconWithTooltip";
 import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
+import CardProject from "../Components/CardProject"; // Import ProjectCard
+import IconArray from "../Components/IconArray"; // Import TechStack
 
 // images
 import VRDude from "../images/VRDude.png";
-import TraumaSim from "../images/traumasim_logo.png";
-// import ropes from "../images/RootPiRopesAssetIconHQ.png";
-import sago_logo from "../images/sago_logo.png";
-import Instapply from "../images/Instapply.png";
 import Coder from "../images/Coder.png";
 import AI from "../images/AI.png";
 
+// Project images
+import TraumaSim from "../images/traumasim_logo.png";
+// import Instapply from "../images/Instapply.png";
+import sago_logo from "../images/sago_logo.png";
+// import ropes from "../images/RootPiRopesAssetIconHQ.png";
+import ai_decoder from "../images/ai_decoder.png";
+
 // icons
-import { BsUnity } from "react-icons/bs";
+import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 import {
   FaReact,
   FaPhp,
@@ -26,6 +31,7 @@ import {
   FaVuejs,
   FaJava,
   FaPython,
+  // FaOpenAi,
 } from "react-icons/fa";
 
 import {
@@ -38,9 +44,82 @@ import {
   SiFlutter,
   SiLaravel,
   SiTailwindcss,
+  SiOpenai,
+  SiFirebase,
+  SiMeta,
 } from "react-icons/si";
 
 function HomePage() {
+  const projectData = [
+    {
+      title: "TraumaSim VR",
+      icons: [
+        { tooltip: "VR", icon: <BsBadgeVrFill /> },
+        { tooltip: "Unity", icon: <BsUnity /> },
+        { tooltip: "Blender", icon: <SiBlender /> },
+        { tooltip: "C#", icon: <SiCsharp /> },
+      ],
+      description:
+        "A VR education software for practicing realistic trauma related scenarios in a medical environment. Built in collaboration with Umeå University.",
+      imgSrc: TraumaSim,
+      youtubeLink: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
+    },
+    {
+      title: "sagostund.nu",
+      icons: [
+        { tooltip: "VueJS", icon: <FaVuejs /> },
+        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+        { tooltip: "Python", icon: <FaPython /> },
+        // ... other icons
+      ],
+      description:
+        "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
+      imgSrc: sago_logo,
+      youtubeLink: "sagostund.nu",
+    },
+    {
+      title: "ai-decoder.com",
+      icons: [
+        { tooltip: "VueJS", icon: <FaVuejs /> },
+        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+        { tooltip: "Python", icon: <FaPython /> },
+        // ... other icons
+      ],
+      description:
+        "A website for effortless AI generation of personalized cover letter, tailored to both your own skills and for the work you are applying to.",
+      imgSrc: ai_decoder,
+      youtubeLink: "https://instapply.se",
+    },
+  ];
+
+  const techStackIcons = [
+    { tooltip: "C#", icon: <SiCsharp /> },
+    { tooltip: "Python", icon: <SiPython /> },
+    { tooltip: "Java", icon: <FaJava /> },
+    { tooltip: "PHP", icon: <FaPhp /> },
+    { tooltip: "Html5", icon: <FaHtml5 /> },
+    { tooltip: "JavaScript", icon: <SiJavascript /> },
+    { tooltip: "Dart", icon: <SiDart /> },
+    { tooltip: "Css3", icon: <SiCss3 /> },
+
+    // ... other icons
+  ];
+
+  const frameworksIcons = [
+    { tooltip: "Unity", icon: <BsUnity /> },
+    { tooltip: "Blender", icon: <SiBlender /> },
+    { tooltip: "Meta", icon: <SiMeta /> },
+    { tooltip: "Flutter", icon: <SiFlutter /> },
+    { tooltip: "Laravel", icon: <SiLaravel /> },
+    { tooltip: "React", icon: <FaReact /> },
+    { tooltip: "VueJS", icon: <FaVuejs /> },
+    { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+    { tooltip: "OpenAI", icon: <SiOpenai /> },
+    { tooltip: "Firebase", icon: <SiFirebase /> },
+
+    // ... other icons
+  ];
+
   return (
     <div className="App">
       <Header
@@ -68,12 +147,14 @@ function HomePage() {
             </div>
             <p style={{ marginTop: "60px", fontSize: "18px" }}>
               Welcome to RootPi, we provide solutions for Virtual Reality
-              applications, mobile apps, and consulting services. Our small team
-              of experienced developers will work with you to create a custom
-              solution that is tailored to your specific needs and goals.
+              applications, mobile apps and websites, and consulting services.
+              Our small team of experienced developers will work with you to
+              create a custom solution that is tailored to your specific needs
+              and goals.
             </p>
             <br />
-            <p>
+            <p style={{ fontSize: "18px" }}>
+              {" "}
               Do you have a project in mind or just want to know more about our
               business? Contact us and let us help you bring your ideas to life.
             </p>
@@ -108,405 +189,51 @@ function HomePage() {
         </div>
 
         <div className="grid-container">
-          <Card
-            color="rgba(0, 0, 0, 0)"
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  className="text"
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                  }}
-                >
-                  TraumaSim VR
-                </h2>
-                <div className="home-grid-container-inner">
-                  <div style={{ gridColumn: "1 / span 2" }}>
-                    <IconWithTooltip
-                      tooltip="Unity"
-                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="Blender"
-                      icon={
-                        <SiBlender
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <IconWithTooltip
-                      tooltip="C#"
-                      icon={
-                        <SiCsharp
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <p className="text">
-                      A VR education software for practicing realistic trauma
-                      related scenarios in a medical environment. Built in
-                      collaboration with Umeå University.
-                    </p>
-                    <br />
-                    <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
-                      YouTube channel
-                    </a>
-                  </div>
-                  <img
-                    className="home-card-image-container rounded-image"
-                    src={TraumaSim}
-                    alt=""
-                  />
-                </div>
-              </div>
-            }
-          />
-          {/* <Card
-            color="rgba(0, 0, 0, 0)"
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  className="text"
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                  }}
-                >
-                  Ropes - Unity asset store
-                </h2>
-                <div className="home-grid-container-inner">
-                  <div style={{ gridColumn: "1 / span 2" }}>
-                    <IconWithTooltip
-                      tooltip="Unity"
-                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="C#"
-                      icon={
-                        <SiCsharp
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <p>
-                      We are developing and maintaining an asset for Unity which
-                      simulates the physics of a rope. A short demo video can be
-                      found here:{" "}
-                      <a href="https://www.youtube.com/watch?v=ZVZiVGy22QA">
-                        RootPi Ropes video
-                      </a>
-                    </p>
-                  </div>
-                  <img
-                    className="home-card-image-container rounded-image"
-                    src={ropes}
-                    alt=""
-                  />
-                </div>
-              </div>
-            }
-          /> */}
-          <Card
-            color="rgba(0, 0, 0, 0)"
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  className="text"
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                  }}
-                >
-                  sagostund.nu
-                </h2>
-                <div className="home-grid-container-inner">
-                  <div style={{ gridColumn: "1 / span 2" }}>
-                    {/* <IconWithTooltip
-                      tooltip="Unity"
-                      icon={<BsUnity style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="C#"
-                      icon={
-                        <SiCsharp
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    /> */}
-                    <IconWithTooltip
-                      tooltip="VueJS"
-                      icon={<FaVuejs style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="TailwindCSS"
-                      icon={
-                        <SiTailwindcss
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <IconWithTooltip
-                      tooltip="Python"
-                      icon={
-                        <FaPython
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <p>
-                      A website for generating magical, unique stories and fairy
-                      tales for your children, your friends or yourself!
-                    </p>
-                    <br />
-                    <a href="sagostund.nu">sagostund.nu</a>
-                  </div>
-                  <img
-                    className="home-card-image-container rounded-image"
-                    src={sago_logo}
-                    alt=""
-                  />
-                </div>
-              </div>
-            }
-          />
-          <Card
-            color="rgba(0, 0, 0, 0)"
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  className="text"
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                  }}
-                >
-                  ai-decoder.com
-                </h2>
-                <div className="home-grid-container-inner">
-                  <div style={{ gridColumn: "1 / span 2" }}>
-                    <IconWithTooltip
-                      tooltip="VueJS"
-                      icon={<FaVuejs style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="TailwindCSS"
-                      icon={
-                        <SiTailwindcss
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <IconWithTooltip
-                      tooltip="Python"
-                      icon={
-                        <FaPython
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-
-                    <p>
-                      A website for effortless AI generation of personalized
-                      cover letter, tailored to both your own skills and for the
-                      work you are applying to.
-                    </p>
-                    <br />
-                    <a href="https://instapply.se">instapply.se</a>
-                  </div>
-                  <img
-                    className="home-card-image-container rounded-image"
-                    src={Instapply}
-                    alt=""
-                  />
-                </div>
-              </div>
-            }
-          />
-          {/* <Card
-            color="rgba(0, 0, 0, 0)"
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  className="text"
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                  }}
-                >
-                  Instapply - AI generated cover letters
-                </h2>
-                <div className="home-grid-container-inner">
-                  <div style={{ gridColumn: "1 / span 2" }}>
-                    <IconWithTooltip
-                      tooltip="React"
-                      icon={<FaReact style={{ marginBottom: "10px" }} />}
-                    />
-                    <IconWithTooltip
-                      tooltip="Python"
-                      icon={
-                        <SiPython
-                          style={{ marginBottom: "10px", marginLeft: "10px" }}
-                        />
-                      }
-                    />
-                    <p>
-                      A website for effortless AI generation of personalized
-                      cover letter, tailored to both your own skills and for the
-                      work you are applying to.
-                    </p>
-                    <br />
-                    <a href="https://instapply.se">instapply.se</a>
-                  </div>
-                  <img
-                    className="home-card-image-container rounded-image"
-                    src={Instapply}
-                    alt=""
-                  />
-                </div>
-              </div>
-            }
-          /> */}
+          {projectData.map((project, index) => (
+            <Card key={index} textColor="black">
+              <CardProject {...project} />
+            </Card>
+          ))}
         </div>
 
         <div className="grid-container">
-          <div className="home-title">
-            <h1>Our tech stack</h1>
-          </div>
-        </div>
-
-        <div className="grid-container2">
-          <h1>
-            <IconWithTooltip
-              tooltip="C#"
-              icon={<SiCsharp style={{ marginBottom: "10px" }} />}
-            />
-            <IconWithTooltip
-              tooltip="Python"
-              icon={
-                <SiPython
-                  style={{ marginBottom: "10px", marginLeft: "10px" }}
-                />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Java"
-              icon={
-                <FaJava style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="PHP"
-              icon={
-                <FaPhp style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Html5"
-              icon={
-                <FaHtml5 style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="JavaScript"
-              icon={
-                <SiJavascript
-                  style={{ marginBottom: "10px", marginLeft: "10px" }}
-                />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Dart"
-              icon={
-                <SiDart style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Css3"
-              icon={
-                <SiCss3 style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-          </h1>
-          <h1>
-            <IconWithTooltip
-              tooltip="Blender"
-              icon={<SiBlender style={{ marginBottom: "10px" }} />}
-            />
-            <IconWithTooltip
-              tooltip="Unity"
-              icon={
-                <BsUnity style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Flutter"
-              icon={
-                <SiFlutter
-                  style={{ marginBottom: "10px", marginLeft: "10px" }}
-                />
-              }
-            />
-            <IconWithTooltip
-              tooltip="Laravel"
-              icon={
-                <SiLaravel
-                  style={{ marginBottom: "10px", marginLeft: "10px" }}
-                />
-              }
-            />
-            <IconWithTooltip
-              tooltip="VueJS"
-              icon={
-                <FaVuejs style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-            <IconWithTooltip
-              tooltip="React"
-              icon={
-                <FaReact style={{ marginBottom: "10px", marginLeft: "10px" }} />
-              }
-            />
-          </h1>
+          <h1>Our tech stack</h1>
         </div>
 
         <div className="grid-container2">
           <Card
-            color="rgba(0, 0, 0, 0)"
             textColor="black"
             children={
               <div>
-                <h2
-                  style={{
-                    marginBottom: "10px",
-                    overflow: "visible",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Coding languages
-                </h2>
-                <p>
-                  We have competence and years of experience in many coding
-                  languages each with their own benefit to allow us to be
-                  flexible and deliver products that meet any client
-                  requirements
-                </p>
+                <div>
+                  <h2
+                    style={{
+                      marginBottom: "10px",
+                      overflow: "visible",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    Coding languages
+                  </h2>
+                  <p>
+                    We have competence and years of experience in many coding
+                    languages each with their own benefit to allow us to be
+                    flexible and deliver products that meet your needs.
+                  </p>
+                </div>
+                <div className="">
+                  <IconArray icons={techStackIcons} />
+                </div>
               </div>
             }
           />
+
           <Card
-            color="rgba(0, 0, 0, 0)"
             textColor="black"
             children={
               <div>
                 <h2
                   style={{
-                    marginBottom: "10px",
                     overflow: "visible",
                     whiteSpace: "nowrap",
                   }}
@@ -514,15 +241,20 @@ function HomePage() {
                   Frameworks and programs
                 </h2>
                 <p>
-                  From 3D modelling and game engines to web- and app development
-                  software, we are confident users of a variety of powerful
-                  frameworks and programs and that allow us to get work done
-                  faster at a high level
+                  We work with high level frameworks and programs to deliver at
+                  a high speed and efficiency. From 3D modelling and game
+                  engines to web- and app development software, we are confident
+                  users of a variety of powerful frameworks and programs and
+                  that allow us to get work done faster at a high level
                 </p>
+                <div className="">
+                  <IconArray icons={frameworksIcons} />
+                </div>
               </div>
             }
           />
         </div>
+
         <div>
           <CardContact
             textColor="black"
