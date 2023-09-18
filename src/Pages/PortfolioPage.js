@@ -16,9 +16,11 @@ import Ropes from "../images/RootPiRopesAssetIconHQ.png";
 import SagoLogo from "../images/sago_logo.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
 // import DataMatrix from "../images/DataMatrix.png";
-import ai_decoder from "../images/ai_decoder.png";
+// import ai_decoder from "../images/ai_decoder.png";
 import GvHD from "../images/GvHD.jpg";
 import IconWithTooltip from "../Components/IconWithTooltip";
+import DecoderOwl from "../images/decoder_owl.png";
+import KawAI from "../images/KawAI.png";
 
 import { FaReact } from "react-icons/fa";
 import {
@@ -137,7 +139,7 @@ function PortfolioPage() {
               />
             </h1>
           }
-          images={<img className="rounded-image" src={ai_decoder} alt="" />}
+          images={<img className="rounded-image" src={DecoderOwl} alt="" />}
         />
 
         {/* sagostund.nu */}
@@ -150,9 +152,10 @@ function PortfolioPage() {
               <p className="text">
                 Using <b>Python</b>, text-to-speech API:s via{" "}
                 <b>Microsoft Azure</b>, and state of the art AI text and image
-                generation via <b>OpenAI</b> we have built a tool for generating
-                a narrated story with AI created images from only a text input.
-                You can try generating your own story on our website{" "}
+                generation via <b>OpenAI</b> we have built a website where you
+                can generate a narrated, completely unique story from only a
+                text input. You can try creating your own story now on our
+                website!{" "}
               </p>
               <br />
               <a href="https://sagostund.nu/skapa-din-egen-saga">
@@ -220,7 +223,35 @@ function PortfolioPage() {
           }
           images={<img className="rounded-image" src={Ropes} alt="" />}
         />
-
+        {/* Kaw AI */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">KawAI</h2>
+              <p className="text">
+                KawAI is a youtube channel where we post videos showing off an
+                AI agent's learning process in different environments in Unity
+                as it implements Reinforcement Learning algorithms. The
+                simulation is built with <b>Unity</b> and <b>C#</b>.
+              </p>
+              <br />
+              <a href="https://www.youtube.com/@KawAI-ys2my">Kaw AI</a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
+              <IconWithTooltip
+                tooltip="C#"
+                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
+              />
+            </h1>
+          }
+          images={<img className="rounded-image" src={KawAI} alt="" />}
+        />
         {/* instapply */}
         <CardPortfolio
           textColor="black"
