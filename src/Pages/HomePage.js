@@ -47,6 +47,8 @@ import {
   SiMeta,
 } from "react-icons/si";
 
+import { FiMail, FiPhone } from "react-icons/fi";
+
 function HomePage() {
   const projectData = [
     {
@@ -60,7 +62,8 @@ function HomePage() {
       description:
         "A VR education software for practicing realistic trauma related scenarios in a medical environment. Built in collaboration with Umeå University.",
       imgSrc: TraumaSim,
-      youtubeLink: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
+      link: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
+      linkText: "Youtube Channel",
     },
     {
       title: "sagostund.nu",
@@ -72,7 +75,8 @@ function HomePage() {
       description:
         "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
       imgSrc: sago_logo,
-      youtubeLink: "sagostund.nu",
+      link: "https://sagostund.nu",
+      linkText: "sagosund.nu",
     },
     {
       title: "ai-decoder.com",
@@ -84,7 +88,8 @@ function HomePage() {
       description:
         "A website for effortless AI generation of personalized cover letter, tailored to both your own skills and for the work you are applying to.",
       imgSrc: ai_decoder,
-      youtubeLink: "https://instapply.se",
+      link: "https://ai-decoder.com",
+      linkText: "ai-decoder.com",
     },
   ];
 
@@ -259,23 +264,52 @@ function HomePage() {
                   ideas!
                 </p>
                 <br />
-                <span style={{ fontWeight: "bold" }}>
-                  RootPi AB, Stralsundsvägen 96
-                </span>
+                <span style={{ fontWeight: "bold" }}>RootPi AB</span>
+                <br />
+                <span style={{ fontWeight: "bold" }}>Stralsundsvägen 96</span>
                 <br />
                 <span style={{ fontWeight: "bold" }}>224 79, Lund</span>
                 <br />
                 <br />
-                <div>
-                  <span style={{ fontWeight: "bold" }}>
-                    {/* <FiMail style={{ marginTop: "5px" }} /> */}
-                    <a
-                      href="mailto:info@rootpi.xyz"
-                      style={{ color: "black", textDecoration: "none" }}
-                    >
-                      info@rootpi.xyz
-                    </a>
-                  </span>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "bold",
+                  }}
+                >
+                  <FiMail style={{}} />
+                  <a
+                    href="mailto:info@rootpi.xyz"
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    info@rootpi.xyz
+                  </a>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "bold",
+                  }}
+                >
+                  <FiPhone style={{}} />
+                  <a
+                    href="tel:+46708889536"
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    +46 70 888 95 36
+                  </a>
+                  <br />
+                  <br />
                 </div>
               </div>
             }

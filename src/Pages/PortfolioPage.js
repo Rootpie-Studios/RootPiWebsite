@@ -114,11 +114,10 @@ function PortfolioPage() {
               <p className="text">
                 Using AI tools and <b>Python</b> we developed a tool for
                 decoding images of 96-well plates used in biobanking and medtech
-                research. The original tool was built for the company Treat4Life
-                in order to improve efficiency and reduce costs for handling of
-                medical test tubes containing blood and tissue samples. You can
-                access it on our website which is built with <b>Vue</b> and{" "}
-                <b>Tailwind</b>.
+                research. The tool was built for the company Treat4Life in order
+                to improve efficiency and reduce costs for handling medical test
+                tubes containing blood and tissue samples. You can access it on
+                our website which is built with <b>Vue</b> and <b>Tailwind</b>.
               </p>
               <br />
               <a href="https://ai-decoder.com">ai-decoder.com</a>
@@ -183,7 +182,11 @@ function PortfolioPage() {
               />
             </h1>
           }
-          images={<img className="rounded-image" src={SagoLogo} alt="" />}
+          images={
+            <a href="https://sagostund.nu/">
+              <img className="rounded-image" src={SagoLogo} alt="" />
+            </a>
+          }
         />
 
         {/* Ropes */}
@@ -200,7 +203,7 @@ function PortfolioPage() {
                 available as a purchasable asset on the Unity Asset Store.{" "}
               </p>
               <br />
-              <a href="https://assetstore.unity.com/packages/tools/physics/rootpi-ropes-177018">
+              <a href="https://assetstore.unity.com/packages/tools/physics/rootpi-ropes-248288">
                 RootPi Ropes
               </a>
               <br />
