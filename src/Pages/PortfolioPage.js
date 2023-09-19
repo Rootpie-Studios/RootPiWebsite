@@ -28,7 +28,6 @@ import {
   SiDart,
   SiBlender,
   SiFirebase,
-  SiJavascript,
   SiMicrosoftazure,
   SiPython,
   SiOpenai,
@@ -142,6 +141,10 @@ function PortfolioPage() {
                 tooltip="Tailwind"
                 icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
               />
+              <IconWithTooltip
+                tooltip="Firebase"
+                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
+              />
             </h1>
           }
           images={<img className="rounded-image" src={DecoderOwl} alt="" />}
@@ -171,15 +174,7 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="OpenAI" icon={<SiOpenai />} />
-              <IconWithTooltip
-                tooltip="Microsoft azure"
-                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Python"
-                icon={<SiPython style={{ marginLeft: "10px" }} />}
-              />
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
               <IconWithTooltip
                 tooltip="Vue"
                 icon={<SiVuedotjs style={{ marginLeft: "10px" }} />}
@@ -187,6 +182,18 @@ function PortfolioPage() {
               <IconWithTooltip
                 tooltip="Tailwind"
                 icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Firebase"
+                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="OpenAI"
+                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
+              />
+              <IconWithTooltip
+                tooltip="Microsoft azure"
+                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
               />
             </h1>
           }
@@ -281,15 +288,12 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="React" icon={<FaReact />} />
+              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
               <IconWithTooltip
-                tooltip="JavaScript"
-                icon={<SiJavascript style={{ marginLeft: "10px" }} />}
+                tooltip="React"
+                icon={<FaReact style={{ marginLeft: "10px" }} />}
               />
-              <IconWithTooltip
-                tooltip="Python"
-                icon={<SiPython style={{ marginLeft: "10px" }} />}
-              />
+
               <IconWithTooltip
                 tooltip="Firebase"
                 icon={<SiFirebase style={{ marginLeft: "10px" }} />}
