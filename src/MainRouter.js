@@ -5,7 +5,7 @@ import NotFoundPage from "./Pages/NotFoundPage";
 import PortfolioPage from "./Pages/PortfolioPage";
 import StudentPage from "./Pages/StudentPage";
 import AboutPage from "./Pages/AboutPage";
-import ContactPage from "./Pages/ContactPage";
+// import ContactPage from "./PagesOld/ContactPage";
 import TraumaSimPrivacyPolicyPage from "./Pages/TraumaSimPrivacyPolicyPage";
 
 function MainRouter(props) {
@@ -16,7 +16,7 @@ function MainRouter(props) {
         <Route exact path="/portfolio" element={<PortfolioPage />} />
         <Route exact path="/students" element={<StudentPage />} />
         <Route exact path="/about" element={<AboutPage />} />
-        <Route exact path="/contact" element={<ContactPage />} />
+        {/* <Route exact path="/contact" element={<ContactPage />} /> */}
         <Route
           exact
           path="/traumasim-privacy-policy"

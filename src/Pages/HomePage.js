@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/homepage.css";
+import { projectData, techStackIcons, frameworksIcons } from "../Constants"; // import constants
 
 // Components
 import Header from "../Components/Header";
@@ -16,108 +17,9 @@ import VRDude from "../images/VRDude.png";
 import Coder from "../images/Coder.png";
 import AI from "../images/AI.png";
 
-// Project images
-import TraumaSim from "../images/traumasim_logo.png";
-import sago_logo from "../images/sago_logo.png";
-import ai_decoder from "../images/decoder_owl.png";
-
-// Icons
-import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
-import {
-  FaReact,
-  FaPhp,
-  FaHtml5,
-  FaVuejs,
-  FaJava,
-  FaPython,
-} from "react-icons/fa";
-
-import {
-  SiCsharp,
-  SiBlender,
-  SiJavascript,
-  SiDart,
-  SiPython,
-  SiCss3,
-  SiFlutter,
-  SiLaravel,
-  SiTailwindcss,
-  SiOpenai,
-  SiFirebase,
-  SiMeta,
-} from "react-icons/si";
-
 import { FiMail, FiPhone } from "react-icons/fi";
 
 function HomePage() {
-  const projectData = [
-    {
-      title: "TraumaSim VR",
-      icons: [
-        { tooltip: "VR", icon: <BsBadgeVrFill /> },
-        { tooltip: "Meta", icon: <SiMeta /> },
-        { tooltip: "Unity", icon: <BsUnity /> },
-        { tooltip: "Blender", icon: <SiBlender /> },
-        { tooltip: "C#", icon: <SiCsharp /> },
-      ],
-      description:
-        "A VR education software for practicing realistic trauma related scenarios in a medical environment. Built in collaboration with Umeå University.",
-      imgSrc: TraumaSim,
-      link: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
-      linkText: "Youtube Channel",
-    },
-    {
-      title: "ai-decoder.com",
-      icons: [
-        { tooltip: "Python", icon: <FaPython /> },
-        { tooltip: "VueJS", icon: <FaVuejs /> },
-        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-      ],
-      description:
-        "An online solution for decoding images of 96-well plates and keeping track of biobanking samples.",
-      imgSrc: ai_decoder,
-      link: "https://ai-decoder.com",
-      linkText: "ai-decoder.com",
-    },
-    {
-      title: "sagostund.nu",
-      icons: [
-        { tooltip: "Python", icon: <FaPython /> },
-        { tooltip: "VueJS", icon: <FaVuejs /> },
-        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-      ],
-      description:
-        "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
-      imgSrc: sago_logo,
-      link: "https://sagostund.nu",
-      linkText: "sagostund.nu",
-    },
-  ];
-
-  const techStackIcons = [
-    { tooltip: "C#", icon: <SiCsharp /> },
-    { tooltip: "Python", icon: <SiPython /> },
-    { tooltip: "Java", icon: <FaJava /> },
-    { tooltip: "PHP", icon: <FaPhp /> },
-    { tooltip: "Html5", icon: <FaHtml5 /> },
-    { tooltip: "JavaScript", icon: <SiJavascript /> },
-    { tooltip: "Dart", icon: <SiDart /> },
-    { tooltip: "Css3", icon: <SiCss3 /> },
-  ];
-
-  const frameworksIcons = [
-    { tooltip: "Unity", icon: <BsUnity /> },
-    { tooltip: "Blender", icon: <SiBlender /> },
-    { tooltip: "Meta", icon: <SiMeta /> },
-    { tooltip: "Flutter", icon: <SiFlutter /> },
-    { tooltip: "Laravel", icon: <SiLaravel /> },
-    { tooltip: "React", icon: <FaReact /> },
-    { tooltip: "VueJS", icon: <FaVuejs /> },
-    { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-    { tooltip: "OpenAI", icon: <SiOpenai /> },
-    { tooltip: "Firebase", icon: <SiFirebase /> },
-  ];
-
   return (
     <div className="App">
       <Header
