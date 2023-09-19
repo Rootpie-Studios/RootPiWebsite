@@ -19,7 +19,7 @@ import AI from "../images/AI.png";
 // Project images
 import TraumaSim from "../images/traumasim_logo.png";
 import sago_logo from "../images/sago_logo.png";
-import ai_decoder from "../images/ai_decoder.png";
+import ai_decoder from "../images/decoder_owl.png";
 
 // Icons
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
@@ -55,6 +55,7 @@ function HomePage() {
       title: "TraumaSim VR",
       icons: [
         { tooltip: "VR", icon: <BsBadgeVrFill /> },
+        { tooltip: "Meta", icon: <SiMeta /> },
         { tooltip: "Unity", icon: <BsUnity /> },
         { tooltip: "Blender", icon: <SiBlender /> },
         { tooltip: "C#", icon: <SiCsharp /> },
@@ -66,30 +67,30 @@ function HomePage() {
       linkText: "Youtube Channel",
     },
     {
-      title: "sagostund.nu",
+      title: "ai-decoder.com",
       icons: [
+        { tooltip: "Python", icon: <FaPython /> },
         { tooltip: "VueJS", icon: <FaVuejs /> },
         { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+      ],
+      description:
+        "An online solution for decoding images of 96-well plates and keeping track of biobanking samples.",
+      imgSrc: ai_decoder,
+      link: "https://ai-decoder.com",
+      linkText: "ai-decoder.com",
+    },
+    {
+      title: "sagostund.nu",
+      icons: [
         { tooltip: "Python", icon: <FaPython /> },
+        { tooltip: "VueJS", icon: <FaVuejs /> },
+        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
       ],
       description:
         "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
       imgSrc: sago_logo,
       link: "https://sagostund.nu",
-      linkText: "sagosund.nu",
-    },
-    {
-      title: "ai-decoder.com",
-      icons: [
-        { tooltip: "VueJS", icon: <FaVuejs /> },
-        { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-        { tooltip: "Python", icon: <FaPython /> },
-      ],
-      description:
-        "A website for effortless AI generation of personalized cover letter, tailored to both your own skills and for the work you are applying to.",
-      imgSrc: ai_decoder,
-      link: "https://ai-decoder.com",
-      linkText: "ai-decoder.com",
+      linkText: "sagostund.nu",
     },
   ];
 

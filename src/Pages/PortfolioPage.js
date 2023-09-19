@@ -40,6 +40,7 @@ import {
   SiNumpy,
   SiVuedotjs,
   SiTailwindcss,
+  SiMeta,
 } from "react-icons/si";
 import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
 // import IconArray from "../Components/IconArray";
@@ -89,6 +90,10 @@ function PortfolioPage() {
               <IconWithTooltip
                 tooltip="Virtual reality"
                 icon={<BsBadgeVrFill />}
+              />
+              <IconWithTooltip
+                tooltip="Meta"
+                icon={<SiMeta style={{ marginLeft: "10px" }} />}
               />
               <IconWithTooltip
                 tooltip="Unity"

@@ -20,12 +20,6 @@
   align-items: center;
 }
 
-/* .home-grid-container2-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-} */
-
 .home-grid-container-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,11 +49,6 @@
     margin-left: 10px;
     margin-right: 10px;
   }
-  /* .home-grid-container2-inner {
-    grid-template-columns: 1fr;
-    margin-left: 10px;
-    margin-right: 10px;
-  } */
   .home-grid-container-inner {
     grid-template-columns: 1fr;
     margin-left: 10px;
