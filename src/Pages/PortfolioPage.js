@@ -72,16 +72,25 @@ function PortfolioPage() {
                 as sound handling and intuitive VR interface building.
               </p>
               <br />
-              <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
-                YouTube channel
-              </a>
-              <br />
-              <p>
-                <Link to="/traumasim-privacy-policy">
-                  TraumaSim Privacy Policy
-                </Link>
-              </p>
-              <br />
+              <div style={{ marginBottom: "10px" }}>
+                <a href="https://www.umu.se/reportage/vr---framtidens-undervisning/">
+                  Article about the project
+                </a>
+              </div>
+              <div style={{ marginBottom: "10px" }}>
+                <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
+                  YouTube channel
+                </a>
+                <br />{" "}
+              </div>
+
+              <div>
+                <p>
+                  <Link to="/traumasim-privacy-policy">
+                    TraumaSim Privacy Policy
+                  </Link>
+                </p>
+              </div>
             </div>
           }
           icons={
