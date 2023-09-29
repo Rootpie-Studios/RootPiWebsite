@@ -49,16 +49,17 @@ function HomePage() {
             </div>
             <p style={{ marginTop: "60px", fontSize: "18px" }}>
               Welcome to RootPi, we provide solutions for Virtual Reality
-              applications, mobile apps and websites, and consulting services.
+              applications, Artificial Intelligence, websites and mobile apps.
               Our small team of experienced developers will work with you to
-              create a custom solution that is tailored to your specific needs
-              and goals.
+              create a custom solution, tailored to your specific needs and
+              goals.
             </p>
             <br />
             <p style={{ fontSize: "18px" }}>
               {" "}
               Do you have a project in mind or just want to know more about our
-              business? Contact us and let us help you bring your ideas to life.
+              business? Get in touch and let us help you bring your ideas to
+              life!
             </p>
             <br />
             <div className="center-content">
@@ -169,9 +170,9 @@ function HomePage() {
                 <br />
                 <span style={{ fontWeight: "bold" }}>RootPi AB</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>Stralsundsvägen 96</span>
+                <span style={{ fontWeight: "bold" }}>Kosterögatan 9</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>224 79, Lund</span>
+                <span style={{ fontWeight: "bold" }}>211 24, Malmö</span>
                 <br />
                 <br />
                 <div
@@ -209,7 +210,7 @@ function HomePage() {
                       marginLeft: "10px",
                     }}
                   >
-                    +46 70 888 95 36
+                    +4673 088 95 56
                   </a>
                   <br />
                   <br />
