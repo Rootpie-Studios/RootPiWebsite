@@ -9,6 +9,7 @@ import AboutPage from "./Pages/AboutPage";
 import TraumaSimPrivacyPolicyPage from "./Pages/TraumaSimPrivacyPolicyPage";
 import StreaksPrivacyPolicyPage from "./Pages/StreaksPrivacyPolicyPage";
 import TimetrackerPrivacyPolicyPage from "./Pages/TimeTrackerPrivacyPolicyPage";
+import LekaosPrivacyPolicyPage from "./Pages/LekaosPrivacyPolicyPage";
 
 function MainRouter(props) {
   return (
@@ -33,6 +34,11 @@ function MainRouter(props) {
           exact
           path="/timetracker-privacy-policy"
           element={<TimetrackerPrivacyPolicyPage />}
+        />
+        <Route
+          exact
+          path="/lekaos-privacy-policy"
+          element={<LekaosPrivacyPolicyPage />}
         />
         <Route exact path="*" element={<NotFoundPage />} />
       </Routes>
