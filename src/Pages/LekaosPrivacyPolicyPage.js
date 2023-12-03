@@ -7,7 +7,7 @@ import "../css/privacy_policy.css";
 
 function LekaosPrivacyPolicyPage() {
   const privacyPolicyMarkdown = `
-  **Privacy policy**
+  **Privacy policy for Lekaos**
 
 **1. Background**
 
