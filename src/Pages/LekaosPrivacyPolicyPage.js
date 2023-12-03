@@ -1,8 +1,5 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import logo from "../images/LogoTextTransBlack.png";
 import "../css/privacy_policy.css";
 
 function LekaosPrivacyPolicyPage() {
