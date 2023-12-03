@@ -128,9 +128,6 @@ Response time: 3-5 work days.
 
   return (
     <div className="App">
-      <Header
-        subtitle={<img className="header-image-container" src={logo} alt="" />}
-      />
       <main>
         <div>
           <div className="about-container markdown-content">
@@ -138,7 +135,6 @@ Response time: 3-5 work days.
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
