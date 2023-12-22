@@ -80,17 +80,6 @@ function Header(props) {
         >
           About
         </Link>
-
-        {/* <Button
-          textColor="white"
-          label="Contact"
-          onClick={() =>
-            window.scrollTo({
-              top: document.documentElement.scrollHeight,
-              behavior: "smooth",
-            })
-          }
-        /> */}
       </div>
 
       <div

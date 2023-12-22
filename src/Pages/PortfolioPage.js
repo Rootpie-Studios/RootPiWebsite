@@ -15,34 +15,30 @@ import LundaPant from "../images/LundaPant.png";
 import Ropes from "../images/RootPiRopesAssetIconHQ.png";
 import SagoLogo from "../images/sago_logo.png";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
-// import DataMatrix from "../images/DataMatrix.png";
-// import ai_decoder from "../images/ai_decoder.png";
 import GvHD from "../images/GvHD.jpg";
-import IconWithTooltip from "../Components/IconWithTooltip";
 import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
 
-import { FaReact } from "react-icons/fa";
 import {
-  SiCsharp,
-  SiDart,
-  SiBlender,
-  SiFirebase,
-  SiMicrosoftazure,
-  SiPython,
-  SiOpenai,
-  SiFlutter,
-  SiGoogleplay,
-  SiAppstore,
-  SiKeras,
-  SiLaravel,
-  SiNumpy,
-  SiVuedotjs,
-  SiTailwindcss,
-  SiMeta,
-} from "react-icons/si";
-import { BsBadgeVrFill, BsUnity } from "react-icons/bs";
-// import IconArray from "../Components/IconArray";
+  AppStoreIcon,
+  BlenderIcon,
+  DartIcon,
+  FlutterIcon,
+  GooglePlayIcon,
+  KerasIcon,
+  PythonIcon,
+  UnityIcon,
+  VirtualRealityIcon,
+  VueIcon,
+  CSharpIcon,
+  FirebaseIcon,
+  JavaScriptIcon,
+  OpenAIIcon,
+  NumpyIcon,
+  ReactIcon,
+  TailwindIcon,
+  LaravelIcon,
+} from "../Components/IconLibrary";
 
 function PortfolioPage() {
   return (
@@ -95,70 +91,14 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip
-                tooltip="Virtual reality"
-                icon={<BsBadgeVrFill />}
-              />
-              <IconWithTooltip
-                tooltip="Meta"
-                icon={<SiMeta style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Unity"
-                icon={<BsUnity style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="C#"
-                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Blender"
-                icon={<SiBlender style={{ marginLeft: "10px" }} />}
-              />
+              <UnityIcon />
+              <BlenderIcon />
+              <CSharpIcon />
+              <VirtualRealityIcon />
             </h1>
           }
           images={<img className="rounded-image" src={TraumaSim} alt="" />}
         />
-        {/* ai-decoder */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">ai-decoder.com</h2>
-              <p className="text">
-                Using AI tools and <b>Python</b> we developed a tool for
-                decoding images of 96-well plates used in biobanking and medtech
-                research. The tool was built for the company Treat4Life in order
-                to improve efficiency and reduce costs for handling medical test
-                tubes containing blood and tissue samples. You can access it on
-                our website which is built with <b>Vue</b> and <b>Tailwind</b>.
-              </p>
-              <br />
-              <a href="https://ai-decoder.com">ai-decoder.com</a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="Vue"
-                icon={<SiVuedotjs style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Tailwind"
-                icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Firebase"
-                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
-              />
-            </h1>
-          }
-          images={<img className="rounded-image" src={DecoderOwl} alt="" />}
-        />
-
         {/* sagostund.nu */}
         <CardPortfolio
           textColor="black"
@@ -167,12 +107,11 @@ function PortfolioPage() {
             <div>
               <h2 className="text">sagostund.nu</h2>
               <p className="text">
-                Using <b>Python</b>, text-to-speech API:s via{" "}
-                <b>Microsoft Azure</b>, and state of the art AI text and image
-                generation via <b>OpenAI</b> we have built a website where you
-                can generate a narrated, completely unique story from only a
-                text input. You can try creating your own story now on our
-                website!{" "}
+                Sagostund is a website where you can generate a narrated,
+                completely unique story from only a text input. You can try
+                creating your own story now on our website! It is built with{" "}
+                <b>Python</b>, utilizing state of the art AI text and image
+                generation as well as text-to-speech, via <b>OpenAI</b> API:s.
               </p>
               <br />
               <a href="https://sagostund.nu/skapa-din-egen-saga">
@@ -183,27 +122,10 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="Vue"
-                icon={<SiVuedotjs style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Tailwind"
-                icon={<SiTailwindcss style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Firebase"
-                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="OpenAI"
-                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Microsoft azure"
-                icon={<SiMicrosoftazure style={{ marginLeft: "10px" }} />}
-              />
+              <PythonIcon />
+              <OpenAIIcon />
+              <VueIcon />
+              <TailwindIcon />
             </h1>
           }
           images={
@@ -211,6 +133,58 @@ function PortfolioPage() {
               <img className="rounded-image" src={SagoLogo} alt="" />
             </a>
           }
+        />
+        {/* Niftitech */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">Consulting for Niftitech</h2>
+              <p className="text">
+                We provide services in development in <b>Flutter</b> and{" "}
+                <b>Laravel</b> development for the company Niftitech.
+              </p>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <FlutterIcon />
+              <LaravelIcon />
+            </h1>
+          }
+          images={<img className="rounded-image" src={Nifti} alt="" />}
+        />
+        {/* ai-decoder */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">ai-decoder.com</h2>
+              <p className="text">
+                AI-decoder is a completely web based alternative to traditional
+                biobanking. It allows the user to upload images of 96-well
+                plates, decode the code and send them to a slot in a freezer,
+                allowing for a seamless integration with a digital storage
+                system. Please send us an email if you are interested in trying
+                it. It is built built with <b>Vue</b> and <b>Tailwind</b>.
+              </p>
+              <br />
+              <a href="https://ai-decoder.com">ai-decoder.com</a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <PythonIcon />
+              <VueIcon />
+              <TailwindIcon />
+              <FirebaseIcon />
+            </h1>
+          }
+          images={<img className="rounded-image" src={DecoderOwl} alt="" />}
         />
 
         {/* Ropes */}
@@ -235,11 +209,8 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
-              <IconWithTooltip
-                tooltip="C#"
-                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
-              />
+              <UnityIcon />
+              <CSharpIcon />
             </h1>
           }
           images={<img className="rounded-image" src={Ropes} alt="" />}
@@ -264,11 +235,8 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
-              <IconWithTooltip
-                tooltip="C#"
-                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
-              />
+              <UnityIcon />
+              <CSharpIcon />
             </h1>
           }
           images={<img className="rounded-image" src={KawAI} alt="" />}
@@ -297,20 +265,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="React"
-                icon={<FaReact style={{ marginLeft: "10px" }} />}
-              />
-
-              <IconWithTooltip
-                tooltip="Firebase"
-                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="OpenAI"
-                icon={<SiOpenai style={{ marginLeft: "10px" }} />}
-              />
+              <ReactIcon />
+              <JavaScriptIcon />
+              <PythonIcon />
+              <FirebaseIcon />
+              <OpenAIIcon />
             </h1>
           }
           images={<img className="rounded-image" src={Instapply} alt="" />}
@@ -338,23 +297,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
-              <IconWithTooltip
-                tooltip="Dart"
-                icon={<SiDart style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Firebase"
-                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="App store"
-                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Play store"
-                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
-              />
+              <DartIcon />
+              <FlutterIcon />
+              <FirebaseIcon />
+              <AppStoreIcon />
+              <GooglePlayIcon />
             </h1>
           }
           images={<img className="rounded-image" src={TimeTrack} alt="" />}
@@ -379,23 +326,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
-              <IconWithTooltip
-                tooltip="Dart"
-                icon={<SiDart style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Firebase"
-                icon={<SiFirebase style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="App store"
-                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Play store"
-                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
-              />
+              <DartIcon />
+              <FlutterIcon />
+              <FirebaseIcon />
+              <AppStoreIcon />
+              <GooglePlayIcon />
             </h1>
           }
           images={<img className="rounded-image" src={LundaPant} alt="" />}
@@ -423,43 +358,10 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="Keras"
-                icon={<SiKeras style={{ marginLeft: "10px" }} />}
-              />
+              <PythonIcon />
             </h1>
           }
           images={<img className="rounded-image" src={GvHD} alt="" />}
-        />
-
-        {/* Niftitech */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">Consulting for Niftitech</h2>
-              <p className="text">
-                We were hired on project basis for the company Niftitech,
-                consulting in development in <b>Flutter</b> and <b>Laravel</b>.
-                With a wide array of projects in mobile apps, websites and
-                custom solutions we have aided them in providing high quality
-                experiences to their customers.
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <IconWithTooltip tooltip="Flutter" icon={<SiFlutter />} />
-              <IconWithTooltip
-                tooltip="Laravel"
-                icon={<SiLaravel style={{ marginLeft: "10px" }} />}
-              />
-            </h1>
-          }
-          images={<img className="rounded-image" src={Nifti} alt="" />}
         />
 
         {/* Crystal Quest */}
@@ -485,23 +387,11 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Unity" icon={<BsUnity />} />
-              <IconWithTooltip
-                tooltip="C#"
-                icon={<SiCsharp style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Blender"
-                icon={<SiBlender style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="App store"
-                icon={<SiAppstore style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Play store"
-                icon={<SiGoogleplay style={{ marginLeft: "10px" }} />}
-              />
+              <UnityIcon />
+              <BlenderIcon />
+              <CSharpIcon />
+              <AppStoreIcon />
+              <GooglePlayIcon />
             </h1>
           }
           images={<img className="rounded-image" src={CrystalQuest2} alt="" />}
@@ -530,15 +420,9 @@ function PortfolioPage() {
           }
           icons={
             <h1>
-              <IconWithTooltip tooltip="Python" icon={<SiPython />} />
-              <IconWithTooltip
-                tooltip="Numpy"
-                icon={<SiNumpy style={{ marginLeft: "10px" }} />}
-              />
-              <IconWithTooltip
-                tooltip="Keras"
-                icon={<SiKeras style={{ marginLeft: "10px" }} />}
-              />
+              <PythonIcon />
+              <KerasIcon />
+              <NumpyIcon />
             </h1>
           }
           images={<img className="rounded-image" src={HaliteIV} alt="" />}
