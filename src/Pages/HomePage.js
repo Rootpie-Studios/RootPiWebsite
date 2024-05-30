@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/homepage.css";
 import { projectData, techStackIcons, frameworksIcons } from "../Constants"; // import constants
+import Spline from "@splinetool/react-spline";
 
 // Components
 import Header from "../Components/Header";
@@ -10,7 +11,6 @@ import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
 import CardProject from "../Components/CardProject";
 import IconArray from "../Components/IconArray";
-// import Spline from "@splinetool/react-spline";
 
 // images
 import RootPiText from "../images/LogoTextTransBlack.png";
@@ -160,71 +160,60 @@ function HomePage() {
           />
         </div>
 
-        <div>
-          <CardContact
-            textColor="black"
-            children={
-              <div>
-                <h1>Come in contact</h1>
-                <p>
-                  Contact us and tell us about yourself, your company or your
-                  ideas!
-                </p>
-                <br />
-                <span style={{ fontWeight: "bold" }}>RootPi AB</span>
-                <br />
-                <span style={{ fontWeight: "bold" }}>Bantorget 2</span>
-                <br />
-                <span style={{ fontWeight: "bold" }}>222 29, Lund</span>
-                <br />
-                <br />
-                <div
+        <div className="flex justify-center mt-10">
+          <CardContact textColor="black">
+            <div>
+              <h1>Come in contact</h1>
+              <p>
+                Contact us and tell us about yourself, your company, or your
+                ideas!
+              </p>
+              <br />
+              <span style={{ fontWeight: "bold" }}>RootPi AB</span>
+              <br />
+              <span style={{ fontWeight: "bold" }}>Bantorget 2</span>
+              <br />
+              <span style={{ fontWeight: "bold" }}>222 29, Lund</span>
+              <br />
+              <br />
+              <div className="flex items-center font-bold">
+                <FiMail />
+                <a
+                  href="mailto:info@rootpi.xyz"
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
+                    color: "black",
+                    textDecoration: "none",
+                    marginLeft: "10px",
                   }}
                 >
-                  <FiMail />
-                  <a
-                    href="mailto:info@rootpi.xyz"
-                    style={{
-                      color: "black",
-                      textDecoration: "none",
-                      marginLeft: "10px",
-                    }}
-                  >
-                    info@rootpi.xyz
-                  </a>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  <FiPhone />
-                  <a
-                    href="tel:+46708889536"
-                    style={{
-                      color: "black",
-                      textDecoration: "none",
-                      marginLeft: "10px",
-                    }}
-                  >
-                    +4673 088 95 56
-                  </a>
-                  <br />
-                  <br />
-                </div>
+                  info@rootpi.xyz
+                </a>
               </div>
-            }
-          />
+              <div className="flex items-center font-bold mt-2">
+                <FiPhone />
+                <a
+                  href="tel:+46708889536"
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    marginLeft: "10px",
+                  }}
+                >
+                  +4673 088 95 56
+                </a>
+              </div>
+            </div>
+          </CardContact>
         </div>
-        {/* <div className="flex justify-center mt-10">
-          <Spline scene="https://prod.spline.design/FfT-a7IuNd82WpcD/scene.splinecode" />
-        </div> */}
+
+        <div className="flex justify-center mt-10">
+          <iframe
+            src="https://my.spline.design/untitled-6a905e0c5959f08e09703dc48722dd3e/"
+            width="100%"
+            height="500px"
+            style={{ border: "none" }}
+          ></iframe>
+        </div>
       </main>
       <Footer />
     </div>
