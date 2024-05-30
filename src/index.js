@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./tailwind.css"; // Import Tailwind CSS
+
 import "./index.css";
 import MainRouter from "./MainRouter";
 import reportWebVitals from "./reportWebVitals";
+import "./index.css"; // Your custom styles
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

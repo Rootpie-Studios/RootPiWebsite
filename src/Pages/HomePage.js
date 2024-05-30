@@ -24,7 +24,11 @@ function HomePage() {
     <div className="App">
       <Header
         subtitle={
-          <img className="header-image-container" src={RootPiText} alt="" />
+          <img
+            className="header-image-container"
+            src={RootPiText}
+            alt="RootPi Logo"
+          />
         }
       />
       <main style={{ marginBottom: "10vw" }}>
@@ -34,13 +38,13 @@ function HomePage() {
               className="home-title-image-container rounded-image"
               style={{ marginLeft: "5%", marginTop: "20px" }}
               src={VRDude}
-              alt=""
+              alt="VR Dude"
             />
             <img
               className="home-title-image-container rounded-image"
               style={{ marginLeft: "20%", marginTop: "50px" }}
               src={AI}
-              alt=""
+              alt="AI"
             />
           </div>
           <div>
@@ -56,7 +60,6 @@ function HomePage() {
             </p>
             <br />
             <p style={{ fontSize: "18px" }}>
-              {" "}
               Do you have a project in mind or just want to know more about our
               business? Get in touch and let us help you bring your ideas to
               life!
@@ -80,7 +83,7 @@ function HomePage() {
             <img
               className="home-title-image-container rounded-image coder-image"
               src={Coder}
-              alt=""
+              alt="Coder"
             />
           </div>
         </div>
@@ -170,9 +173,9 @@ function HomePage() {
                 <br />
                 <span style={{ fontWeight: "bold" }}>RootPi AB</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>Kosterögatan 9</span>
+                <span style={{ fontWeight: "bold" }}>Bangatan 2</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>211 24, Malmö</span>
+                <span style={{ fontWeight: "bold" }}>222 29, Lund</span>
                 <br />
                 <br />
                 <div
@@ -182,7 +185,7 @@ function HomePage() {
                     fontWeight: "bold",
                   }}
                 >
-                  <FiMail style={{}} />
+                  <FiMail />
                   <a
                     href="mailto:info@rootpi.xyz"
                     style={{
@@ -201,7 +204,7 @@ function HomePage() {
                     fontWeight: "bold",
                   }}
                 >
-                  <FiPhone style={{}} />
+                  <FiPhone />
                   <a
                     href="tel:+46708889536"
                     style={{
@@ -217,7 +220,7 @@ function HomePage() {
                 </div>
               </div>
             }
-          ></CardContact>
+          />
         </div>
       </main>
       <Footer />
