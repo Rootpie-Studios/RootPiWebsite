@@ -26,7 +26,7 @@ const CardProject = ({ title, icons, description, link, linkText, imgSrc }) => {
   return link ? (
     <a
       href={link}
-      className="block rounded-lg shadow-lg p-8 mx-2 my-8 transition-shadow  bg-white hover:shadow-2xl hover:scale-105 transition-transform duration-200 ease-in-out"
+      className="block rounded-lg shadow-lg p-8 mx-2 my-8 transition-shadow bg-white hover:shadow-2xl hover:scale-105 transition-transform duration-200 ease-in-out"
       style={{ textDecoration: "none", color: "inherit" }}
     >
       {content}
