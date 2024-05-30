@@ -36,3 +36,11 @@
     min-height: 70px;
   }
 }
+
+.card-hover-tilt {
+  transition: transform 0.1s ease-in-out;
+}
+
+.card-hover-tilt:hover {
+  transform: rotate(-3deg) scale(1.05);
+}

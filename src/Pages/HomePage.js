@@ -1,22 +1,21 @@
 import React from "react";
 import "../css/homepage.css";
-import { projectData, techStackIcons, frameworksIcons } from "../Constants"; // import constants
-// import Spline from "@splinetool/react-spline";
+import { projectData, techStackIcons, frameworksIcons } from "../Constants";
 
 // Components
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Card from "../Components/Card";
 import Button from "../Components/Button";
-import CardContact from "../Components/CardContact";
+// import CardContact from "../Components/CardContact";
 import CardProject from "../Components/CardProject";
 import IconArray from "../Components/IconArray";
 
 // images
 import RootPiText from "../images/LogoTextTransBlack.png";
-import VRDude from "../images/VRDude.png";
-import Coder from "../images/Coder.png";
-import AI from "../images/AI.png";
+// import VRDude from "../images/VRDude.png";
+// import Coder from "../images/Coder.png";
+// import AI from "../images/AI.png";
 
 import { FiMail, FiPhone } from "react-icons/fi";
 
@@ -34,23 +33,9 @@ function HomePage() {
       />
       <main>
         <div className="flex flex-col items-center">
-          {/* <div className="hidden">
-            <img
-              className="home-title-image-container rounded-image"
-              style={{ marginLeft: "5%", marginTop: "20px" }}
-              src={VRDude}
-              alt="VR Dude"
-            />
-            <img
-              className="home-title-image-container rounded-image"
-              style={{ marginLeft: "20%", marginTop: "50px" }}
-              src={AI}
-              alt="AI"
-            />
-          </div> */}
           <div className="flex flex-col justify-center max-w-2xl">
             <div>
-              <h1 className="font-bold text-xl">This is RootPi</h1>
+              <h1 className="font-bold text-2xl mb-4">This is RootPi</h1>
             </div>
             <div>
               We build fullstack and AI solutions for your needs. We are here to
@@ -78,27 +63,20 @@ function HomePage() {
               />
             </div>
           </div>
-          {/* <img
-            className="home-title-image-container rounded-image coder-image"
-            src={Coder}
-            alt="Coder"
-          /> */}
         </div>
 
         <div className="font-bold text-xl">
-          <h1>Current projects</h1>
+          <div>Current projects</div>
         </div>
 
         <div className="grid-container">
-          {projectData.map((project, index) => (
-            <Card key={index} textColor="black">
-              <CardProject {...project} />
-            </Card>
+          {projectData.map((project) => (
+            <CardProject {...project} />
           ))}
         </div>
 
         <div className="grid-container">
-          <h1>Our tech stack</h1>
+          <div>Our tech stack</div>
         </div>
 
         <div className="grid-container2">
@@ -155,13 +133,13 @@ function HomePage() {
           />
         </div>
 
-        <CardContact textColor="black">
+        <Card textColor="black">
           <div>
-            <h1>Come in contact</h1>
-            <p>
+            <div className="text-2xl font-bold p-2">Come in contact</div>
+            <div>
               Contact us and tell us about yourself, your company, or your
               ideas!
-            </p>
+            </div>
             <br />
             <span style={{ fontWeight: "bold" }}>RootPi AB</span>
             <br />
@@ -197,7 +175,7 @@ function HomePage() {
               </a>
             </div>
           </div>
-        </CardContact>
+        </Card>
 
         <iframe
           title="Spline"

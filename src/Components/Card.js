@@ -3,7 +3,7 @@ import React from "react";
 function Card(props) {
   return (
     <div
-      className={`rounded-lg shadow-lg p-8 m-12 flex items-center transition-shadow duration-300 ease-in-out bg-white`}
+      className={`rounded-lg shadow-lg p-8 mx-2 my-8 flex items-center transition-shadow duration-300 ease-in-out bg-white`}
       style={{
         backgroundColor: props.color,
         color: props.textColor,

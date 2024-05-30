@@ -1,11 +1,9 @@
 import React from "react";
-import "../css/button.css";
 
 function Button(props) {
   return (
     <button
-      className="button"
-      style={{ backgroundColor: props.color, color: props.textColor }}
+      className="bg-white rounded-md text-black font-bold px-4 py-2 shadow-lg hover:bg-black border hover:text-white transition-colors duration-100 ease-in-out"
       onClick={props.onClick}
     >
       {props.label}
