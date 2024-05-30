@@ -2,11 +2,11 @@ import React from "react";
 import IconWithTooltip from "./IconWithTooltip";
 
 const IconArray = ({ icons }) => (
-  <h1>
+  <div className="flex space-x-4">
     {icons.map((icon, index) => (
-      <IconWithTooltip key={index} {...icon} style={{ marginRight: "10px" }} />
+      <IconWithTooltip key={index} {...icon} className="w-8 h-8" />
     ))}
-  </h1>
+  </div>
 );
 
 export default IconArray;

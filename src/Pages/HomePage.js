@@ -33,8 +33,8 @@ function HomePage() {
         }
       />
       <main>
-        <div className="home-grid-container-header">
-          <div className="hidden">
+        <div className="flex flex-col items-center">
+          {/* <div className="hidden">
             <img
               className="home-title-image-container rounded-image"
               style={{ marginLeft: "5%", marginTop: "20px" }}
@@ -47,25 +47,25 @@ function HomePage() {
               src={AI}
               alt="AI"
             />
-          </div>
-          <div>
-            <div className="home-title">
-              <h1>This is RootPi</h1>
+          </div> */}
+          <div className="flex flex-col justify-center max-w-2xl">
+            <div>
+              <h1 className="font-bold text-xl">This is RootPi</h1>
             </div>
-            <p style={{ marginTop: "60px", fontSize: "18px" }}>
-              Welcome to RootPi, we provide fullstack and AI solutions for your
-              needs. We are here to help you bring your ideas to life! Our small
-              team of experienced developers will work with you to create a
-              custom solution, tailored to your specific needs and goals.
-            </p>
+            <div>
+              We build fullstack and AI solutions for your needs. We are here to
+              help you bring your ideas to life! Our small team of experienced
+              developers will work with you to create a custom solution,
+              tailored to your specific needs and goals.
+            </div>
             <br />
-            <p style={{ fontSize: "18px" }}>
+            <div>
               Do you have a project in mind or just want to know more about our
               business? Get in touch and let us help you bring your ideas to
               life!
-            </p>
+            </div>
             <br />
-            <div className="center-content">
+            <div className="flex justify-center">
               <Button
                 textColor="white"
                 label="Contact"
@@ -78,20 +78,15 @@ function HomePage() {
               />
             </div>
           </div>
-
-          <div>
-            <img
-              className="home-title-image-container rounded-image coder-image"
-              src={Coder}
-              alt="Coder"
-            />
-          </div>
+          {/* <img
+            className="home-title-image-container rounded-image coder-image"
+            src={Coder}
+            alt="Coder"
+          /> */}
         </div>
 
-        <div className="grid-container">
-          <div className="home-title">
-            <h1>Current projects</h1>
-          </div>
+        <div className="font-bold text-xl">
+          <h1>Current projects</h1>
         </div>
 
         <div className="grid-container">

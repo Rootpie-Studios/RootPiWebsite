@@ -43,12 +43,12 @@ import {
 
 function PortfolioPage() {
   return (
-    <div className="App">
+    <div className="App font-quicksand min-h-screen flex flex-col items-center bg-gradient-to-b from-gray-200 to-gray-400">
       <Header
-        subtitle={<img className="header-image-container" src={logo} alt="" />}
+        subtitle={<img className="w-72 hover:opacity-80" src={logo} alt="" />}
       />
       <main>
-        <h1 className="center-content">Portfolio</h1>
+        <h1 className="flex justify-center items-center mt-2">Portfolio</h1>
 
         {/* Mapp */}
         <CardPortfolio
@@ -81,7 +81,11 @@ function PortfolioPage() {
             </h1>
           }
           images={
-            <img className="rounded-image" src={MappLogo} alt="Mapp Logo" />
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={MappLogo}
+              alt="Mapp Logo"
+            />
           }
         />
 
@@ -104,12 +108,12 @@ function PortfolioPage() {
                 as sound handling and intuitive VR interface building.
               </p>
               <br />
-              <div style={{ marginBottom: "10px" }}>
+              <div className="mb-2">
                 <a href="https://www.umu.se/reportage/vr---framtidens-undervisning/">
                   Article about the project
                 </a>
               </div>
-              <div style={{ marginBottom: "10px" }}>
+              <div className="mb-2">
                 <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
                   YouTube channel
                 </a>
@@ -133,7 +137,13 @@ function PortfolioPage() {
               <VirtualRealityIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={TraumaSim} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={TraumaSim}
+              alt=""
+            />
+          }
         />
         {/* sagostund.nu */}
         <CardPortfolio
@@ -166,7 +176,11 @@ function PortfolioPage() {
           }
           images={
             <a href="https://sagostund.nu/">
-              <img className="rounded-image" src={SagoLogo} alt="" />
+              <img
+                className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+                src={SagoLogo}
+                alt=""
+              />
             </a>
           }
         />
@@ -190,7 +204,13 @@ function PortfolioPage() {
               <LaravelIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={Nifti} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={Nifti}
+              alt=""
+            />
+          }
         />
         {/* ai-decoder */}
         <CardPortfolio
@@ -220,7 +240,13 @@ function PortfolioPage() {
               <FirebaseIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={DecoderOwl} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={DecoderOwl}
+              alt=""
+            />
+          }
         />
 
         {/* Ropes */}
@@ -249,7 +275,13 @@ function PortfolioPage() {
               <CSharpIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={Ropes} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={Ropes}
+              alt=""
+            />
+          }
         />
         {/* Kaw AI */}
         <CardPortfolio
@@ -275,7 +307,13 @@ function PortfolioPage() {
               <CSharpIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={KawAI} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={KawAI}
+              alt=""
+            />
+          }
         />
         {/* instapply */}
         <CardPortfolio
@@ -308,7 +346,13 @@ function PortfolioPage() {
               <OpenAIIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={Instapply} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={Instapply}
+              alt=""
+            />
+          }
         />
         {/* TimeTracker */}
         <CardPortfolio
@@ -340,7 +384,13 @@ function PortfolioPage() {
               <GooglePlayIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={TimeTrack} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={TimeTrack}
+              alt=""
+            />
+          }
         />
 
         {/* LundaPant */}
@@ -369,7 +419,13 @@ function PortfolioPage() {
               <GooglePlayIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={LundaPant} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={LundaPant}
+              alt=""
+            />
+          }
         />
 
         {/* GvHD */}
@@ -397,7 +453,13 @@ function PortfolioPage() {
               <PythonIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={GvHD} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={GvHD}
+              alt=""
+            />
+          }
         />
 
         {/* Crystal Quest */}
@@ -430,7 +492,13 @@ function PortfolioPage() {
               <GooglePlayIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={CrystalQuest2} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={CrystalQuest2}
+              alt=""
+            />
+          }
         />
 
         {/* Halite IV */}
@@ -461,7 +529,13 @@ function PortfolioPage() {
               <NumpyIcon />
             </h1>
           }
-          images={<img className="rounded-image" src={HaliteIV} alt="" />}
+          images={
+            <img
+              className="rounded-full shadow-lg bg-white mb-5 max-w-full"
+              src={HaliteIV}
+              alt=""
+            />
+          }
         />
       </main>
       <Footer />

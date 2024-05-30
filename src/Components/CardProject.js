@@ -3,11 +3,9 @@ import IconArray from "./IconArray";
 
 const CardProject = ({ title, icons, description, link, linkText, imgSrc }) => (
   <div>
-    <h2 className="text" style={{ marginBottom: "10px", overflow: "visible" }}>
-      {title}
-    </h2>
-    <div className="home-grid-container-inner">
-      <div style={{ gridColumn: "1 / span 2" }}>
+    <h2 className="text mb-2 overflow-visible">{title}</h2>
+    <div className="grid grid-cols-3 gap-5">
+      <div className="col-span-2">
         <div className="">
           <IconArray icons={icons} />
         </div>
@@ -16,7 +14,7 @@ const CardProject = ({ title, icons, description, link, linkText, imgSrc }) => (
         {link && <a href={link}>{linkText}</a>}
       </div>
       <img
-        className="home-card-image-container rounded-image"
+        className="w-full rounded-full shadow-lg bg-white mb-5"
         src={imgSrc}
         alt=""
       />

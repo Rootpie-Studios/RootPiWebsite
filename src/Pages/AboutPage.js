@@ -2,9 +2,8 @@ import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import logo from "../images/LogoTextTransBlack.png";
-import "../css/aboutpage.css";
-import Kim from "../images/Kim.png";
-import Jesper from "../images/jespernorge3.png";
+import Kim from "../images/kim.jpg";
+import Jesper from "../images/jesper.jpg";
 
 const teamMembers = [
   {
@@ -22,34 +21,34 @@ const teamMembers = [
 ];
 
 const TeamMemberCard = ({ name, image, description }) => (
-  <div className="about-container">
+  <div className="flex flex-col items-center m-5">
     <img
-      className="about-image-container rounded-image"
+      className="w-64 h-64 md:w-96 md:h-96 rounded-full shadow-md mb-5 object-cover"
       src={image}
       alt={name}
     />
-    <div className="card">
-      <h2>{name}</h2>
-      <p>{description}</p>
+    <div className="bg-white text-start p-5 rounded-lg shadow-md w-full max-w-lg">
+      <h2 className="text-xl font-semibold mb-2">{name}</h2>
+      <p className="text-gray-600">{description}</p>
     </div>
   </div>
 );
 
 function AboutPage() {
   return (
-    <div className="App">
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-[#eeeeee] to-[#aaaaaa]">
       <Header
         subtitle={
           <img
-            className="header-image-container"
+            className="w-36 md:w-72 hover:opacity-80 transition-opacity duration-300"
             src={logo}
             alt="Company Logo"
           />
         }
       />
-      <main>
-        <h1 className="center-content">About us</h1>
-        <div className="grid-container2">
+      <main className="flex-grow text-center py-10 w-full">
+        <h1 className="text-3xl font-bold mb-10">About Us</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center px-6">
           {teamMembers.map((member) => (
             <TeamMemberCard
               key={member.name}
