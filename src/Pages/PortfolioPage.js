@@ -18,6 +18,7 @@ import TimeTrack from "../images/TimeTrackBadLogo.png";
 import GvHD from "../images/GvHD.jpg";
 import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
+import MappLogo from "../images/MappLogo.png";
 
 import {
   AppStoreIcon,
@@ -48,6 +49,41 @@ function PortfolioPage() {
       />
       <main>
         <h1 className="center-content">Portfolio</h1>
+
+        {/* Mapp */}
+        <CardPortfolio
+          textColor="black"
+          width="60%"
+          children={
+            <div>
+              <h2 className="text">MAPP</h2>
+              <p className="text">
+                <b>MAPP</b> is an innovative agricultural company providing
+                advanced solutions for modern farming. They focus on mapping,
+                analysis, planning, and precision agriculture. Built with{" "}
+                <b>Flutter</b> and <b>Laravel</b> with a web app and mobile app
+                for both <b>App Store</b> and <b>Google Play</b>. MAPP is a
+                product by the <b>AgroMapp Sverige AB</b>. Find out more on
+                their website.
+              </p>
+              <br />
+              <a href="https://mapp.se">mapp.se</a>
+              <br />
+            </div>
+          }
+          icons={
+            <h1>
+              <LaravelIcon />
+              <VueIcon />
+              <FlutterIcon />
+              <AppStoreIcon />
+              <GooglePlayIcon />
+            </h1>
+          }
+          images={
+            <img className="rounded-image" src={MappLogo} alt="Mapp Logo" />
+          }
+        />
 
         {/* TraumaSim VR*/}
         <CardPortfolio
