@@ -10,6 +10,7 @@ import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
 import CardProject from "../Components/CardProject";
 import IconArray from "../Components/IconArray";
+// import Spline from "@splinetool/react-spline";
 
 // images
 import RootPiText from "../images/LogoTextTransBlack.png";
@@ -49,14 +50,13 @@ function HomePage() {
           </div>
           <div>
             <div className="home-title">
-              <h1>This is us</h1>
+              <h1>This is RootPi</h1>
             </div>
             <p style={{ marginTop: "60px", fontSize: "18px" }}>
-              Welcome to RootPi, we provide solutions for Virtual Reality
-              applications, Artificial Intelligence, websites and mobile apps.
-              Our small team of experienced developers will work with you to
-              create a custom solution, tailored to your specific needs and
-              goals.
+              Welcome to RootPi, we provide fullstack and AI solutions for your
+              needs. We are here to help you bring your ideas to life! Our small
+              team of experienced developers will work with you to create a
+              custom solution, tailored to your specific needs and goals.
             </p>
             <br />
             <p style={{ fontSize: "18px" }}>
@@ -173,7 +173,7 @@ function HomePage() {
                 <br />
                 <span style={{ fontWeight: "bold" }}>RootPi AB</span>
                 <br />
-                <span style={{ fontWeight: "bold" }}>Bangatan 2</span>
+                <span style={{ fontWeight: "bold" }}>Bantorget 2</span>
                 <br />
                 <span style={{ fontWeight: "bold" }}>222 29, Lund</span>
                 <br />
@@ -222,6 +222,9 @@ function HomePage() {
             }
           />
         </div>
+        {/* <div className="flex justify-center mt-10">
+          <Spline scene="https://prod.spline.design/FfT-a7IuNd82WpcD/scene.splinecode" />
+        </div> */}
       </main>
       <Footer />
     </div>

@@ -22,14 +22,32 @@ import {
   SiOpenai,
   SiFirebase,
   SiMeta,
+  SiApple,
+  SiGoogleplay,
 } from "react-icons/si";
 
 // Project images
 import TraumaSim from "./images/traumasim_logo.png";
 import sago_logo from "./images/sago_logo.png";
-import ai_decoder from "./images/decoder_owl.png";
+// import ai_decoder from "./images/decoder_owl.png";
+import MappLogo from "./images/MappLogo.png";
 
 export const projectData = [
+  {
+    title: "MAPP",
+    icons: [
+      { tooltip: "Laravel", icon: <SiLaravel /> },
+      { tooltip: "VueJS", icon: <FaVuejs /> },
+      { tooltip: "Flutter", icon: <SiFlutter /> },
+      { tooltip: "App Store", icon: <SiApple /> },
+      { tooltip: "Google Play", icon: <SiGoogleplay /> },
+    ],
+    description:
+      "MAPP is an innovative agricultural company providing advanced solutions mapping, analysis, planning, and precision agriculture.",
+    imgSrc: MappLogo,
+    link: "https://mapp.se",
+    linkText: "mapp.se",
+  },
   {
     title: "TraumaSim VR",
     icons: [
@@ -45,19 +63,19 @@ export const projectData = [
     link: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
     linkText: "Youtube Channel",
   },
-  {
-    title: "ai-decoder.com",
-    icons: [
-      { tooltip: "Python", icon: <FaPython /> },
-      { tooltip: "VueJS", icon: <FaVuejs /> },
-      { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-    ],
-    description:
-      "An online solution for decoding images of 96-well plates and keeping track of biobanking samples.",
-    imgSrc: ai_decoder,
-    link: "https://ai-decoder.com",
-    linkText: "ai-decoder.com",
-  },
+  // {
+  //   title: "ai-decoder.com",
+  //   icons: [
+  //     { tooltip: "Python", icon: <FaPython /> },
+  //     { tooltip: "VueJS", icon: <FaVuejs /> },
+  //     { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+  //   ],
+  //   description:
+  //     "An online solution for decoding images of 96-well plates and keeping track of biobanking samples.",
+  //   imgSrc: ai_decoder,
+  //   link: "https://ai-decoder.com",
+  //   linkText: "ai-decoder.com",
+  // },
   {
     title: "sagostund.nu",
     icons: [
