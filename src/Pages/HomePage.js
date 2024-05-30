@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/homepage.css";
 import { projectData, techStackIcons, frameworksIcons } from "../Constants"; // import constants
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 
 // Components
 import Header from "../Components/Header";
@@ -208,6 +208,7 @@ function HomePage() {
 
         <div className="flex justify-center mt-10">
           <iframe
+            title="Spline"
             src="https://my.spline.design/untitled-6a905e0c5959f08e09703dc48722dd3e/"
             width="100%"
             height="500px"
