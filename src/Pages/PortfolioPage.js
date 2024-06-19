@@ -61,10 +61,8 @@ function PortfolioPage() {
                 <b>MAPP</b> is an innovative agricultural company providing
                 advanced solutions for modern farming. They focus on mapping,
                 analysis, planning, and precision agriculture. Built with{" "}
-                <b>Flutter</b> and <b>Laravel</b> with a web app and mobile app
-                for both <b>App Store</b> and <b>Google Play</b>. MAPP is a
-                product by the <b>AgroMapp Sverige AB</b>. Find out more on
-                their website.
+                <b>Laravel</b> and <b>Vue3</b> for <b>AgroMapp Sverige AB</b>.
+                Find out more on their website.
               </p>
               <br />
               <a href="https://mapp.se">mapp.se</a>
@@ -75,9 +73,6 @@ function PortfolioPage() {
             <h1>
               <LaravelIcon />
               <VueIcon />
-              <FlutterIcon />
-              <AppStoreIcon />
-              <GooglePlayIcon />
             </h1>
           }
           images={
