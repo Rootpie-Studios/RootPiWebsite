@@ -10,6 +10,7 @@ import TraumaSimPrivacyPolicyPage from "./Pages/TraumaSimPrivacyPolicyPage";
 import StreaksPrivacyPolicyPage from "./Pages/StreaksPrivacyPolicyPage";
 import TimetrackerPrivacyPolicyPage from "./Pages/TimeTrackerPrivacyPolicyPage";
 import LekaosPrivacyPolicyPage from "./Pages/LekaosPrivacyPolicyPage";
+import SetupGuidePage from "./Pages/SetupGuidePage";
 
 function MainRouter(props) {
   return (
