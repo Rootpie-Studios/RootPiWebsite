@@ -39,6 +39,25 @@ The setup script will:
 - Configure all necessary environment variables
 - Start the development environment
 
+## 2. Clone Existing Project
+
+To clone and set up an existing RootPi project, run:
+
+\`\`\`bash
+curl -o rootpi-clone.sh https://raw.githubusercontent.com/Rootpie-Studios/bash-scripts/refs/heads/main/rootpi-clone.sh && chmod +x rootpi-clone.sh && ./rootpi-clone.sh
+\`\`\`
+
+The clone script will:
+- Check for Docker installation
+- Clone your specified repository
+- Set up the environment file
+- Install all dependencies
+- Configure Sail
+- Start the development environment
+- Run database migrations
+- Generate application key
+- Open the project in Cursor (if installed)
+
 ## What's Next?
 
 After the setup is complete, your project will be ready for development with:
@@ -48,6 +67,16 @@ After the setup is complete, your project will be ready for development with:
 - Redis for caching and queues
 - Meilisearch for full-text search
 - Docker-based development environment
+
+You can access your application at:
+- Main application: http://localhost
+- Pulse dashboard: http://localhost/pulse
+- Horizon dashboard: http://localhost/horizon
+
+Use the \`sail\` command to manage your application:
+- \`sail up -d\` - Start the application
+- \`sail down\` - Stop the application
+- \`sail artisan\` - Run artisan commands
 `;
 
   return (
