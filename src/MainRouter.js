@@ -25,6 +25,7 @@ function MainRouter(props) {
           path="/traumasim-privacy-policy"
           element={<TraumaSimPrivacyPolicyPage />}
         />
+        <Route exact path="/setup-guide" element={<SetupGuidePage />} />
         <Route
           exact
           path="/streaks-privacy-policy"

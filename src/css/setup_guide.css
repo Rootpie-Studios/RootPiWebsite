@@ -1,0 +1,29 @@
+.setup-guide-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.setup-guide-container code {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  display: block;
+  overflow-x: auto;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.setup-guide-container code:hover {
+  background-color: #e8e8e8;
+}
+
+.setup-guide-container h1,
+.setup-guide-container h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+.setup-guide-container ul {
+  padding-left: 20px;
+}
