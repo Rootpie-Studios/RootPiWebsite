@@ -6,7 +6,7 @@ import logo from "../images/LogoTextTransBlack.png";
 import { Link } from "react-router-dom";
 
 // Images
-import TraumaSim from "../images/traumasim_logo.png";
+import TraumaSim from "../images/traumasim_logo.webp";
 import Instapply from "../images/Instapply.png";
 import HaliteIV from "../images/HaliteIV.png";
 import CrystalQuest2 from "../images/CrystalQuest2.png";

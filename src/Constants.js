@@ -27,7 +27,7 @@ import {
 } from "react-icons/si";
 
 // Project images
-import TraumaSim from "./images/traumasim_logo.png";
+import TraumaSim from "./images/traumasim_logo.webp";
 import sago_logo from "./images/sago_logo.png";
 // import ai_decoder from "./images/decoder_owl.png";
 import MappLogo from "./images/MappLogo.png";
