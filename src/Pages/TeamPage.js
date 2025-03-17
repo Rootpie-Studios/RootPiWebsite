@@ -39,7 +39,7 @@ const TeamMemberCard = ({ name, title, image, description }) => (
   </div>
 );
 
-function AboutPage() {
+function TeamPage() {
   return (
     <div className="App">
       <Header
@@ -72,4 +72,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default TeamPage;
