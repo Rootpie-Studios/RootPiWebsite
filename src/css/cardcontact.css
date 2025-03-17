@@ -1,16 +1,54 @@
 .cardcontact {
-  background-color: rgb(238, 238, 238);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  margin: 3rem auto 3rem auto;
+  background-color: var(--background-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 3rem auto;
   width: 40%;
+  border: 1px solid var(--background-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.cardcontact:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cardcontact h1 {
+  color: var(--secondary);
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.cardcontact h1:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent);
+}
+
+.cardcontact p {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.cardcontact a {
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.cardcontact a:hover {
+  color: var(--primary-dark);
 }
 
 .card-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 .img {
@@ -21,6 +59,14 @@
 
 @media (max-width: 800px) {
   .cardcontact {
-    width: 70%;
+    width: 80%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardcontact {
+    width: 90%;
+    padding: 20px;
   }
 }

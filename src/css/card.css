@@ -1,38 +1,54 @@
 .card {
-  background-color: rgb(238, 238, 238);
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 20px 20px;
-  margin: 3rem auto 3rem auto;
+  background-color: var(--background-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 2rem auto;
   align-items: center;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--background-dark);
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 .text {
   justify-self: start;
   overflow: auto;
+  color: var(--text-dark);
 }
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  border-radius: 50%;
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 .image-grid img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 @media (max-width: 800px) {
+  .card {
+    padding: 20px;
+  }
+
   .text {
     min-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
   }
 }

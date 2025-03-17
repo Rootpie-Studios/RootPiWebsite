@@ -90,7 +90,7 @@ function HomePage() {
 
         <div className="grid-container">
           <div className="home-title">
-            <h1>Current projects</h1>
+            <h1>Customers</h1>
           </div>
         </div>
 
@@ -100,64 +100,6 @@ function HomePage() {
               <CardProject {...project} />
             </Card>
           ))}
-        </div>
-
-        <div className="grid-container">
-          <h1>Our tech stack</h1>
-        </div>
-
-        <div className="grid-container2">
-          <Card
-            textColor="black"
-            children={
-              <div>
-                <div>
-                  <h2
-                    style={{
-                      marginBottom: "10px",
-                      overflow: "visible",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    Coding languages
-                  </h2>
-                  <p>
-                    We have competence and years of experience in many coding
-                    languages each with their own benefit to allow us to be
-                    flexible and deliver products that meet your needs.
-                  </p>
-                </div>
-                <div className="">
-                  <IconArray icons={techStackIcons} />
-                </div>
-              </div>
-            }
-          />
-
-          <Card
-            textColor="black"
-            children={
-              <div>
-                <h2
-                  style={{
-                    overflow: "visible",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Frameworks and programs
-                </h2>
-                <p>
-                  We work with high level frameworks and programs to deliver at
-                  a high speed and efficiency. From 3D modelling and game
-                  engines to web- and app development software, we utilize state
-                  of the art technologies to create the best possible products.
-                </p>
-                <div className="">
-                  <IconArray icons={frameworksIcons} />
-                </div>
-              </div>
-            }
-          />
         </div>
 
         <CardContact textColor="black">
@@ -203,14 +145,6 @@ function HomePage() {
             </div>
           </div>
         </CardContact>
-
-        <iframe
-          title="Spline"
-          src="https://my.spline.design/untitled-6a905e0c5959f08e09703dc48722dd3e/"
-          width="100%"
-          height="300px"
-          style={{ border: "none" }}
-        ></iframe>
       </main>
       <Footer />
     </div>
