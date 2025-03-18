@@ -19,7 +19,7 @@ const teamMembers = [
     title: "Co-founder",
     image: Jesper,
     description:
-      "M.Sc. Electrical Engineering, LTH, Sweden. Interested in VR, game development and design, Unity, Generative AI, Python, image analysis, UI, and UX.",
+      "M.Sc. Electrical Engineering, LTH, Sweden. M.Sc. Electrical Engineering, LTH, Sweden. Interested in UX, generative AI, game design, incremental self improvement.",
   },
 ];
 
