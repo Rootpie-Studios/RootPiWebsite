@@ -58,11 +58,21 @@ function Header(props) {
       >
         <Link
           style={{ color: props.textColor }}
+          className={
+            selected === "home" || selected === "" ? "selected" : "header-link"
+          }
+          onClick={() => setSelected("home")}
+          to="/"
+        >
+          Home
+        </Link>
+        <Link
+          style={{ color: props.textColor }}
           className={selected === "portfolio" ? "selected" : "header-link"}
           onClick={() => setSelected("portfolio")}
           to="/portfolio"
         >
-          Portfolio
+          Projects
         </Link>
         <Link
           style={{ color: props.textColor }}
@@ -74,11 +84,11 @@ function Header(props) {
         </Link>
         <Link
           style={{ color: props.textColor }}
-          className={selected === "about" ? "selected" : "header-link"}
-          onClick={() => setSelected("about")}
-          to="/about"
+          className={selected === "team" ? "selected" : "header-link"}
+          onClick={() => setSelected("team")}
+          to="/team"
         >
-          About
+          Team
         </Link>
       </div>
 
@@ -106,12 +116,28 @@ function Header(props) {
                   <Link
                     style={{ color: props.textColor }}
                     className={
+                      selected === "home" || selected === ""
+                        ? "selected"
+                        : "header-link"
+                    }
+                    onClick={() => setSelected("home")}
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <Link
+                    style={{ color: props.textColor }}
+                    className={
                       selected === "portfolio" ? "selected" : "header-link"
                     }
                     onClick={() => setSelected("portfolio")}
                     to="/portfolio"
                   >
-                    Portfolio
+                    Projects
                   </Link>
                 </ListItemButton>
               </ListItem>
@@ -133,13 +159,11 @@ function Header(props) {
                 <ListItemButton>
                   <Link
                     style={{ color: props.textColor }}
-                    className={
-                      selected === "about" ? "selected" : "header-link"
-                    }
-                    onClick={() => setSelected("about")}
-                    to="/about"
+                    className={selected === "team" ? "selected" : "header-link"}
+                    onClick={() => setSelected("team")}
+                    to="/team"
                   >
-                    About
+                    Team
                   </Link>
                 </ListItemButton>
               </ListItem>

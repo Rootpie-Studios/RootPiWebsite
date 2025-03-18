@@ -28,7 +28,9 @@ const StudentPage = () => (
     />
 
     <main>
-      <h1 className="center-content">Student Projects</h1>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h1 className="section-title">Student Projects</h1>
+      </div>
 
       {/* Database Evaluation Project */}
       <Card color="white" textColor="black" width="80%">
@@ -38,8 +40,6 @@ const StudentPage = () => (
             <p>
               Teodor and Axel studied systems science at LTU, Sweden, and worked
               with us to evaluate and research different database solutions.
-            </p>
-            <p>
               They compared our current implementation with Firebase to a
               regular MySQL solution and the project was carried out with great
               success.

@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import CardPortfolio from "../Components/CardPortfolio";
+import CardProject from "../Components/CardProject";
 import logo from "../images/LogoTextTransBlack.png";
-import { Link } from "react-router-dom";
+import "../css/portfolioGrid.css"; // Import new CSS for grid layout
 
 // Images
 import TraumaSim from "../images/traumasim_logo.webp";
@@ -20,27 +20,6 @@ import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
 import MappLogo from "../images/MappLogo.png";
 
-import {
-  AppStoreIcon,
-  BlenderIcon,
-  DartIcon,
-  FlutterIcon,
-  GooglePlayIcon,
-  KerasIcon,
-  PythonIcon,
-  UnityIcon,
-  VirtualRealityIcon,
-  VueIcon,
-  CSharpIcon,
-  FirebaseIcon,
-  JavaScriptIcon,
-  OpenAIIcon,
-  NumpyIcon,
-  ReactIcon,
-  TailwindIcon,
-  LaravelIcon,
-} from "../Components/IconLibrary";
-
 function PortfolioPage() {
   return (
     <div className="App">
@@ -48,416 +27,392 @@ function PortfolioPage() {
         subtitle={<img className="header-image-container" src={logo} alt="" />}
       />
       <main>
-        <h1 className="center-content">Portfolio</h1>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h1 className="section-title">Projects</h1>
+        </div>
 
-        {/* Mapp */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">MAPP</h2>
-              <p className="text">
-                <b>MAPP</b> is an innovative agricultural company providing
-                advanced solutions for modern farming. They focus on mapping,
-                analysis, planning, and precision agriculture. Built with{" "}
-                <b>Laravel</b> and <b>Vue3</b> for <b>AgroMapp Sverige AB</b>.
-                Find out more on their website.
-              </p>
-              <br />
-              <a href="https://mapp.se">mapp.se</a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <LaravelIcon />
-              <VueIcon />
-            </h1>
-          }
-          images={
-            <img className="rounded-image" src={MappLogo} alt="Mapp Logo" />
-          }
-        />
-
-        {/* TraumaSim VR*/}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">TraumaSim VR</h2>
-              <p className="text">
-                A <b>VR-simulation</b> for education of hospital personnel and
-                students. In collaboration with Umeå University we are
-                developing a VR simulation for training on practical aspects of
-                acuta trauma care. The application is developed in <b>Unity</b>{" "}
-                with <b>C#</b> and is currently being built and tailored for the
-                needs of the students. The work involves VR-centered programming
-                and design, discussions with experienced doctors at Umeå
-                University, 3D-modelling and animation in <b>Blender</b> as well
-                as sound handling and intuitive VR interface building.
-              </p>
-              <br />
-              <div style={{ marginBottom: "10px" }}>
-                <a href="https://www.umu.se/reportage/vr---framtidens-undervisning/">
-                  Article about the project
-                </a>
-              </div>
-              <div style={{ marginBottom: "10px" }}>
-                <a href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g">
-                  YouTube channel
-                </a>
-                <br />{" "}
-              </div>
-
+        <div className="projects-grid-container">
+          {/* Mapp */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
               <div>
-                <p>
-                  <Link to="/traumasim-privacy-policy">
-                    TraumaSim Privacy Policy
-                  </Link>
+                <h2 className="text">MAPP</h2>
+                <p className="text">
+                  MAPP is an innovative agricultural platform that
+                  revolutionizes modern farming through advanced mapping and
+                  analysis solutions. Working with AgroMapp Sverige AB, we
+                  developed tools that enable precision agriculture and smarter
+                  farm planning for improved productivity and sustainability.
+                </p>
+                <a href="https://mapp.se" className="card-button">
+                  Visit Website
+                </a>
+              </div>
+            }
+            images={
+              <img className="rounded-image" src={MappLogo} alt="Mapp Logo" />
+            }
+          />
+
+          {/* TraumaSim VR*/}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">TraumaSim VR</h2>
+                <p className="text">
+                  A virtual reality medical training simulation created in
+                  collaboration with Umeå University. This immersive educational
+                  platform helps hospital personnel and students practice
+                  critical trauma care procedures in a risk-free environment,
+                  enhancing readiness for real-world emergencies.
+                </p>
+                <a
+                  href="https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g"
+                  className="card-button"
+                >
+                  YouTube Channel
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={TraumaSim}
+                alt="TraumaSim Logo"
+              />
+            }
+          />
+
+          {/* Niftitech */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">Consulting for Niftitech</h2>
+                <p className="text">
+                  Our team provides comprehensive development services to
+                  Niftitech, helping them deliver exceptional mobile
+                  applications and web solutions. We work closely with their
+                  team to transform client requirements into polished,
+                  user-focused products that exceed expectations.
+                </p>
+                <a href="https://niftitech.com/" className="card-button">
+                  Visit Website
+                </a>
+              </div>
+            }
+            images={
+              <img className="rounded-image" src={Nifti} alt="Nifti Logo" />
+            }
+          />
+
+          {/* sagostund.nu */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">sagostund.nu</h2>
+                <p className="text">
+                  Sagostund transforms simple text prompts into magical,
+                  narrated stories. With just a few words, our platform creates
+                  completely unique tales complete with custom illustrations and
+                  professional-quality narration. Perfect for parents, teachers,
+                  or anyone who loves stories but lacks time to create them from
+                  scratch.
+                </p>
+                <a
+                  href="https://sagostund.nu/skapa-din-egen-saga"
+                  className="card-button"
+                >
+                  Create a Story
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={SagoLogo}
+                alt="Sagostund Logo"
+              />
+            }
+          />
+
+          {/* ai-decoder */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">ai-decoder.com</h2>
+                <p className="text">
+                  AI-decoder revolutionizes traditional biobanking with a
+                  streamlined digital approach. Researchers can upload images of
+                  96-well plates, and our system automatically decodes and
+                  catalogs samples, seamlessly integrating with digital storage
+                  systems. This innovation drastically reduces manual work while
+                  improving accuracy in biospecimen management.
+                </p>
+                <a href="https://ai-decoder.com" className="card-button">
+                  Visit Website
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={DecoderOwl}
+                alt="AI Decoder Logo"
+              />
+            }
+          />
+
+          {/* Ropes */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">RootPi Ropes</h2>
+                <p className="text">
+                  RootPi Ropes is our premium toolkit for creating realistic
+                  rope and tube simulations in 3D environments. Game developers
+                  and 3D artists use our physics-based solution to easily add
+                  dynamic, believable rope mechanics to their projects, saving
+                  countless hours of complex programming while enhancing visual
+                  appeal.
+                </p>
+                <a
+                  href="https://assetstore.unity.com/packages/tools/physics/rootpi-ropes-248288"
+                  className="card-button"
+                >
+                  Unity Asset Store
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={Ropes}
+                alt="RootPi Ropes Logo"
+              />
+            }
+          />
+
+          {/* Kaw AI */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">KawAI</h2>
+                <p className="text">
+                  KawAI is our educational YouTube channel showcasing the
+                  journey of artificial intelligence learning in interactive 3D
+                  environments. Watch as the cute AI progressively masters
+                  complex tasks through trial and error, providing both
+                  entertainment and insights into how machine learning evolves
+                  over time.
+                </p>
+                <a
+                  href="https://www.youtube.com/@KawAI-ys2my"
+                  className="card-button"
+                >
+                  YouTube Channel
+                </a>
+              </div>
+            }
+            images={
+              <img className="rounded-image" src={KawAI} alt="KawAI Logo" />
+            }
+          />
+
+          {/* instapply */}
+          {/* <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">instapply.se</h2>
+                <p className="text">
+                  Instapply transforms job applications with cutting-edge AI
+                  that generates personalized cover letters in seconds. Simply
+                  upload your CV and the job description, and our platform
+                  creates a tailored, professional cover letter that highlights
+                  your relevant experience. This tool saves valuable time and
+                  increases your chances of landing interviews.
+                </p>
+                <a href="https://instapply.se" className="card-button">
+                  Try it Now
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={Instapply}
+                alt="Instapply Logo"
+              />
+            }
+          /> */}
+
+          {/* TimeTracker */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">TimeTracker</h2>
+                <p className="text">
+                  TimeTracker seamlessly logs your activities using your phone's
+                  location data, eliminating the need for manual check-ins. The
+                  app quietly works in the background, providing insights into
+                  how you spend your time at different locations. Perfect for
+                  professionals tracking billable hours or anyone wanting to
+                  optimize their daily routine.
                 </p>
               </div>
-            </div>
-          }
-          icons={
-            <h1>
-              <UnityIcon />
-              <BlenderIcon />
-              <CSharpIcon />
-              <VirtualRealityIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={TraumaSim} alt="" />}
-        />
-        {/* sagostund.nu */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">sagostund.nu</h2>
-              <p className="text">
-                Sagostund is a website where you can generate a narrated,
-                completely unique story from only a text input. You can try
-                creating your own story now on our website! It is built with{" "}
-                <b>Python</b>, utilizing state of the art AI text and image
-                generation as well as text-to-speech, via <b>OpenAI</b> API:s.
-              </p>
-              <br />
-              <a href="https://sagostund.nu/skapa-din-egen-saga">
-                sagostund.nu
-              </a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <PythonIcon />
-              <OpenAIIcon />
-              <VueIcon />
-              <TailwindIcon />
-            </h1>
-          }
-          images={
-            <a href="https://sagostund.nu/">
-              <img className="rounded-image" src={SagoLogo} alt="" />
-            </a>
-          }
-        />
-        {/* Niftitech */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">Consulting for Niftitech</h2>
-              <p className="text">
-                We provide services in development in <b>Flutter</b> and{" "}
-                <b>Laravel</b> development for the company Niftitech.
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <FlutterIcon />
-              <LaravelIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={Nifti} alt="" />}
-        />
-        {/* ai-decoder */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">ai-decoder.com</h2>
-              <p className="text">
-                AI-decoder is a completely web based alternative to traditional
-                biobanking. It allows the user to upload images of 96-well
-                plates, decode the code and send them to a slot in a freezer,
-                allowing for a seamless integration with a digital storage
-                system. Please send us an email if you are interested in trying
-                it. It is built built with <b>Vue</b> and <b>Tailwind</b>.
-              </p>
-              <br />
-              <a href="https://ai-decoder.com">ai-decoder.com</a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <PythonIcon />
-              <VueIcon />
-              <TailwindIcon />
-              <FirebaseIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={DecoderOwl} alt="" />}
-        />
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={TimeTrack}
+                alt="TimeTracker Logo"
+              />
+            }
+          />
 
-        {/* Ropes */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">RootPi Ropes</h2>
-              <p className="text">
-                RootPi Ropes is a toolkit for easily integrating ropes and tubes
-                in a <b>Unity</b> based 3D environment. It is built with Unity,
-                code for the physics simulations written in <b>C#</b> and it is
-                available as a purchasable asset on the Unity Asset Store.{" "}
-              </p>
-              <br />
-              <a href="https://assetstore.unity.com/packages/tools/physics/rootpi-ropes-248288">
-                RootPi Ropes
-              </a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <UnityIcon />
-              <CSharpIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={Ropes} alt="" />}
-        />
-        {/* Kaw AI */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">KawAI</h2>
-              <p className="text">
-                KawAI is a youtube channel where we post videos showing off an
-                AI agent's learning process in different environments in Unity
-                as it implements Reinforcement Learning algorithms. The
-                simulation is built with <b>Unity</b> and <b>C#</b>.
-              </p>
-              <br />
-              <a href="https://www.youtube.com/@KawAI-ys2my">Kaw AI</a>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <UnityIcon />
-              <CSharpIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={KawAI} alt="" />}
-        />
-        {/* instapply */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">instapply.se</h2>
-              <p className="text">
-                A platform for generating a personal cover letter based on
-                inputting only your CV and the ad for the position you are
-                applying for. Using state of the art AI language models and a
-                clean interface you can get your cover letter written in seconds
-                completely free. The application is written in <b>React</b>{" "}
-                (with <b>JavaScript</b> and <b>Python</b>), database handling
-                via <b>Firebase</b> and is implementing LLM API:s from{" "}
-                <b>OpenAI</b>.
-              </p>
-              <br />
-              <a href="https://instapply.se">instapply.se</a>.
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <ReactIcon />
-              <JavaScriptIcon />
-              <PythonIcon />
-              <FirebaseIcon />
-              <OpenAIIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={Instapply} alt="" />}
-        />
-        {/* TimeTracker */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">TimeTracker</h2>
-              <p className="text">
-                TimeTracker is an app that tracks your activites from the GPS on
-                your phone, allowing you to automatically track where you spend
-                your time without checking in. Everything is handled
-                automatically! Get a better overview of your life, whether you
-                want to track your work, training, school or other habits.
-                Activites are recorded in a calendar giving you an overview of
-                where spend your time on a day to day basis. It is built with{" "}
-                <b>Flutter</b> and <b>Dart</b> with <b>Firebase</b>. Available
-                for download on <b>App Store</b> and <b>Play Store</b>
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <DartIcon />
-              <FlutterIcon />
-              <FirebaseIcon />
-              <AppStoreIcon />
-              <GooglePlayIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={TimeTrack} alt="" />}
-        />
+          {/* LundaPant */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">LundaPant</h2>
+                <p className="text">
+                  LundaPant makes recycling bottles and cans effortless for
+                  residents of Lund. Our app shows the nearest recycling
+                  stations, tracks your environmental impact, and helps manage
+                  your returns. This practical tool encourages sustainability
+                  while making the recycling process more convenient and
+                  rewarding.
+                </p>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.rootpi.lunda_pant&hl=ln"
+                  className="card-button"
+                >
+                  Google Play Store
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={LundaPant}
+                alt="LundaPant Logo"
+              />
+            }
+          />
 
-        {/* LundaPant */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">LundaPant</h2>
-              <p className="text">
-                LundaPant is an app for getting rid of empty cans and bottles
-                without leaving your home, while still making sure they will be
-                recycled. They app was developed with <b>Flutter</b>,{" "}
-                <b>Dart</b> and <b>Firebase</b> and is available for free on{" "}
-                <b>App Store</b> and <b>Play Store</b>
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <DartIcon />
-              <FlutterIcon />
-              <FirebaseIcon />
-              <AppStoreIcon />
-              <GooglePlayIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={LundaPant} alt="" />}
-        />
+          {/* GvHD */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">GvHD Detection System</h2>
+                <p className="text">
+                  Developed in partnership with Lund University researchers,
+                  this medical diagnostic tool helps identify Graft versus Host
+                  Disease (GvHD) from patient samples. Our solution analyzes
+                  microRNA patterns to provide fast, accurate disease detection,
+                  potentially improving treatment timing and patient outcomes
+                  for this serious transplant complication.
+                </p>
+              </div>
+            }
+            images={
+              <img className="rounded-image" src={GvHD} alt="GvHD Project" />
+            }
+          />
 
-        {/* GvHD */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">ML-classification GvHD with MicroRNA</h2>
-              <p className="text">
-                In collaboration with researchers at Lund University we created
-                a neural network based binary classifier for determining whether
-                a patient has or does not have Graft versus Host Disease (GvHD)
-                based on MicroRNA data. Our results indicated that machine
-                learning can indeed be combined with micro-RNA data in order to
-                determine positive/negative status of GvHD for a patient. The
-                work was done in <b>Python</b> and the algorithms utilized the{" "}
-                <b>Keras</b> API.
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <PythonIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={GvHD} alt="" />}
-        />
+          {/* Halite */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">Halite IV</h2>
+                <p className="text">
+                  A master thesis project that created intelligent digital
+                  agents capable of competing in the Halite IV strategy
+                  competition. Our autonomous agents learned to make complex
+                  decisions about resource management and tactical gameplay,
+                  demonstrating how AI can master intricate competitive
+                  environments through strategic learning.
+                </p>
+                <a
+                  href="https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=9059757&fileOId=9059759"
+                  className="card-button"
+                >
+                  Read Thesis
+                </a>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={HaliteIV}
+                alt="Halite IV Logo"
+              />
+            }
+          />
 
-        {/* Crystal Quest */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">
-                Crystal Quest: Rainbow and Crystal Quest 2
-              </h2>
-              <p className="text">
-                The enormously anticipated sequel of the smash hit Crystal King:
-                Crystal Quest - Rainbow! With the same intense, never ending
-                arcade style gameplay but with 6 more levels, 2 thrilling boss
-                fights and brand new a shop filled with gear to unlock, this
-                adventure will send you to the skies! Available on{" "}
-                <b>App Store</b> and <b>Play Store</b>, built in <b>Unity</b>{" "}
-                with <b>C#</b> and 3D models created with <b>Blender</b>.
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <UnityIcon />
-              <BlenderIcon />
-              <CSharpIcon />
-              <AppStoreIcon />
-              <GooglePlayIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={CrystalQuest2} alt="" />}
-        />
-
-        {/* Halite IV */}
-        <CardPortfolio
-          textColor="black"
-          width="60%"
-          children={
-            <div>
-              <h2 className="text">Deep Reinforcement Learning in Halite IV</h2>
-              <p className="text">
-                For our master thesis at Lund University, LTH at the department
-                of Automatic Control we investigated the field of{" "}
-                <b>Deep Reinforcement Learning (DRL)</b>. We built a program
-                capable of setting up and training agents using DRL techniques
-                and testing them in the competitive game environment Halite IV.
-                Our RL agents outperformed some previously created algorithmic
-                agents. Our full results are presented in our master thesis done
-                at LTH and the software was developed in <b>Python</b> and
-                powerful packages including <b>Numpy</b> and <b>Keras</b>.
-              </p>
-              <br />
-            </div>
-          }
-          icons={
-            <h1>
-              <PythonIcon />
-              <KerasIcon />
-              <NumpyIcon />
-            </h1>
-          }
-          images={<img className="rounded-image" src={HaliteIV} alt="" />}
-        />
+          {/* Crystal Quest 2 */}
+          <CardProject
+            textColor="black"
+            width="100%"
+            children={
+              <div>
+                <h2 className="text">Crystal Quest 2</h2>
+                <p className="text">
+                  Crystal Quest 2 is our captivating mobile adventure game
+                  available on iOS and Android. Players embark on a journey to
+                  collect precious crystals while solving puzzles and overcoming
+                  obstacles in beautifully designed worlds. With intuitive
+                  controls, progressive difficulty, and rewarding gameplay, it
+                  offers a delightful experience for casual gamers of all ages.
+                </p>
+                <div className="button-group">
+                  <a
+                    href="https://apps.apple.com/us/app/crystal-quest-2/id1672041266"
+                    className="card-button"
+                  >
+                    App Store
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.rootpi.crystalquest2&hl=sv"
+                    className="card-button"
+                  >
+                    Google Play
+                  </a>
+                </div>
+              </div>
+            }
+            images={
+              <img
+                className="rounded-image"
+                src={CrystalQuest2}
+                alt="Crystal Quest 2 Logo"
+              />
+            }
+          />
+        </div>
       </main>
       <Footer />
     </div>

@@ -58,24 +58,11 @@ export const projectData = [
       { tooltip: "C#", icon: <SiCsharp /> },
     ],
     description:
-      "A VR education software for practicing realistic trauma related scenarios in a medical environment. Built in collaboration with Umeå University.",
+      "A VR education software for practicing realistic trauma related scenarios in a medical environment. Reach out to us for free access to the software.",
     imgSrc: TraumaSim,
     link: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
     linkText: "Youtube Channel",
   },
-  // {
-  //   title: "ai-decoder.com",
-  //   icons: [
-  //     { tooltip: "Python", icon: <FaPython /> },
-  //     { tooltip: "VueJS", icon: <FaVuejs /> },
-  //     { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
-  //   ],
-  //   description:
-  //     "An online solution for decoding images of 96-well plates and keeping track of biobanking samples.",
-  //   imgSrc: ai_decoder,
-  //   link: "https://ai-decoder.com",
-  //   linkText: "ai-decoder.com",
-  // },
   {
     title: "sagostund.nu",
     icons: [

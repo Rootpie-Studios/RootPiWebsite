@@ -4,7 +4,7 @@ import Footer from "../Components/Footer";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/aboutpage.css";
 import Kim from "../images/Kim.png";
-import Jesper from "../images/jespernorge3.png";
+import Jesper from "../images/jesper.webp";
 
 const teamMembers = [
   {
@@ -24,7 +24,7 @@ const teamMembers = [
 ];
 
 const TeamMemberCard = ({ name, title, image, description }) => (
-  <div className="about-container">
+  <div className="team-member-card">
     <img
       className="about-image-container rounded-image"
       src={image}
@@ -53,17 +53,27 @@ function TeamPage() {
       />
       <main className="about-page-main">
         <div className="about-page-container">
-          <h1 className="center-content team-title">Our Team</h1>
-          <div className="grid-container2 about-grid">
-            {teamMembers.map((member) => (
-              <TeamMemberCard
-                key={member.name}
-                name={member.name}
-                title={member.title}
-                image={member.image}
-                description={member.description}
-              />
-            ))}
+          <div className="about-container">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
+              <h1 className="section-title">Team</h1>
+            </div>
+            <div className="about-grid">
+              {teamMembers.map((member, index) => (
+                <TeamMemberCard
+                  key={member.name}
+                  name={member.name}
+                  title={member.title}
+                  image={member.image}
+                  description={member.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </main>

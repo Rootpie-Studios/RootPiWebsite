@@ -11,6 +11,8 @@ function Footer(props) {
           style={{
             color: props.textColor,
             marginBottom: "50px",
+            fontSize: "0.9rem",
+            fontWeight: "normal",
           }}
           className="copyright"
         >

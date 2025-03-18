@@ -61,6 +61,7 @@
   .cardcontact {
     width: 80%;
     padding: 25px;
+    margin-bottom: 4rem;
   }
 }
 
@@ -68,5 +69,6 @@
   .cardcontact {
     width: 90%;
     padding: 20px;
+    margin-bottom: 5rem;
   }
 }

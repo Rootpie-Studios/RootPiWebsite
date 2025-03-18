@@ -29,6 +29,13 @@
   width: 200px;
 }
 
+/* Copyright styling */
+.copyright {
+  font-size: 0.9rem;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
 .center-text {
   text-align: center;
 }

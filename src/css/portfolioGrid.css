@@ -1,0 +1,128 @@
+/* Basic reset and box-sizing fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Projects Grid Layout */
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  padding: 45px;
+  max-width: 1400px;
+  margin: 2rem auto 4rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Adjust card-project styles for grid layout */
+.projects-grid-container .card-project {
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 35px !important;
+  padding-bottom: 90px !important; /* Space for the button */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07) !important;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  width: 100% !important;
+}
+
+/* Make images consistent size and circular */
+.projects-grid-container .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.projects-grid-container .img img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  padding: 10px;
+}
+
+.projects-grid-container .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-grid-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #2d3748;
+}
+
+/* Scope paragraph styling to only affect project cards */
+.projects-grid-container .card-project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  /* Remove height and text clipping */
+}
+
+/* Hide icons in the grid layout */
+.projects-grid-container .tech-icons {
+  display: none;
+}
+
+/* Card button styling */
+.projects-grid-container .card-button {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background-color: #2d3748;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 0 !important;
+}
+
+.projects-grid-container .card-button:hover {
+  background-color: #4a5568;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1300px) {
+  .projects-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 35px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-grid-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 25px;
+    max-width: 600px;
+  }
+
+  .projects-grid-container .card-project {
+    padding: 30px !important;
+    padding-bottom: 90px !important;
+    min-height: auto;
+  }
+
+  /* Remove existing paragraph constraints */
+}
