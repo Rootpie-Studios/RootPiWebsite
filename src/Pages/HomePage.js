@@ -53,9 +53,9 @@ function HomePage() {
               style={{ marginTop: "60px", fontSize: "18px", color: "#4a5568" }}
             >
               Welcome to RootPi, we provide fullstack and AI solutions for your
-              needs. We are here to help you bring your ideas to life! Our small
-              team of experienced developers will work with you to create a
-              custom solution, tailored to your specific needs and goals.
+              needs. Our team of experienced developers will work with you to
+              create a custom solutions, tailored to your specific needs and
+              goals.
             </p>
             <br />
             <p style={{ fontSize: "18px", color: "#4a5568" }}>
