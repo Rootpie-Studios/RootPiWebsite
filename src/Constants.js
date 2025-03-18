@@ -28,9 +28,8 @@ import {
 
 // Project images
 import TraumaSim from "./images/traumasim_logo.webp";
-import sago_logo from "./images/sago_logo.png";
-// import ai_decoder from "./images/decoder_owl.png";
-import MappLogo from "./images/MappLogo.png";
+import sago_logo from "./images/sago_logo.webp";
+import MappLogo from "./images/MappLogo.webp";
 
 export const projectData = [
   {

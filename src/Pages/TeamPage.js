@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import logo from "../images/LogoTextTransBlack.png";
 import "../css/aboutpage.css";
-import Kim from "../images/Kim.png";
+import Kim from "../images/Kim.webp";
 import Jesper from "../images/jesper.webp";
 
 const teamMembers = [

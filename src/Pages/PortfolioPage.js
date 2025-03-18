@@ -7,18 +7,17 @@ import "../css/portfolioGrid.css"; // Import new CSS for grid layout
 
 // Images
 import TraumaSim from "../images/traumasim_logo.webp";
-import Instapply from "../images/Instapply.png";
 import HaliteIV from "../images/HaliteIV.png";
 import CrystalQuest2 from "../images/CrystalQuest2.png";
 import Nifti from "../images/Nifti.png";
 import LundaPant from "../images/LundaPant.png";
 import Ropes from "../images/RootPiRopesAssetIconHQ.png";
-import SagoLogo from "../images/sago_logo.png";
+import SagoLogo from "../images/sago_logo.webp";
 import TimeTrack from "../images/TimeTrackBadLogo.png";
 import GvHD from "../images/GvHD.jpg";
 import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
-import MappLogo from "../images/MappLogo.png";
+import MappLogo from "../images/MappLogo.webp";
 
 function PortfolioPage() {
   return (

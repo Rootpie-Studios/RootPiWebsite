@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/homepage.css";
-import { projectData, techStackIcons, frameworksIcons } from "../Constants"; // import constants
-// import Spline from "@splinetool/react-spline";
+import { projectData } from "../Constants";
 
 // Components
 import Header from "../Components/Header";
@@ -9,13 +8,12 @@ import Footer from "../Components/Footer";
 import Button from "../Components/Button";
 import CardContact from "../Components/CardContact";
 import CardProject from "../Components/CardProject";
-import IconArray from "../Components/IconArray";
 
 // images
 import RootPiText from "../images/LogoTextTransBlack.png";
-import VRDude from "../images/VRDude.png";
-import Coder from "../images/Coder.png";
-import AI from "../images/AI.png";
+import VRDude from "../images/VRDude.webp";
+import Coder from "../images/Coder.webp";
+import AI from "../images/AI.webp";
 
 import { FiMail, FiPhone } from "react-icons/fi";
 
