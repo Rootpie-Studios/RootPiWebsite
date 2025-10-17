@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import "../css/header.css";
 import logo from "../images/LogoTrans.png";
 import RoundButton from "./RoundButton";
 import { Link, useLocation } from "react-router-dom";
@@ -37,29 +36,37 @@ function Header(props) {
     setSelected(path || "home");
   }, [location]);
 
+  const linkClasses =
+    "py-2.5 px-5 my-2.5 text-black no-underline ml-2.5 text-base hover:opacity-80";
+  const selectedClasses =
+    "py-2.5 px-5 my-2.5 text-black ml-2.5 text-base underline underline-offset-4";
+
   return (
-    <div className="header">
-      <div className="header-left">
+    <div className="flex justify-between items-center text-black min-w-[90%]">
+      <div className="flex items-center my-2.5 mx-8 md:mx-1.5">
         <Link
-          className="link"
+          className="flex justify-center items-center group"
           to="/"
           style={{ textDecoration: "none", color: "white" }}
         >
-          <RoundButton
-            color="black"
-            label={<img className="logo" src={logo} alt="" />}
-          />
-          {props.subtitle}
+          <div className="transition-opacity duration-200 group-hover:opacity-70">
+            <RoundButton
+              color="black"
+              label={<img className="w-[70px] md:w-[50px]" src={logo} alt="" />}
+            />
+          </div>
+          <div className="transition-opacity duration-200 group-hover:opacity-70">
+            {props.subtitle}
+          </div>
         </Link>
       </div>
-      <div
-        className="header-right"
-        style={{ display: window.innerWidth >= 900 ? "flex" : "none" }}
-      >
+      <div className="hidden lg:flex justify-end">
         <Link
           style={{ color: props.textColor }}
           className={
-            selected === "home" || selected === "" ? "selected" : "header-link"
+            selected === "home" || selected === ""
+              ? selectedClasses
+              : linkClasses
           }
           onClick={() => setSelected("home")}
           to="/"
@@ -68,7 +75,7 @@ function Header(props) {
         </Link>
         <Link
           style={{ color: props.textColor }}
-          className={selected === "portfolio" ? "selected" : "header-link"}
+          className={selected === "portfolio" ? selectedClasses : linkClasses}
           onClick={() => setSelected("portfolio")}
           to="/portfolio"
         >
@@ -76,7 +83,7 @@ function Header(props) {
         </Link>
         <Link
           style={{ color: props.textColor }}
-          className={selected === "students" ? "selected" : "header-link"}
+          className={selected === "students" ? selectedClasses : linkClasses}
           onClick={() => setSelected("students")}
           to="/students"
         >
@@ -84,7 +91,7 @@ function Header(props) {
         </Link>
         <Link
           style={{ color: props.textColor }}
-          className={selected === "team" ? "selected" : "header-link"}
+          className={selected === "team" ? selectedClasses : linkClasses}
           onClick={() => setSelected("team")}
           to="/team"
         >
@@ -92,11 +99,8 @@ function Header(props) {
         </Link>
       </div>
 
-      <div
-        className="header-right"
-        style={{ display: window.innerWidth < 900 ? "flex" : "none" }}
-      >
-        <h1 onClick={toggleDrawer("right", true)}>
+      <div className="flex lg:hidden justify-end">
+        <h1 onClick={toggleDrawer("right", true)} className="cursor-pointer">
           <RxHamburgerMenu style={{ color: "black" }} />
         </h1>
         <Drawer
@@ -117,8 +121,8 @@ function Header(props) {
                     style={{ color: props.textColor }}
                     className={
                       selected === "home" || selected === ""
-                        ? "selected"
-                        : "header-link"
+                        ? selectedClasses
+                        : linkClasses
                     }
                     onClick={() => setSelected("home")}
                     to="/"
@@ -132,7 +136,7 @@ function Header(props) {
                   <Link
                     style={{ color: props.textColor }}
                     className={
-                      selected === "portfolio" ? "selected" : "header-link"
+                      selected === "portfolio" ? selectedClasses : linkClasses
                     }
                     onClick={() => setSelected("portfolio")}
                     to="/portfolio"
@@ -146,7 +150,7 @@ function Header(props) {
                   <Link
                     style={{ color: props.textColor }}
                     className={
-                      selected === "students" ? "selected" : "header-link"
+                      selected === "students" ? selectedClasses : linkClasses
                     }
                     onClick={() => setSelected("students")}
                     to="/students"
@@ -159,7 +163,9 @@ function Header(props) {
                 <ListItemButton>
                   <Link
                     style={{ color: props.textColor }}
-                    className={selected === "team" ? "selected" : "header-link"}
+                    className={
+                      selected === "team" ? selectedClasses : linkClasses
+                    }
                     onClick={() => setSelected("team")}
                     to="/team"
                   >
@@ -167,17 +173,6 @@ function Header(props) {
                   </Link>
                 </ListItemButton>
               </ListItem>
-              {/* <ListItem disablePadding>
-                <ListItemButton>
-                  <Link style={{ marginLeft: "5px" }} to="/contact">
-                    <Button
-                      color="dodgerblue"
-                      textColor="black"
-                      label="Contact"
-                    />
-                  </Link>
-                </ListItemButton>
-              </ListItem> */}
             </List>
           </Box>
         </Drawer>

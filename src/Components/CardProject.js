@@ -1,21 +1,20 @@
 import React from "react";
-import "../css/cardproject.css";
 
 function CardProject(props) {
+  const defaultClasses =
+    "bg-white rounded-2xl shadow-md p-8 my-8 mx-auto flex flex-col relative border border-gray-50 md:p-6";
+  const className = props.className || defaultClasses;
+
   return (
     <div
-      className="card-project"
+      className={className}
       style={{
         color: props.textColor,
         width: props.width,
       }}
     >
-      <div className="card-header">
-        {props.images && <div className="img">{props.images}</div>}
-      </div>
-      <div className="card-content">
-        <div className="text-content">{props.children}</div>
-      </div>
+      {props.images && props.images}
+      <div className="flex-1 flex flex-col">{props.children}</div>
     </div>
   );
 }

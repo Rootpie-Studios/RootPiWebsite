@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import CircularImage from "../Components/CircularImage";
 import logo from "../images/LogoTextTransBlack.png";
-import "../css/aboutpage.css";
 import Kim from "../images/Kim.webp";
 import Jesper from "../images/jesper.webp";
 
@@ -24,17 +24,23 @@ const teamMembers = [
 ];
 
 const TeamMemberCard = ({ name, title, image, description }) => (
-  <div className="team-member-card">
-    <img
-      className="about-image-container rounded-image"
+  <div className="flex flex-col items-center w-full bg-white rounded-2xl shadow-lg border border-gray-200 p-8 mb-4 transition-all duration-300 hover:shadow-xl">
+    <CircularImage
+      className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] object-cover mb-6"
       src={image}
       alt={name}
-      loading="lazy"
+      shadowSize="md"
     />
-    <div className="card">
-      <h2>{name}</h2>
-      <h3 className="member-title">{title}</h3>
-      <p>{description}</p>
+    <div className="w-full text-center">
+      <h2 className="text-2xl md:text-3xl mb-2 text-gray-800 font-semibold">
+        {name}
+      </h2>
+      <h3 className="text-sm md:text-base text-gray-500 mb-4 font-medium tracking-wider uppercase inline-block relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-0.5 after:bg-accent pb-2">
+        {title}
+      </h3>
+      <p className="text-sm md:text-base leading-relaxed text-gray-600 mt-6">
+        {description}
+      </p>
     </div>
   </div>
 );
@@ -51,20 +57,14 @@ function TeamPage() {
           />
         }
       />
-      <main className="about-page-main">
-        <div className="about-page-container">
-          <div className="about-container">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                width: "100%",
-              }}
-            >
+      <main className="w-full overflow-x-hidden">
+        <div className="max-w-[1200px] mx-auto px-5 w-full">
+          <div className="flex flex-col items-center w-full pb-8">
+            <div className="flex justify-center w-full">
               <h1 className="section-title">Team</h1>
             </div>
-            <div className="about-grid">
-              {teamMembers.map((member, index) => (
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-10">
+              {teamMembers.map((member) => (
                 <TeamMemberCard
                   key={member.name}
                   name={member.name}

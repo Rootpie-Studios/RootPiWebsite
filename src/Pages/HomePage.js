@@ -1,15 +1,12 @@
 import React from "react";
-import "../css/homepage.css";
 import { projectData } from "../Constants";
 
-// Components
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Button from "../Components/Button";
-import CardContact from "../Components/CardContact";
 import CardProject from "../Components/CardProject";
+import CircularImage from "../Components/CircularImage";
 
-// images
 import RootPiText from "../images/LogoTextTransBlack.png";
 import VRDude from "../images/VRDude.webp";
 import Coder from "../images/Coder.webp";
@@ -29,42 +26,37 @@ function HomePage() {
           />
         }
       />
-      <main>
-        <div className="home-grid-container-header">
-          <div className="hidden">
-            <img
-              className="home-title-image-container rounded-image"
-              style={{ marginLeft: "5%", marginTop: "20px" }}
+      <main className="mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mx-4 md:mx-15 lg:mx-20 mb-8">
+          <div className="hidden md:block">
+            <CircularImage
+              className="w-[70%] ml-[5%] mt-5"
               src={VRDude}
               alt="VR Dude"
             />
-            <img
-              className="home-title-image-container rounded-image"
-              style={{ marginLeft: "20%", marginTop: "50px" }}
+            <CircularImage
+              className="w-[70%] ml-[30%] mt-12"
               src={AI}
               alt="AI"
             />
           </div>
+
           <div>
-            <div className="home-title">
-              <h1>RootPi</h1>
+            <div className="mt-16 md:mt-24 mb-8">
+              <h1 className="text-gray-700 text-4xl font-bold relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-[60px] after:h-[3px] after:bg-accent">
+                RootPi
+              </h1>
             </div>
-            <p
-              style={{ marginTop: "60px", fontSize: "18px", color: "#4a5568" }}
-            >
-              Welcome to RootPi, we provide fullstack and AI solutions for your
-              needs. Our team of experienced developers will work with you to
-              create a custom solutions, tailored to your specific needs and
-              goals.
+            <p className="mt-15 text-lg text-gray-600">
+              We build fullstack applications and AI solutions. Our team of
+              experienced developers delivers custom software that solves real
+              problems.
             </p>
-            <br />
-            <p style={{ fontSize: "18px", color: "#4a5568" }}>
-              Do you have a project in mind or just want to know more about our
-              business? Get in touch and let us help you bring your ideas to
-              life!
+            <p className="mt-6 text-lg text-gray-600">
+              Whether you have a project in mind or want to explore
+              possibilities, let's talk about what we can build together.
             </p>
-            <br />
-            <div className="center-content">
+            <div className="flex justify-center items-center mt-8">
               <Button
                 textColor="white"
                 label="Contact"
@@ -89,41 +81,49 @@ function HomePage() {
           </div>
 
           <div>
-            <img
-              className="home-title-image-container rounded-image coder-image"
+            <CircularImage
+              className="w-[70%] ml-[20%] mt-12 md:mt-48"
               src={Coder}
               alt="Coder"
             />
           </div>
         </div>
 
-        <div className="projects-grid-container homepage-projects">
+        <div className="flex justify-center mt-12 mb-8">
+          <h1 className="text-gray-700 text-4xl font-bold relative inline-block after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-[60px] after:h-[3px] after:bg-accent">
+            Projects
+          </h1>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-11 px-6 md:px-9 lg:px-11 max-w-[1400px] mx-auto mb-16 w-full">
           {projectData.map((project, index) => (
             <CardProject
               key={index}
               textColor="black"
               width="100%"
+              className="m-0 flex flex-col relative p-9 pb-24 rounded-2xl shadow-lg bg-white border border-gray-200"
               images={
-                <img
-                  className="rounded-image"
-                  src={project.imgSrc}
-                  alt={project.title}
-                />
+                <div className="w-full flex justify-center items-center mb-2.5 p-0">
+                  <CircularImage
+                    className="w-40 h-40"
+                    src={project.imgSrc}
+                    alt={project.title}
+                  />
+                </div>
               }
               children={
-                <div>
-                  <h2 className="text">{project.title}</h2>
-                  <p className="text">{project.description}</p>
-                  <div className="tech-icons">
-                    {project.icons &&
-                      project.icons.map((icon, idx) => (
-                        <span key={idx} title={icon.tooltip}>
-                          {icon.icon}
-                        </span>
-                      ))}
-                  </div>
+                <div className="flex-1 flex flex-col">
+                  <h2 className="text-2xl md:text-3xl mb-3 text-gray-700">
+                    {project.title}
+                  </h2>
+                  <p className="text-base leading-relaxed text-gray-600 mb-8">
+                    {project.description}
+                  </p>
                   {project.link && (
-                    <a href={project.link} className="card-button">
+                    <a
+                      href={project.link}
+                      className="inline-block px-7 py-4 bg-gray-700 text-white rounded-lg no-underline font-medium absolute bottom-9 left-9 transition-all duration-200 hover:bg-gray-600 hover:-translate-y-0.5"
+                    >
                       {project.linkText || "Learn More"}
                     </a>
                   )}
@@ -133,54 +133,38 @@ function HomePage() {
           ))}
         </div>
 
-        <CardContact textColor="black" id="contact-section">
-          <div>
-            <h1 style={{ color: "#2d3748" }}>Contact us</h1>
-            <p style={{ color: "#4a5568" }}>
-              Tell us about your project, your company, or your ideas!
-            </p>
-            <br />
-            <span style={{ fontWeight: "bold", color: "#4a5568" }}>
-              RootPi AB
-            </span>
-            <br />
-            <span style={{ fontWeight: "bold", color: "#4a5568" }}>
-              Bantorget 2
-            </span>
-            <br />
-            <span style={{ fontWeight: "bold", color: "#4a5568" }}>
-              222 29, Lund
-            </span>
-            <br />
-            <br />
-            <div className="flex items-center font-bold">
-              <FiMail />
-              <a
-                href="mailto:info@rootpi.xyz"
-                style={{
-                  color: "#4a5568",
-                  textDecoration: "none",
-                  marginLeft: "10px",
-                }}
-              >
-                info@rootpi.xyz
-              </a>
-            </div>
-            <div className="flex items-center font-bold mt-2">
-              <FiPhone />
-              <a
-                href="tel:+46708889536"
-                style={{
-                  color: "#4a5568",
-                  textDecoration: "none",
-                  marginLeft: "10px",
-                }}
-              >
-                +4673 088 95 56
-              </a>
-            </div>
+        <div
+          id="contact-section"
+          className="bg-white rounded-2xl shadow-md p-6 md:p-8 mx-4 md:mx-auto mb-8 w-auto md:w-[70%] lg:w-[50%] max-w-[800px] border border-gray-200"
+        >
+          <h1 className="text-gray-700 text-3xl font-bold">Contact us</h1>
+          <p className="text-gray-600 mt-4">
+            Tell us about your project, your company, or your ideas!
+          </p>
+          <div className="mt-6 space-y-1">
+            <span className="block font-bold text-gray-600">RootPi AB</span>
+            <span className="block font-bold text-gray-600">Bantorget 2</span>
+            <span className="block font-bold text-gray-600">222 29, Lund</span>
           </div>
-        </CardContact>
+          <div className="flex items-center font-bold mt-6">
+            <FiMail className="text-gray-600" />
+            <a
+              href="mailto:info@rootpi.xyz"
+              className="text-gray-600 no-underline ml-2.5 hover:text-gray-800"
+            >
+              info@rootpi.xyz
+            </a>
+          </div>
+          <div className="flex items-center font-bold mt-2">
+            <FiPhone className="text-gray-600" />
+            <a
+              href="tel:+46708889536"
+              className="text-gray-600 no-underline ml-2.5 hover:text-gray-800"
+            >
+              +4673 088 95 56
+            </a>
+          </div>
+        </div>
       </main>
       <Footer />
     </div>

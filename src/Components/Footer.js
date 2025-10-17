@@ -1,20 +1,14 @@
 import React from "react";
-import "../css/footer.css";
 
 function Footer(props) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer-box">
-      <footer className="footer center-content">
+    <div className="w-full pt-8">
+      <footer className="flex flex-wrap w-full items-center justify-center">
         <div
-          style={{
-            color: props.textColor,
-            marginBottom: "50px",
-            fontSize: "0.9rem",
-            fontWeight: "normal",
-          }}
-          className="copyright"
+          style={{ color: props.textColor }}
+          className="mb-12 text-sm font-normal opacity-80"
         >
           &copy; {currentYear} RootPi AB
         </div>
