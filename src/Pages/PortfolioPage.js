@@ -17,6 +17,7 @@ import GvHD from "../images/GvHD.jpg";
 import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
 import MappLogo from "../images/MappLogo.webp";
+import PluggahpLogo from "../images/pluggahp_logo.png";
 
 const projectCardClasses =
   "m-0 flex flex-col relative p-9 pb-24 rounded-2xl shadow-lg bg-white border border-gray-200";
@@ -30,6 +31,15 @@ const projectImageWrapperClasses =
 
 function PortfolioPage() {
   const projects = [
+    {
+      title: "pluggahp.com",
+      description:
+        "Pluggahp is a comprehensive platform designed to help students prepare for the Swedish Högskoleprovet (SweSAT). With practice tests, study materials, and progress tracking, we make it easier for students to achieve their academic goals and secure their place at Swedish universities.",
+      link: "https://pluggahp.com",
+      linkText: "Visit Website",
+      image: PluggahpLogo,
+      alt: "Pluggahp Logo",
+    },
     {
       title: "MAPP",
       description:
