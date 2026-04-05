@@ -21,11 +21,11 @@ const StudentPage = () => (
       </div>
 
       <div className="max-w-[900px] mx-auto px-4">
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-gray-200">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
+        <div className="bg-surface rounded-2xl border border-outline p-8 md:p-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-ink mb-4 text-center font-display">
             Database Evaluation
           </h2>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-12 text-center">
+          <p className="text-sm md:text-base text-ink-muted leading-relaxed mb-12 text-center">
             Teodor and Axel studied systems science at LTU, Sweden, and worked
             with us to evaluate and research different database solutions. They
             compared our current implementation with Firebase to a regular MySQL
@@ -40,7 +40,7 @@ const StudentPage = () => (
                 alt="Teodor"
                 shadowSize="md"
               />
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+              <h3 className="text-lg md:text-xl font-semibold text-ink">
                 Teodor
               </h3>
             </div>
@@ -51,7 +51,7 @@ const StudentPage = () => (
                 alt="Axel"
                 shadowSize="md"
               />
-              <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+              <h3 className="text-lg md:text-xl font-semibold text-ink">
                 Axel
               </h3>
             </div>

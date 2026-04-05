@@ -8,29 +8,30 @@ module.exports = {
           dark: "#1d4ed8",
           light: "#3b82f6",
         },
-        secondary: {
-          DEFAULT: "#1e293b",
-          dark: "#0f172a",
-          light: "#334155",
-        },
         accent: {
-          DEFAULT: "#f97316",
-          dark: "#ea580c",
-          light: "#fb923c",
+          DEFAULT: "#60a5fa",
+          dark: "#3b82f6",
+          light: "#93c5fd",
         },
-        background: {
-          DEFAULT: "#f8fafc",
-          dark: "#e2e8f0",
-          light: "#ffffff",
+        // Dark theme tokens
+        ink: {
+          DEFAULT: "#fafafa",
+          muted: "#a1a1aa",
+          subtle: "#71717a",
         },
-        text: {
-          dark: "#1e293b",
-          light: "#f8fafc",
-          muted: "#64748b",
+        surface: {
+          DEFAULT: "#1c1c20",
+          alt: "#16161a",
+          page: "#111114",
+        },
+        outline: {
+          DEFAULT: "#2a2a2f",
+          faint: "#222227",
         },
       },
       fontFamily: {
         sans: ["Quicksand", "sans-serif"],
+        display: ["Space Grotesk", "sans-serif"],
       },
     },
   },
