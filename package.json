@@ -21,6 +21,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "volta": {
+    "node": "20.19.0",
+    "npm": "10.8.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "env-cmd -f prod.env react-scripts build",
