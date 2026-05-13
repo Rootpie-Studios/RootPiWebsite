@@ -10,6 +10,7 @@ const teamMembers = [
   {
     name: "Kim Haapamäki",
     title: "Co-founder",
+    email: "kim@rootpi.xyz",
     image: Kim,
     description:
       "M.Sc. Computer Science Engineering, LTH, Sweden. A passion for game development and Machine Learning. Developing Unity games, consulting expertise in VR/ML, mobile and web app development.",
@@ -17,13 +18,14 @@ const teamMembers = [
   {
     name: "Jesper Laurell",
     title: "Co-founder",
+    email: "jesper@rootpi.xyz",
     image: Jesper,
     description:
       "M.Sc. Electrical Engineering, LTH, Sweden. Interested in UX, generative AI, game design, and incremental self improvement.",
   },
 ];
 
-const TeamMemberCard = ({ name, title, image, description }) => (
+const TeamMemberCard = ({ name, title, email, image, description }) => (
   <div className="flex flex-col items-center w-full bg-surface rounded-2xl border border-outline p-8 mb-4">
     <CircularImage
       className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] object-cover mb-6"
@@ -38,6 +40,12 @@ const TeamMemberCard = ({ name, title, image, description }) => (
       <h3 className="text-xs md:text-sm text-ink-subtle mb-4 font-medium tracking-widest uppercase inline-block relative after:content-[''] after:absolute after:bottom-[-8px] after:left-1/2 after:-translate-x-1/2 after:w-8 after:h-0.5 after:bg-accent pb-2">
         {title}
       </h3>
+      <a
+        href={`mailto:${email}`}
+        className="block text-sm font-semibold text-accent hover:text-accent-dark transition-colors duration-200 no-underline mt-2"
+      >
+        {email}
+      </a>
       <p className="text-sm md:text-base leading-relaxed text-ink-muted mt-6">
         {description}
       </p>
