@@ -64,9 +64,13 @@ function HomePage() {
               Fullstack applications &amp; AI solutions
             </p>
             <p className="text-sm md:text-base text-ink-subtle max-w-xs leading-relaxed mb-10" style={{ textWrap: "balance" }}>
-              We build custom software — web platforms, mobile apps,
-              VR simulations and AI tools. Let's talk about what we can
-              build together.
+              <span className="block">
+                We build custom software — web platforms, mobile apps, VR
+                simulations and AI tools.
+              </span>
+              <span className="block mt-3">
+                Let's talk about what we can build together.
+              </span>
             </p>
             <button
               onClick={scrollToContact}
