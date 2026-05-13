@@ -102,11 +102,11 @@ function HomePage() {
               >
                 {/* Logo + Title */}
                 <div className="flex items-center gap-4 mb-5">
-                  <div className="w-20 h-20 shrink-0 rounded-xl bg-surface-alt border border-outline p-2.5 flex items-center justify-center">
+                  <div className="w-20 h-20 shrink-0 rounded-xl bg-surface-alt border border-outline overflow-hidden flex items-center justify-center">
                     <img
                       src={project.imgSrc}
                       alt={project.title}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="text-base font-bold text-ink leading-snug">
