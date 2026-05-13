@@ -83,6 +83,7 @@ const projects = [
     linkText: "Visit Website",
     image: SnickeristarkLogo,
     alt: "Snickeri Stark Logo",
+    imageClassName: "object-contain p-2.5",
   },
   {
     title: "ai-decoder.com",
