@@ -46,6 +46,7 @@ const projects = [
     linkText: "Visit Website",
     image: PluggahpLogo,
     alt: "Pluggahp Logo",
+    imageClassName: "object-contain p-2.5",
   },
   {
     title: "TraumaSim VR",
@@ -163,14 +164,27 @@ const projects = [
   },
 ];
 
-function ProjectCard({ title, description, image, alt, link, linkText, links }) {
+function ProjectCard({
+  title,
+  description,
+  image,
+  alt,
+  link,
+  linkText,
+  links,
+  imageClassName,
+}) {
   return (
     <div className="flex flex-col bg-surface rounded-2xl border border-outline p-7">
       {/* Logo + Title */}
       <div className="flex items-center gap-4 mb-5">
         <div className="w-20 h-20 shrink-0 rounded-xl bg-surface-alt border border-outline overflow-hidden flex items-center justify-center">
           {image ? (
-            <img src={image} alt={alt} className="w-full h-full object-cover" />
+            <img
+              src={image}
+              alt={alt}
+              className={`w-full h-full ${imageClassName || "object-cover"}`}
+            />
           ) : (
             <span className="text-2xl font-bold text-ink-subtle font-display">
               {title.charAt(0).toUpperCase()}
