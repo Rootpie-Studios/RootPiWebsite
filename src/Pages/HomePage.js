@@ -56,14 +56,15 @@ function HomePage() {
 
           <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
             <h1
-              className="font-display font-bold tracking-tight leading-none mb-6 text-7xl md:text-[8rem] bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent"
+              className="hero-content-animate font-display font-bold tracking-tight leading-none mb-6 text-7xl md:text-[8rem] bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent"
+              style={{ animationDelay: "0.1s" }}
             >
               RootPi
             </h1>
-            <p className="text-lg md:text-xl text-ink-muted mb-4 font-normal">
+            <p className="hero-content-animate text-lg md:text-xl text-ink-muted mb-4 font-normal" style={{ animationDelay: "0.25s" }}>
               Fullstack applications &amp; AI solutions
             </p>
-            <p className="text-sm md:text-base text-ink-subtle max-w-xs leading-relaxed mb-10" style={{ textWrap: "balance" }}>
+            <p className="hero-content-animate text-sm md:text-base text-ink-subtle max-w-xs leading-relaxed mb-10" style={{ textWrap: "balance", animationDelay: "0.4s" }}>
               <span className="block">
                 We build custom software — web platforms, mobile apps, VR
                 simulations and AI tools.
@@ -74,7 +75,8 @@ function HomePage() {
             </p>
             <button
               onClick={scrollToContact}
-              className="px-8 py-3.5 rounded-lg bg-white text-surface-page text-sm font-bold hover:bg-zinc-200 transition-colors duration-200 cursor-pointer tracking-wide inline-block w-auto"
+              className="hero-content-animate px-8 py-3.5 rounded-lg bg-white text-surface-page text-sm font-bold hover:bg-zinc-200 transition-colors duration-200 cursor-pointer tracking-wide inline-block w-auto"
+              style={{ animationDelay: "0.55s" }}
             >
               Get in touch
             </button>
