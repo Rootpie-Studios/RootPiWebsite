@@ -10,6 +10,7 @@ import TraumaSimPrivacyPolicyPage from "./Pages/TraumaSimPrivacyPolicyPage";
 import StreaksPrivacyPolicyPage from "./Pages/StreaksPrivacyPolicyPage";
 import TimetrackerPrivacyPolicyPage from "./Pages/TimeTrackerPrivacyPolicyPage";
 import LekaosPrivacyPolicyPage from "./Pages/LekaosPrivacyPolicyPage";
+import BogeyBeastsPrivacyPolicyPage from "./Pages/BogeyBeastsPrivacyPolicyPage";
 import SetupGuidePage from "./Pages/SetupGuidePage";
 
 function MainRouter(props) {
@@ -41,6 +42,11 @@ function MainRouter(props) {
           exact
           path="/lekaos-privacy-policy"
           element={<LekaosPrivacyPolicyPage />}
+        />
+        <Route
+          exact
+          path="/bogeybeasts-privacy-policy"
+          element={<BogeyBeastsPrivacyPolicyPage />}
         />
         <Route exact path="*" element={<NotFoundPage />} />
       </Routes>
