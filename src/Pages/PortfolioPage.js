@@ -18,6 +18,7 @@ import DecoderOwl from "../images/decoder_owl.png";
 import KawAI from "../images/KawAI.png";
 import MappLogo from "../images/MappLogo.webp";
 import PluggahpLogo from "../images/pluggahp_logo.png";
+import KemikollenLogo from "../images/kemikollen_logo.svg";
 
 const projects = [
   {
@@ -28,6 +29,16 @@ const projects = [
     linkText: "Visit Website",
     image: MappLogo,
     alt: "Mapp Logo",
+  },
+  {
+    title: "Kemikollen",
+    description:
+      "Kemikollen is a modern API for Swedish pesticide and biocide data. We collect, structure, and serve up-to-date information on every approved plant protection product in Sweden — combining automated monitoring of Kemikalieinspektionen with AI-driven extraction from decision PDFs to give developers and companies a reliable, machine-readable source.",
+    link: "https://kemikollen.se",
+    linkText: "Visit Website",
+    image: KemikollenLogo,
+    alt: "Kemikollen Logo",
+    imageClassName: "object-contain p-2.5",
   },
   {
     title: "Invenire",

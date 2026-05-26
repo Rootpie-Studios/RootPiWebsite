@@ -6,7 +6,6 @@ import {
   FaHtml5,
   FaVuejs,
   FaJava,
-  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -28,8 +27,8 @@ import {
 
 // Project images
 import TraumaSim from "./images/traumasim_logo.webp";
-import sago_logo from "./images/sago_logo.webp";
 import MappLogo from "./images/MappLogo.webp";
+import KemikollenLogo from "./images/kemikollen_logo.svg";
 
 export const projectData = [
   {
@@ -63,17 +62,18 @@ export const projectData = [
     linkText: "Youtube Channel",
   },
   {
-    title: "sagostund.nu",
+    title: "Kemikollen",
     icons: [
-      { tooltip: "Python", icon: <FaPython /> },
+      { tooltip: "Laravel", icon: <SiLaravel /> },
       { tooltip: "VueJS", icon: <FaVuejs /> },
       { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
+      { tooltip: "OpenAI", icon: <SiOpenai /> },
     ],
     description:
-      "A website for creating magical stories and fairy tales for your children, your friends or yourself!",
-    imgSrc: sago_logo,
-    link: "https://sagostund.nu",
-    linkText: "sagostund.nu",
+      "A modern REST API delivering structured, up-to-date data on Swedish pesticides and biocides — built for developers and companies that need reliable plant protection information.",
+    imgSrc: KemikollenLogo,
+    link: "https://kemikollen.se",
+    linkText: "kemikollen.se",
   },
 ];
 
