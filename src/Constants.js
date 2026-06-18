@@ -40,8 +40,10 @@ export const projectData = [
       { tooltip: "App Store", icon: <SiApple /> },
       { tooltip: "Google Play", icon: <SiGoogleplay /> },
     ],
-    description:
-      "MAPP is an innovative agricultural company providing advanced solutions mapping, analysis, planning, and precision agriculture.",
+    description: {
+      en: "MAPP is an innovative agricultural company providing advanced solutions mapping, analysis, planning, and precision agriculture.",
+      sv: "MAPP är ett innovativt jordbruksföretag som erbjuder avancerade lösningar för kartläggning, analys, planering och precisionsjordbruk.",
+    },
     imgSrc: MappLogo,
     link: "https://mapp.se",
     linkText: "mapp.se",
@@ -55,11 +57,13 @@ export const projectData = [
       { tooltip: "Blender", icon: <SiBlender /> },
       { tooltip: "C#", icon: <SiCsharp /> },
     ],
-    description:
-      "A VR education software for practicing realistic trauma related scenarios in a medical environment. Reach out to us for free access to the software.",
+    description: {
+      en: "A VR education software for practicing realistic trauma related scenarios in a medical environment. Reach out to us for free access to the software.",
+      sv: "En VR-utbildningsmjukvara för att öva realistiska traumarelaterade scenarier i en medicinsk miljö. Hör av dig till oss för kostnadsfri tillgång till mjukvaran.",
+    },
     imgSrc: TraumaSim,
     link: "https://www.youtube.com/channel/UCSN4whSZMrjPGXJAuBy1p1g",
-    linkText: "Youtube Channel",
+    linkText: { en: "YouTube Channel", sv: "YouTube-kanal" },
   },
   {
     title: "Kemikollen",
@@ -69,8 +73,10 @@ export const projectData = [
       { tooltip: "TailwindCSS", icon: <SiTailwindcss /> },
       { tooltip: "OpenAI", icon: <SiOpenai /> },
     ],
-    description:
-      "A modern REST API delivering structured, up-to-date data on Swedish pesticides and biocides — built for developers and companies that need reliable plant protection information.",
+    description: {
+      en: "A modern REST API delivering structured, up-to-date data on Swedish pesticides and biocides — built for developers and companies that need reliable plant protection information.",
+      sv: "Ett modernt REST-API som levererar strukturerad och aktuell data om svenska bekämpningsmedel och biocider — byggt för utvecklare och företag som behöver tillförlitlig information om växtskydd.",
+    },
     imgSrc: KemikollenLogo,
     link: "https://kemikollen.se",
     linkText: "kemikollen.se",

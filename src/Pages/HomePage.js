@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { pick, useLanguage, useT } from "../i18n/LanguageContext";
 
 import RootPiText from "../images/LogoTextTransBlack.png";
 import VRDude from "../images/VRDude.webp";
@@ -12,6 +13,8 @@ import AI from "../images/AI.webp";
 import { FiMail, FiPhone, FiMapPin, FiChevronDown } from "react-icons/fi";
 
 function HomePage() {
+  const t = useT();
+  const { lang } = useLanguage();
   const [mouse, setMouse] = React.useState({ x: 0, y: 0 });
 
   React.useEffect(() => {
@@ -62,23 +65,18 @@ function HomePage() {
               RootPi
             </h1>
             <p className="hero-content-animate text-lg md:text-xl text-ink-muted mb-4 font-normal" style={{ animationDelay: "0.25s" }}>
-              Fullstack applications &amp; AI solutions
+              {t("home.tagline")}
             </p>
             <p className="hero-content-animate text-sm md:text-base text-ink-subtle max-w-xs leading-relaxed mb-10" style={{ textWrap: "balance", animationDelay: "0.4s" }}>
-              <span className="block">
-                We build custom software — web platforms, mobile apps, VR
-                simulations and AI tools.
-              </span>
-              <span className="block mt-3">
-                Let's talk about what we can build together.
-              </span>
+              <span className="block">{t("home.lead1")}</span>
+              <span className="block mt-3">{t("home.lead2")}</span>
             </p>
             <button
               onClick={scrollToContact}
               className="hero-content-animate px-8 py-3.5 rounded-lg bg-white text-surface-page text-sm font-bold hover:bg-zinc-200 transition-colors duration-200 cursor-pointer tracking-wide inline-block w-auto"
               style={{ animationDelay: "0.55s" }}
             >
-              Get in touch
+              {t("home.cta")}
             </button>
           </div>
 
@@ -93,7 +91,7 @@ function HomePage() {
         {/* ── Featured projects ── */}
         <div className="max-w-[1400px] mx-auto px-6 md:px-9 lg:px-11 w-full">
           <div className="flex justify-center mt-4 mb-10">
-            <h2 className="section-title">Featured Projects</h2>
+            <h2 className="section-title">{t("home.featured")}</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
@@ -117,7 +115,7 @@ function HomePage() {
                 </div>
                 {/* Description */}
                 <p className="text-sm leading-relaxed text-ink-muted flex-1 mb-5">
-                  {project.description}
+                  {pick(project.description, lang)}
                 </p>
                 {/* CTA */}
                 <div className="mt-auto pt-4 border-t border-outline-faint">
@@ -126,11 +124,11 @@ function HomePage() {
                       href={project.link}
                       className="text-sm font-semibold text-accent hover:text-accent-dark transition-colors duration-200 no-underline"
                     >
-                      {project.linkText || "Learn More"} →
+                      {pick(project.linkText, lang) || t("common.learnMore")} →
                     </a>
                   ) : (
                     <span className="text-sm text-ink-subtle italic">
-                      Not publicly available
+                      {t("common.notPublic")}
                     </span>
                   )}
                 </div>
@@ -143,7 +141,7 @@ function HomePage() {
               to="/portfolio"
               className="text-sm font-semibold text-accent hover:text-accent-dark transition-colors duration-200 no-underline"
             >
-              View all projects →
+              {t("home.viewAll")} →
             </Link>
           </div>
         </div>
@@ -151,7 +149,7 @@ function HomePage() {
         {/* ── Contact ── */}
         <div className="max-w-[1400px] mx-auto px-6 md:px-9 lg:px-11 w-full">
           <div className="flex justify-center mb-4">
-            <h2 className="section-title">Contact</h2>
+            <h2 className="section-title">{t("home.contact")}</h2>
           </div>
 
           <div
@@ -161,11 +159,10 @@ function HomePage() {
             <div className="absolute top-0 left-0 bottom-0 w-1 bg-accent rounded-l-2xl" />
 
             <h3 className="text-2xl font-display font-bold text-ink mb-2">
-              Say hello
+              {t("home.sayHello")}
             </h3>
             <p className="text-ink-muted text-sm md:text-base mb-8 leading-relaxed">
-              Tell us about your project, your company, or your ideas — we'd
-              love to hear from you.
+              {t("home.contactLead")}
             </p>
 
             <div className="space-y-5">

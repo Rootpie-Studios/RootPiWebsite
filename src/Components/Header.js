@@ -8,15 +8,18 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useT } from "../i18n/LanguageContext";
 
 const NAV_LINKS = [
-  { path: "/", label: "Home", key: "home" },
-  { path: "/portfolio", label: "Projects", key: "portfolio" },
-  { path: "/students", label: "Students", key: "students" },
-  { path: "/team", label: "Team", key: "team" },
+  { path: "/", labelKey: "nav.home", key: "home" },
+  { path: "/portfolio", labelKey: "nav.portfolio", key: "portfolio" },
+  { path: "/students", labelKey: "nav.students", key: "students" },
+  { path: "/team", labelKey: "nav.team", key: "team" },
 ];
 
 function Header(props) {
+  const t = useT();
   const location = useLocation();
   const [selected, setSelected] = useState("");
   const [scrolled, setScrolled] = useState(false);
@@ -70,20 +73,22 @@ function Header(props) {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
-          {NAV_LINKS.map(({ path, label, key }) => (
+          {NAV_LINKS.map(({ path, labelKey, key }) => (
             <Link
               key={key}
               className={isActive(key) ? selectedClasses : linkClasses}
               onClick={() => setSelected(key)}
               to={path}
             >
-              {label}
+              {t(labelKey)}
             </Link>
           ))}
+          <LanguageSwitcher className="ml-3" />
         </nav>
 
         {/* Mobile hamburger */}
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden items-center gap-2">
+          <LanguageSwitcher />
           <button
             onClick={() => setDrawerOpen(true)}
             className="p-2 rounded-lg hover:bg-outline transition-colors duration-200 cursor-pointer mr-1"
@@ -102,7 +107,7 @@ function Header(props) {
           >
             <Box sx={{ width: 220 }} role="presentation">
               <div className="flex justify-between items-center px-4 py-3 border-b border-outline">
-                <span className="font-bold text-ink text-sm">Menu</span>
+                <span className="font-bold text-ink text-sm">{t("nav.menu")}</span>
                 <button
                   onClick={() => setDrawerOpen(false)}
                   className="p-1.5 rounded-lg hover:bg-outline transition-colors duration-200 cursor-pointer"
@@ -112,7 +117,7 @@ function Header(props) {
                 </button>
               </div>
               <List>
-                {NAV_LINKS.map(({ path, label, key }) => (
+                {NAV_LINKS.map(({ path, labelKey, key }) => (
                   <ListItem key={key} disablePadding>
                     <ListItemButton
                       onClick={() => {
@@ -133,7 +138,7 @@ function Header(props) {
                         to={path}
                         style={{ width: "100%" }}
                       >
-                        {label}
+                        {t(labelKey)}
                       </Link>
                     </ListItemButton>
                   </ListItem>

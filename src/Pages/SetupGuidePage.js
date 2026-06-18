@@ -3,14 +3,85 @@ import ReactMarkdown from "react-markdown";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import logo from "../images/LogoTextTransBlack.png";
+import { useLanguage } from "../i18n/LanguageContext";
 import "../css/setup_guide.css";
+
+const setupGuideMarkdownSv = `
+# RootPi – guide för projektuppsättning
+
+## 1. Skapa nytt projekt
+
+Kör följande kommando i din terminal för att skapa ett nytt projekt med hela vår stack:
+
+\`\`\`bash
+curl -o rootpi-setup.sh https://raw.githubusercontent.com/Rootpie-Studios/bash-scripts/refs/heads/main/rootpi-setup.sh && chmod +x rootpi-setup.sh && ./rootpi-setup.sh
+\`\`\`
+
+Detta kommando kommer att:
+1. Ladda ner vårt installationsskript
+2. Göra det körbart
+3. Köra installationsprocessen
+
+Installationsskriptet kommer att:
+- Installera Docker om det saknas
+- Skapa ett nytt Laravel-projekt
+- Installera och konfigurera:
+  - Laravel Jetstream med Inertia
+  - Laravel Pulse
+  - Laravel Horizon
+  - Laravel Scout
+  - Laravel Sail
+- Sätta upp PostgreSQL, Redis och Meilisearch
+- Konfigurera alla nödvändiga miljövariabler
+- Starta utvecklingsmiljön
+
+## 2. Klona befintligt projekt
+
+Kör följande för att klona och sätta upp ett befintligt RootPi-projekt:
+
+\`\`\`bash
+curl -o rootpi-clone.sh https://raw.githubusercontent.com/Rootpie-Studios/bash-scripts/refs/heads/main/rootpi-clone.sh && chmod +x rootpi-clone.sh && ./rootpi-clone.sh
+\`\`\`
+
+Klonskriptet kommer att:
+- Kontrollera att Docker är installerat
+- Klona det angivna repot
+- Sätta upp miljöfilen
+- Installera alla beroenden
+- Konfigurera Sail
+- Starta utvecklingsmiljön
+- Köra databasmigreringar
+- Generera applikationsnyckel
+- Öppna projektet i Cursor (om det är installerat)
+
+## Vad händer härnäst?
+
+När installationen är klar är ditt projekt redo för utveckling med:
+- En färdigkonfigurerad Laravel-backend
+- Inertia.js + Vue.js-frontend
+- PostgreSQL-databas
+- Redis för cachning och köer
+- Meilisearch för fritextsökning
+- Docker-baserad utvecklingsmiljö
+
+Du kan nå din applikation på:
+- Huvudapplikation: http://localhost
+- Pulse-dashboard: http://localhost/pulse
+- Horizon-dashboard: http://localhost/horizon
+
+Använd kommandot \`sail\` för att hantera din applikation:
+- \`sail up -d\` – Starta applikationen
+- \`sail down\` – Stoppa applikationen
+- \`sail artisan\` – Kör artisan-kommandon
+`;
 
 /**
  * Setup guide page component that provides instructions for setting up a new project
  * using RootPi's tech stack
  */
 function SetupGuidePage() {
-  const setupGuideMarkdown = `
+  const { lang } = useLanguage();
+  const setupGuideMarkdownEn = `
 # RootPi Project Setup Guide
 
 ## 1. Create New Project
@@ -78,6 +149,9 @@ Use the \`sail\` command to manage your application:
 - \`sail down\` - Stop the application
 - \`sail artisan\` - Run artisan commands
 `;
+
+  const setupGuideMarkdown =
+    lang === "sv" ? setupGuideMarkdownSv : setupGuideMarkdownEn;
 
   return (
     <div className="App">

@@ -1,18 +1,18 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { useT } from "../i18n/LanguageContext";
 import "../App.css";
 
 function NotFoundPage() {
+  const t = useT();
   return (
     <div className="page">
       <Header />
       <main className="center-content">
-        <h1>404 Not Found</h1>
+        <h1>{t("notFound.title")}</h1>
       </main>
-      <p className="center-content">
-        Seems like the page you are looking for is in another castle!
-      </p>
+      <p className="center-content">{t("notFound.body")}</p>
       <Footer />
     </div>
   );
