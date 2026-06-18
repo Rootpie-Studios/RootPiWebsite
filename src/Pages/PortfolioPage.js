@@ -52,7 +52,7 @@ const projects = [
     title: "Invenire",
     description: {
       en: "A platform for visual artists to discover open calls for residencies and exhibitions. Follow the galleries and institutions you care about — and let Invenire track opportunities for you.",
-      sv: "En plattform för bildkonstnärer att upptäcka öppna ansökningar till residens och utställningar. Följ de gallerier och institutioner du bryr dig om — och låt Invenire bevaka möjligheterna åt dig.",
+      sv: "En plattform för konstnärer att upptäcka öppna ansökningar till residens och utställningar. Följ de gallerier och institutioner du bryr dig om — och låt Invenire bevaka möjligheterna åt dig.",
     },
     link: "https://invenire.se",
     linkText: VISIT,
