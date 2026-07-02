@@ -92,11 +92,11 @@ Vi inhämtar samtycke på följande sätt:
 
 En användare kan när som helst återkalla sitt samtycke, vilket görs på följande sätt:
 
-* Samtycke kan återkallas genom att radera kontot i appen eller genom att skicka ett e-postmeddelande till [info@rootpi.xyz](mailto:info@rootpi.xyz).
+* Samtycke kan återkallas genom att radera kontot i appen eller genom att skicka ett e-postmeddelande till [info@rootpi.se](mailto:info@rootpi.se).
 
 **c) Rätt att få personuppgifter raderade**
 
-När samtycket återkallas kan användaren även begära att deras personuppgifter raderas från alla servrar. Detta görs med ett e-postmeddelande till [info@rootpi.xyz](mailto:info@rootpi.xyz).
+När samtycket återkallas kan användaren även begära att deras personuppgifter raderas från alla servrar. Detta görs med ett e-postmeddelande till [info@rootpi.se](mailto:info@rootpi.se).
 
 **5. Behandling av personuppgifter**
 
@@ -132,7 +132,7 @@ Om en incident gällande personuppgifter inträffar kommer berörda användare a
 
 Efter att ha godkänt policyn har användaren rätt att begära information om huruvida deras personuppgifter behandlas. Om de behandlas har användaren rätt att få tillgång till uppgifterna.
 
-Begäran om tillgång till egna personuppgifter görs genom att skicka ett e-postmeddelande till [info@rootpi.xyz](mailto:info@rootpi.xyz).
+Begäran om tillgång till egna personuppgifter görs genom att skicka ett e-postmeddelande till [info@rootpi.se](mailto:info@rootpi.se).
 
 Uppgifterna skickas till användaren i textform via digital e-post.
 
@@ -175,7 +175,7 @@ Denna policy kan komma att ändras, varför appens användare uppmuntras att lä
 
 **9. Kontakt**
 
-För frågor relaterade till webbplatsen och dess innehåll kan vi nås via e-post till [info@rootpi.xyz](mailto:info@rootpi.xyz).
+För frågor relaterade till webbplatsen och dess innehåll kan vi nås via e-post till [info@rootpi.se](mailto:info@rootpi.se).
 
 Svarstid: 3–5 arbetsdagar.
 `;
@@ -210,11 +210,11 @@ We collect agreement in the following way:
 
 A user can at any point revoke their agreement, which is made in the following way:
 
-* Agreement can be revoked by deleting the account in the app or sending an email to [info@rootpi.xyz](mailto:info@rootpi.xyz).
+* Agreement can be revoked by deleting the account in the app or sending an email to [info@rootpi.se](mailto:info@rootpi.se).
 
 **c) Right to have personal data deleted**
 
-When the agreement is revoked the user can also request their personal data to be deleted from all servers. This is done with an email to [info@rootpi.xyz](mailto:info@rootpi.xyz).
+When the agreement is revoked the user can also request their personal data to be deleted from all servers. This is done with an email to [info@rootpi.se](mailto:info@rootpi.se).
 
 **5. Processing of personal data**
 
@@ -250,7 +250,7 @@ If an incident regarding personal data occurs the affected users will be notifie
 
 After agreeing to the policy the user has the right to request information if their personal data is being proccessed. If they are proccessed the user has the right to access the data.
 
-The request to access own personal data is made by sending an email to [info@rootpi.xyz](mailto:info@rootpi.xyz).
+The request to access own personal data is made by sending an email to [info@rootpi.se](mailto:info@rootpi.se).
 
 The data is sent to the user in text via digital email.
 
@@ -293,7 +293,7 @@ This policy may change, which is why the app's users are encouraged to read the 
 
 **9. Contact**
 
-For questions related to the website and its content, we can be reached via e-mail sent to [info@rootpi.xyz](mailto:info@rootpi.xyz).
+For questions related to the website and its content, we can be reached via e-mail sent to [info@rootpi.se](mailto:info@rootpi.se).
 
 Response time: 3-5 work days.
 `;
@@ -372,7 +372,7 @@ Vi delar inte dina uppgifter med tredje part om det inte krävs enligt lag.
 - Rättelse av dina uppgifter
 - Radering av dina uppgifter
 
-För att utöva någon av dessa rättigheter, kontakta oss på info@rootpi.xyz.
+För att utöva någon av dessa rättigheter, kontakta oss på info@rootpi.se.
 
 ### Samtycke till forskning
 
@@ -384,7 +384,7 @@ Vi förbehåller oss rätten att uppdatera denna policy. Ändringar kommer att a
 
 ### Kontakt
 
-För frågor om denna integritetspolicy, kontakta info@rootpi.xyz
+För frågor om denna integritetspolicy, kontakta info@rootpi.se
   `;
   }
 
@@ -426,7 +426,7 @@ We do not share your data with third parties unless required by law.
 - Rectification of your data
 - Deletion of your data
 
-To exercise any of these rights, please contact us at info@rootpi.xyz.
+To exercise any of these rights, please contact us at info@rootpi.se.
 
 ### Consent for Research
 
@@ -438,6 +438,6 @@ We reserve the right to update this policy. Changes will be noted here.
 
 ### Contact
 
-For questions about this privacy policy, please contact info@rootpi.xyz
+For questions about this privacy policy, please contact info@rootpi.se
   `;
 }

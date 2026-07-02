@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: "Kim Haapamäki",
     titleKey: "team.coFounder",
-    email: "kim@rootpi.xyz",
+    email: "kim@rootpi.se",
     image: Kim,
     description: {
       en: "M.Sc. Computer Science Engineering, LTH, Sweden. A passion for game development and Machine Learning. Developing Unity games, consulting expertise in VR/ML, mobile and web app development.",
@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: "Jesper Laurell",
     titleKey: "team.coFounder",
-    email: "jesper@rootpi.xyz",
+    email: "jesper@rootpi.se",
     image: Jesper,
     description: {
       en: "M.Sc. Electrical Engineering, LTH, Sweden. Interested in UX, generative AI, game design, and incremental self improvement.",

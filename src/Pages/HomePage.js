@@ -180,10 +180,10 @@ function HomePage() {
               <div className="flex items-center gap-3">
                 <FiMail size={17} className="text-accent shrink-0" />
                 <a
-                  href="mailto:info@rootpi.xyz"
+                  href="mailto:info@rootpi.se"
                   className="text-ink text-sm font-semibold no-underline hover:text-accent transition-colors duration-200"
                 >
-                  info@rootpi.xyz
+                  info@rootpi.se
                 </a>
               </div>
               <div className="flex items-center gap-3">

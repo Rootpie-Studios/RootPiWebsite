@@ -24,11 +24,11 @@ b) Återkallelse av samtycke
 
 En användare kan när som helst återkalla sitt samtycke, vilket görs på följande sätt:
 
-Samtycke kan återkallas genom att skicka ett e-postmeddelande till info@rootpi.xyz.
+Samtycke kan återkallas genom att skicka ett e-postmeddelande till info@rootpi.se.
 
 c) Rätten att få personuppgifter raderade
 
-När samtycke återkallas har användaren också rätt att begära att deras personuppgifter ska raderas från alla servrar. Detta görs med ett e-postmeddelande till info@rootpi.xyz.
+När samtycke återkallas har användaren också rätt att begära att deras personuppgifter ska raderas från alla servrar. Detta görs med ett e-postmeddelande till info@rootpi.se.
 
 5. Bearbetning av personuppgifter
 
@@ -65,7 +65,7 @@ a) Rätten att få tillgång till egna uppgifter
 
 Efter att ha samtyckt till policyn har användaren rätt att begära information om deras personuppgifter bearbetas. Om de bearbetas har användaren rätt att få tillgång till uppgifterna.
 
-Begäran om att få tillgång till egna personuppgifter görs genom att skicka ett e-postmeddelande till info@rootpi.xyz.
+Begäran om att få tillgång till egna personuppgifter görs genom att skicka ett e-postmeddelande till info@rootpi.se.
 
 Uppgifterna skickas till användaren i text via digital e-post.
 
@@ -108,6 +108,6 @@ Denna policy kan ändras, varför tjänstens användare uppmanas att läsa polic
 
 9. Kontakt
 
-För frågor som rör webbplatsen och dess innehåll kan vi nås via e-post som skickas till info@rootpi.xyz.
+För frågor som rör webbplatsen och dess innehåll kan vi nås via e-post som skickas till info@rootpi.se.
 
 Svarstid: 3-5 arbetsdagar.
